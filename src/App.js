@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import theme from "./styles/theme";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Navbar, ScrollToTop, Sidebar, Footer } from "./components";
+import { ThemeProvider } from "styled-components";
+import GlobalStyles from "./styles/GlobalStyles";
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggling = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <ThemeProvider theme={theme}>
+        <div className="page-container">
+          <div className="content-wrap">
+            <ScrollToTop />
+            <GlobalStyles />
+            <Navbar toggling={toggling} />
+            <Sidebar toggling={toggling} isOpen={isOpen} />
+            <Routes>
+              <Route path="/" />
+              <Route path="/" />
+              <Route path="/" />
+            </Routes>
+          </div>
+        </div>
+        <Footer />
+      </ThemeProvider>
+    </Router>
   );
 }
 
