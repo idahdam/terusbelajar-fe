@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import logo from "../../assets/terusBelajarLogo.png";
-import profilephoto from "../../assets/terusBelajarLogo.png";
+import logo from "../../assets/images/terusBelajarLogo.png";
+// import profilephoto from "../../assets/terusBelajarLogo.png";
 import { FaBars } from "react-icons/fa";
 import {
   Nav,

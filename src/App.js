@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Navbar, ScrollToTop, Sidebar, Footer } from "./components";
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
+import { Home, Product } from "./pages";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const toggling = () => {
@@ -20,9 +21,8 @@ function App() {
             <Navbar toggling={toggling} />
             <Sidebar toggling={toggling} isOpen={isOpen} />
             <Routes>
-              <Route path="/" />
-              <Route path="/" />
-              <Route path="/" />
+              <Route path="/" element={<Home />} exact />
+              <Route path="/product" element={<Product />} exact />
             </Routes>
           </div>
         </div>

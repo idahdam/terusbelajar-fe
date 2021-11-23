@@ -38,6 +38,7 @@ export const NavLogo = styled.img`
 export const NavItemList = styled.div`
   margin-left: auto;
   display: flex;
+  padding-top: 5px;
   @media screen and (max-width: ${(props) => props.theme.screen.md}) {
     display: none;
   }
