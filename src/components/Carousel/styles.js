@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const SectionOneTemplate = styled.div`
+export const CarouselTemplate = styled.div`
   max-width: ${({ maxWidth }) => maxWidth};
   width: ${({ width }) => width};
   height: ${({ height }) => height};
@@ -22,7 +22,7 @@ export const SectionOneTemplate = styled.div`
   }
 `;
 
-export const SectionOneHeader = styled.div`
+export const CarouselHeader = styled.div`
   width: ${({ width }) => width};
   flex-direction: column;
   display: flex;
@@ -35,13 +35,14 @@ export const SectionOneHeader = styled.div`
   }
 `;
 
-export const HighlightText = styled.span`
+export const CarouselHighlightText = styled.span`
   color: ${({ color }) => color};
+  font-family: "Raleway Bold";
 `;
 
-export const SectionOneButton = styled(Link)`
+export const CarouselButton = styled(Link)`
   display: block;
-  background: ${(props) => props.theme.color.blue.A900};
+  background: ${(props) => props.theme.color.orange.A500};
   color: ${(props) => props.theme.color.white};
   padding: 12px 24px;
   border-radius: 4px;
@@ -50,4 +51,8 @@ export const SectionOneButton = styled(Link)`
   @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
     margin: 0 auto;
   }
+`;
+
+export const CarouselTitle = styled.div`
+  font-family: "Raleway Bold";
 `;

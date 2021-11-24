@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import logo from "../../assets/images/terusBelajarLogo.png";
 // import profilephoto from "../../assets/terusBelajarLogo.png";
 import { FaBars } from "react-icons/fa";
@@ -8,39 +8,19 @@ import {
   NavLogo,
   NavItemList,
   NavItem,
-  NavItemButtonLogin,
-  NavItemButtonLogout,
+  // NavItemButtonLogin,
+  // NavItemButtonLogout,
   NavItemButtonSign,
   MobileIcon,
-  NavbarDropdownContent,
-  NavbarProfilePhoto,
+  // NavbarDropdownContent,
+  // NavbarProfilePhoto,
 } from "./styles";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = (props) => {
-  const [navbar, setNavbar] = useState(false);
-  //   const auth = useSelector((state) => state.auth);
-  const history = useNavigate();
-  const location = useLocation();
-  //   useEffect(() => {
-  //     const navbarState = async () => {
-  //       const state = auth.isAuthenticated;
-  //       if (!state) {
-  //         setNavbar(false);
-  //       } else {
-  //         setNavbar(true);
-  //       }
-  //     };
-  //     navbarState();
-  //   }, [auth]);
-  //   const logout = async () => {
-  //     props.logout();
-  //     if (location.pathname === "/") {
-  //       window.location.reload();
-  //     } else {
-  //       history.push("/");
-  //     }
-  //   };
+  // const [navbar, setNavbar] = useState(false);
+  // const history = useNavigate();
+  // const location = useLocation();
   const { pathname } = useLocation();
 
   return (

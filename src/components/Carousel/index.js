@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import theme from "../../styles/theme";
 // import homeBanner from "../../../assets/homeBanner.png";
 import {
-  SectionOneTemplate,
-  SectionOneHeader,
-  HighlightText,
-  SectionOneButton,
+  CarouselTemplate,
+  CarouselHeader,
+  CarouselHighlightText,
+  CarouselButton,
+  CarouselTitle,
 } from "./styles";
 
 const CarouselItem = (props) => {
@@ -34,21 +35,19 @@ const CarouselItem = (props) => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <SectionOneTemplate width="100%" maxWidth="75%" position="150% 100%">
-        <SectionOneHeader width={position}>
+      <CarouselTemplate width="100%" maxWidth="75%" position="150% 100%">
+        <CarouselHeader width={position}>
           <h1>
-            {props.title}{" "}
-            <HighlightText color={theme.color.blue.A700}>
+            <CarouselTitle>{props.title} </CarouselTitle>
+            <CarouselHighlightText color={theme.color.blue.A700}>
               {props.titleBold}
-            </HighlightText>
+            </CarouselHighlightText>
           </h1>
 
           <h6>{props.description}</h6>
-          <SectionOneButton to={props.link}>
-            {props.buttonTitle}
-          </SectionOneButton>
-        </SectionOneHeader>
-      </SectionOneTemplate>
+          <CarouselButton to={props.link}>{props.buttonTitle}</CarouselButton>
+        </CarouselHeader>
+      </CarouselTemplate>
     </div>
   );
 };

@@ -1,0 +1,35 @@
+import styled from "styled-components";
+
+export const SectionFourTemplate = styled.div`
+  width: 75%;
+  margin: 0 auto;
+  padding: 70px 0;
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+  @media screen and (max-width: ${(props) => props.theme.screen.md}) {
+    width: 80%;
+    flex-direction: column;
+  }
+`;
+
+export const SectionFourTestimony = styled.div`
+  width: ${(props) => props.width};
+  background-image: url(${(props) => props.src});
+  background-repeat: no-repeat;
+  background-position: 80% 80%;
+  height: fit-content;
+  margin-bottom: auto;
+`;
+
+export const SectionFourSliderTestimonial = styled.div`
+  max-width: 30%;
+  flex: 1;
+  height: 100%;
+  div.react-multi-carousel-list {
+    padding: 10px 10px 30px 10px;
+  }
+  @media screen and (max-width: ${(props) => props.theme.screen.md}) {
+    width: 100%;
+  }
+`;

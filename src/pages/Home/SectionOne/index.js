@@ -16,7 +16,7 @@ const SectionOne = () => {
       title="Lorem Ipsum Dolor Sit Amet"
       titleBold="consectetur"
       description="Vel sed habitant sed mus et porta dignissim egestas neque sodales sed sit Adatas masurs"
-      buttonTitle="Button Title"
+      buttonTitle="Register"
       link="/"
       image={imageHero}
     />,
