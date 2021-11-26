@@ -26,7 +26,7 @@ function App() {
               <Route path="/program" element={<Product />} exact />
               <Route path="/about-us" element={<About />} exact />
               <Route path="/register" element={<Register />} exact />
-              <Route element={<NotFound />} exact />
+              <Route path="*" element={<NotFound />} exact />
             </Routes>
           </div>
         </div>
