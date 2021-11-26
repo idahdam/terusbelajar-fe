@@ -6,6 +6,7 @@ import { Navbar, ScrollToTop, Sidebar, Footer } from "./components";
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
 import { Home, Product } from "./pages";
+import About from "./pages/About";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const toggling = () => {
@@ -22,7 +23,8 @@ function App() {
             <Sidebar toggling={toggling} isOpen={isOpen} />
             <Routes>
               <Route path="/" element={<Home />} exact />
-              <Route path="/product" element={<Product />} exact />
+              <Route path="/program" element={<Product />} exact />
+              <Route path="/about-us" element={<About />} exact />
             </Routes>
           </div>
         </div>

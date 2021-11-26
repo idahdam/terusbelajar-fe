@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 export const SectionSixTemplate = styled.div`
   width: 65%;
   margin: 0 auto;
-  padding: 70px 0;
+  padding-top: 150px;
+  text-align: center;
   display: flex;
   flex-direction: row;
   background-color: ${(props) => props.theme.color.orange};
@@ -16,8 +17,25 @@ export const SectionSixTemplate = styled.div`
   }
 `;
 
+export const SectionSixTemplateButton = styled.div`
+  width: 65%;
+  margin: auto;
+  padding: 35px 0 150px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: ${(props) => props.theme.color.orange};
+  @media screen and (max-width: ${(props) => props.theme.screen.md}) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
+    width: 80%;
+  }
+`;
+
 export const SectionSixButton = styled(Link)`
-  display: block;
+  // display: block;
   background: ${(props) => props.theme.color.orange.A500};
   color: ${(props) => props.theme.color.white};
   padding: 12px 24px;

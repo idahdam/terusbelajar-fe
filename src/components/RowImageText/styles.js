@@ -7,7 +7,7 @@ export const RowImageTemplates = styled.div`
   margin: 0 auto;
   padding: 70px 0;
   background-color: ${(props) =>
-    props.white ? `${theme.color.white}` : `${theme.color.black.A50}`};
+    props.white ? `${theme.color.white}` : `${theme.color.white}`};
 `;
 
 export const RowImageBoxContent = styled.div`

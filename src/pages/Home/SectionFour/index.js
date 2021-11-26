@@ -1,10 +1,12 @@
 import React from "react";
-import Carousel from "react-multi-carousel";
+// import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import person from "../../../assets/images/person.jpg";
 import { TestimonyBox } from "../../../components";
 import {
   SectionFourTestimony,
   SectionFourTemplate,
+  SectionFourTemplateTestimonies,
   SectionFourSliderTestimonial,
 } from "./styles";
 
@@ -28,46 +30,53 @@ const SectionFour = () => {
     },
   };
   return (
-    <SectionFourTemplate>
-      {/* <SectionFourTestimony width="100%">
-        <h2>Testimonies</h2>
-        <h6>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo id
-          eleifend accumsan nisl, tincidunt.
-        </h6>
-      </SectionFourTestimony> */}
-      <SectionFourSliderTestimonial>
-        <TestimonyBox
-          testi="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo id
+    <>
+      <SectionFourTemplate>
+        <SectionFourTestimony width={"100%"}>
+          <h2>Testimonies</h2>
+          <h6>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo id
+            eleifend accumsan nisl, tincidunt.
+          </h6>
+        </SectionFourTestimony>
+      </SectionFourTemplate>
+      <SectionFourTemplateTestimonies>
+        <SectionFourSliderTestimonial>
+          <TestimonyBox
+            testi="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo id
         eleifend accumsan nisl, tincidunt."
-          name="Idahdam"
-          title="Teknik Komputer - Universitas Indonesia"
-          rating="4"
-          width="100%"
-        />
-      </SectionFourSliderTestimonial>
-      <SectionFourSliderTestimonial>
-        <TestimonyBox
-          testi="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo id
+            name="Idahdam"
+            title="Teknik Komputer - Universitas Indonesia"
+            rating="4"
+            width="100%"
+            image={person}
+          />
+        </SectionFourSliderTestimonial>
+        <SectionFourSliderTestimonial>
+          <TestimonyBox
+            testi="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo id
         eleifend accumsan nisl, tincidunt."
-          name="Idahdam"
-          title="Teknik Komputer - Universitas Indonesia"
-          rating="5"
-          width="100%"
-        />
-      </SectionFourSliderTestimonial>
-      <SectionFourSliderTestimonial>
-        <TestimonyBox
-          testi="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo id
+            name="Idahdam"
+            title="Teknik Komputer - Universitas Indonesia"
+            rating="5"
+            width="100%"
+            image={person}
+          />
+        </SectionFourSliderTestimonial>
+        <SectionFourSliderTestimonial>
+          <TestimonyBox
+            testi="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo id
         eleifend accumsan nisl, tincidunt."
-          name="Idahdam"
-          title="Teknik Komputer - Universitas Indonesia"
-          rating="3"
-          width="100%"
-        />
-      </SectionFourSliderTestimonial>
-      {/* </Carousel> */}
-    </SectionFourTemplate>
+            name="Idahdam"
+            title="Teknik Komputer - Universitas Indonesia"
+            rating="3"
+            width="100%"
+            image={person}
+          />
+        </SectionFourSliderTestimonial>
+        {/* </Carousel> */}
+      </SectionFourTemplateTestimonies>
+    </>
   );
 };
 

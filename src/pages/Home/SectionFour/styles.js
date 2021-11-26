@@ -4,6 +4,20 @@ export const SectionFourTemplate = styled.div`
   width: 75%;
   margin: 0 auto;
   padding: 70px 0;
+  font-family: "Raleway Bold";
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+  @media screen and (max-width: ${(props) => props.theme.screen.md}) {
+    width: 80%;
+    flex-direction: column;
+  }
+`;
+
+export const SectionFourTemplateTestimonies = styled.div`
+  width: 40%;
+  margin: 0 auto;
+  padding-bottom: 70px;
   display: flex;
   flex-direction: row;
   column-gap: 24px;
@@ -15,6 +29,8 @@ export const SectionFourTemplate = styled.div`
 
 export const SectionFourTestimony = styled.div`
   width: ${(props) => props.width};
+  margin: auto;
+  text-align: center;
   background-image: url(${(props) => props.src});
   background-repeat: no-repeat;
   background-position: 80% 80%;

@@ -6,7 +6,7 @@ import {
   DropDownContentText,
 } from "./styles";
 
-const Dropdown = (props) => {
+const Program = (props) => {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -29,4 +29,4 @@ const Dropdown = (props) => {
   );
 };
 
-export default Dropdown;
+export default Program;
