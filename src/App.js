@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Navbar, ScrollToTop, Sidebar, Footer } from "./components";
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
-import { Home, Product } from "./pages";
+import { Home, NotFound, Product, Register } from "./pages";
 import About from "./pages/About";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +25,8 @@ function App() {
               <Route path="/" element={<Home />} exact />
               <Route path="/program" element={<Product />} exact />
               <Route path="/about-us" element={<About />} exact />
+              <Route path="/register" element={<Register />} exact />
+              <Route element={<NotFound />} exact />
             </Routes>
           </div>
         </div>

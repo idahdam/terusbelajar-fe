@@ -7,3 +7,4 @@ export { default as RowImageText } from "./RowImageText";
 export { default as ScrollToTop } from "./ScrollToTop";
 export { default as Dropdown } from "./Dropdown";
 export { default as Program } from "./Program";
+export { default as NotFouund } from "./NotFound";

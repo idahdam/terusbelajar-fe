@@ -4,7 +4,6 @@ import SectionOne from "./SectionOne";
 const Product = () => {
   return (
     <>
-      Product
       <SectionOne />
     </>
   );
