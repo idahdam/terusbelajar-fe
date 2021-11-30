@@ -3,12 +3,7 @@ import React from "react";
 import "react-multi-carousel/lib/styles.css";
 import person from "../../../assets/images/person.jpg";
 import { TestimonyBox } from "../../../components";
-import {
-  SectionFourTestimony,
-  SectionFourTemplate,
-  SectionFourTemplateTestimonies,
-  SectionFourSliderTestimonial,
-} from "./styles";
+import { SectionFourTestimony, SectionFourTemplate, SectionFourTemplateTestimonies, SectionFourSliderTestimonial, SectionFourTitle } from "./styles";
 
 const SectionFour = () => {
   const responsive = {
@@ -33,11 +28,8 @@ const SectionFour = () => {
     <>
       <SectionFourTemplate>
         <SectionFourTestimony width={"100%"}>
-          <h2>Testimonies</h2>
-          <h6>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo id
-            eleifend accumsan nisl, tincidunt.
-          </h6>
+          <SectionFourTitle>Testimonies</SectionFourTitle>
+          <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo id eleifend accumsan nisl, tincidunt.</h6>
         </SectionFourTestimony>
       </SectionFourTemplate>
       <SectionFourTemplateTestimonies>

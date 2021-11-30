@@ -14,6 +14,11 @@ export const SectionFourTemplate = styled.div`
   }
 `;
 
+export const SectionFourTitle = styled.h2`
+  font-family: "Raleway Bold";
+  color: ${(props) => props.theme.color.blue.A500};
+`;
+
 export const SectionFourTemplateTestimonies = styled.div`
   width: 40%;
   margin: 0 auto;

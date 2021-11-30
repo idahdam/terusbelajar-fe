@@ -18,6 +18,10 @@ export const SectionSixTemplate = styled.div`
   }
 `;
 
+export const SectionSixText = styled.h2`
+  font-family: "Raleway Bold";
+`;
+
 export const SectionSixTemplateButton = styled.div`
   width: 65%;
   margin: auto;

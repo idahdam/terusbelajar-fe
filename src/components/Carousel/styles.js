@@ -4,12 +4,13 @@ import { Link } from "react-router-dom";
 export const CarouselTemplate = styled.div`
   max-width: ${({ maxWidth }) => maxWidth};
   width: ${({ width }) => width};
-  height: ${({ height }) => height};
+  height: 400px;
   display: flex;
   margin: 0 auto;
   flex-direction: row;
   column-gap: 10px;
-  padding: 50px 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
   overflow-y: hidden;
   background-color: ${({ color }) => color};
   background-image: url(${(props) => props.src});
