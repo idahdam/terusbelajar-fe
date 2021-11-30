@@ -1,32 +1,27 @@
 import React from "react";
-// import { Dropdown } from "../../../components";
-import {
-  SectionFiveTemplate,
-  SectionFiveApart,
-  SectionFiveButton,
-  SectionFiveDescription,
-  SectionFiveContent,
-} from "./styles";
+import { Program } from "../../../components";
+import person from "../../../assets/images/person.jpg";
+import { SectionThreeTemplate, SectionThreeApart, SectionThreeButton, SectionThreeDescription, SectionThreeContent, SectionThreeTitle } from "./styles";
 
 const SectionThree = () => {
   return (
-    <SectionFiveContent>
-      <SectionFiveTemplate>
-        <SectionFiveApart>
-          <h2>Program</h2>
-          <SectionFiveDescription>
-            Condimentum leo tincidunt malesuada enim, sagittis, vestibulum amet
-            in. Lorem sed sit lectus massa risus, nibh.
-          </SectionFiveDescription>
-          <SectionFiveButton to="/">Register</SectionFiveButton>
-        </SectionFiveApart>
-        <SectionFiveApart>
-          {/* <Dropdown num="1" name="Hello" children="Lorem ipsum" />
-          <Dropdown num="1" name="Hello" children="Lorem ipsum" />
-          <Dropdown num="1" name="Hello" children="Lorem ipsum" /> */}
-        </SectionFiveApart>
-      </SectionFiveTemplate>
-    </SectionFiveContent>
+    <SectionThreeContent>
+      <SectionThreeTemplate>
+        <SectionThreeApart>
+          <SectionThreeTitle>Program</SectionThreeTitle>
+          <SectionThreeDescription>Condimentum leo tincidunt malesuada enim, sagittis, vestibulum amet in. Lorem sed sit lectus massa risus, nibh.</SectionThreeDescription>
+          <SectionThreeButton to="/">Register</SectionThreeButton>
+        </SectionThreeApart>
+        <SectionThreeApart grid={true}>
+          <Program title="Lorem Ipsum Sit Dolor" image={person} text="Cursus odio nisi turpis eros. Amet pharetra tempor enim, est viverra. Pretium nisl aliquam posuere lectus." />
+          <Program title="Lorem Ipsum Sit Dolor" image={person} text="Cursus odio nisi turpis eros. Amet pharetra tempor enim, est viverra. Pretium nisl aliquam posuere lectus." />
+          <Program title="Lorem Ipsum Sit Dolor" image={person} text="Cursus odio nisi turpis eros. Amet pharetra tempor enim, est viverra. Pretium nisl aliquam posuere lectus." />
+          <Program title="Lorem Ipsum Sit Dolor" image={person} text="Cursus odio nisi turpis eros. Amet pharetra tempor enim, est viverra. Pretium nisl aliquam posuere lectus." />
+          <Program title="Lorem Ipsum Sit Dolor" image={person} text="Cursus odio nisi turpis eros. Amet pharetra tempor enim, est viverra. Pretium nisl aliquam posuere lectus." />
+          <Program title="Lorem Ipsum Sit Dolor" image={person} text="Cursus odio nisi turpis eros. Amet pharetra tempor enim, est viverra. Pretium nisl aliquam posuere lectus." />
+        </SectionThreeApart>
+      </SectionThreeTemplate>
+    </SectionThreeContent>
   );
 };
 

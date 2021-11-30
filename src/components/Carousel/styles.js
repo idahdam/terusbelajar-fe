@@ -56,3 +56,9 @@ export const CarouselButton = styled(Link)`
 export const CarouselTitle = styled.div`
   font-family: "Raleway Bold";
 `;
+
+export const CarouselDesc = styled.div`
+  font-family: "Glacial Bold";
+  margin: 8px 0 32px 0;
+  color: rgba(0, 0, 0, 0.7);
+`;

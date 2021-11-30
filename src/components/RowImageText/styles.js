@@ -6,8 +6,7 @@ export const RowImageTemplates = styled.div`
   width: 100%;
   margin: 0 auto;
   padding: 70px 0;
-  background-color: ${(props) =>
-    props.white ? `${theme.color.white}` : `${theme.color.white}`};
+  background-color: ${(props) => (props.white ? `${theme.color.white}` : `${theme.color.white}`)};
 `;
 
 export const RowImageBoxContent = styled.div`
@@ -32,11 +31,13 @@ export const RowImageBoxItem = styled.div`
   }
 `;
 
+export const RowImageImageContainer = styled.div``;
+
 export const RowImageImage = styled.div`
   background-image: url(${(props) => props.src});
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   width: 45%;
   height: 388px;
   @media screen and (max-width: ${(props) => props.theme.screen.sm}) {

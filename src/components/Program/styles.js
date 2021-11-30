@@ -1,48 +1,20 @@
 import styled from "styled-components";
-// import theme from "../../styles/theme";
-import { RiArrowDropDownLine } from "react-icons/ri";
 
-export const DropdownSection = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  padding: 4px 48px;
-  border-radius: 4px;
-  cursor: pointer;
-  background-color: ${(props) => props.theme.color.orange.A500};
-  color: ${(props) => props.theme.color.white};
-  margin-bottom: ${(props) => (props.open ? "0" : "24")}px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  &:hover {
-    background-color: ${(props) => props.theme.color.orange.A500}EE;
-  }
+export const ProgramCard = styled.div`
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 16px;
 `;
 
-export const DropDownSymbol = styled(RiArrowDropDownLine)`
-  color: ${(props) => props.theme.color.white};
-  font-size: 40px;
-  transform: ${(props) => (props.open ? "rotate(180deg)" : "rotate(0deg)")};
-  transition: 0.3s ease-out;
+export const ProgramTitle = styled.div`
+  font-family: Glacial Bold;
+  margin-top: 20px;
+  margin-bottom: -7px;
 `;
 
-export const DropDownContent = styled.div`
-  background-color: ${(props) => props.theme.color.orange.A500};
-  padding: 5px 15px;
-  margin-bottom: 24px;
-  border: 1px solid rgba(0, 0, 0, 0.16);
-  box-sizing: border-box;
-  border-radius: 4px;
-  animation: ${(props) =>
-    props.open ? "growDown .3s ease-out" : "growUp .3s ease-in"};
-  transform-origin: top center;
-`;
-
-export const DropDownContentText = styled.h6`
-  color: white;
+export const ProgramImage = styled.div`
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  background-color: #ff8585;
 `;

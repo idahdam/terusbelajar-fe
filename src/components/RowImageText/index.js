@@ -35,9 +35,7 @@ const RowImageText = (props) => {
               <RowImageImage src={props.image} />
               <RowImageBoxText>
                 <RowImageBoxTitle>{props.title}</RowImageBoxTitle>
-                <RowImageBoxDescription>
-                  {props.description}
-                </RowImageBoxDescription>
+                <RowImageBoxDescription>{props.description}</RowImageBoxDescription>
               </RowImageBoxText>
             </RowImageBoxItem>
           </>
@@ -46,9 +44,7 @@ const RowImageText = (props) => {
             <RowImageBoxItem>
               <RowImageBoxText>
                 <RowImageBoxTitle>{props.title}</RowImageBoxTitle>
-                <RowImageBoxDescription>
-                  {props.description}
-                </RowImageBoxDescription>
+                <RowImageBoxDescription>{props.description}</RowImageBoxDescription>
               </RowImageBoxText>
               <RowImageImage src={props.image} />
             </RowImageBoxItem>

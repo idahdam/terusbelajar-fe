@@ -1,13 +1,7 @@
 import React, { useState, useEffect } from "react";
 import theme from "../../styles/theme";
 // import homeBanner from "../../../assets/homeBanner.png";
-import {
-  CarouselTemplate,
-  CarouselHeader,
-  CarouselHighlightText,
-  CarouselButton,
-  CarouselTitle,
-} from "./styles";
+import { CarouselTemplate, CarouselHeader, CarouselHighlightText, CarouselButton, CarouselTitle, CarouselDesc } from "./styles";
 
 const CarouselItem = (props) => {
   const [position, setPosition] = useState("50%");
@@ -39,12 +33,9 @@ const CarouselItem = (props) => {
         <CarouselHeader width={position}>
           <h1>
             <CarouselTitle>{props.title} </CarouselTitle>
-            <CarouselHighlightText color={theme.color.blue.A700}>
-              {props.titleBold}
-            </CarouselHighlightText>
+            <CarouselHighlightText color={theme.color.blue.A700}>{props.titleBold}</CarouselHighlightText>
           </h1>
-
-          <h6>{props.description}</h6>
+          <CarouselDesc>{props.description}</CarouselDesc>
           <CarouselButton to={props.link}>{props.buttonTitle}</CarouselButton>
         </CarouselHeader>
       </CarouselTemplate>

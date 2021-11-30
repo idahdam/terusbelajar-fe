@@ -3,31 +3,13 @@ import Carousel, { Dots, autoplayPlugin } from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 import imageHero from "../../../assets/images/backgroundHero.png";
 import { CarouselItem } from "../../../components";
-import {
-  SectionOneDiv,
-  SectionOneDivDots,
-  SectionOneDivCarousel,
-} from "./styles";
+import { SectionOneDiv, SectionOneDivDots, SectionOneDivCarousel } from "./styles";
 
 const SectionOne = () => {
   const [value, setValue] = useState(0);
   const slides = [
-    <CarouselItem
-      title="Lorem Ipsum Dolor Sit Amet"
-      titleBold="consectetur"
-      description="Vel sed habitant sed mus et porta dignissim egestas neque sodales sed sit Adatas masurs"
-      buttonTitle="Register"
-      link="/"
-      image={imageHero}
-    />,
-    <CarouselItem
-      title="Lorem Ipsum Dolor Sit Amet"
-      titleBold="consectetur"
-      description="Vel sed habitant sed mus et porta dignissim egestas neque sodales sed sit Adatas masurs"
-      buttonTitle="Button Title"
-      link="/"
-      image={imageHero}
-    />,
+    <CarouselItem title="Lorem Ipsum Dolor Sit Amet" titleBold="consectetur" description="Vel sed habitant sed mus et porta dignissim egestas neque sodales sed sit Adatas masurs" buttonTitle="Register" link="/" image={imageHero} />,
+    <CarouselItem title="Lorem Ipsum Dolor Sit Amet" titleBold="consectetur" description="Vel sed habitant sed mus et porta dignissim egestas neque sodales sed sit Adatas masurs" buttonTitle="Register" link="/" image={imageHero} />,
   ];
   return (
     <SectionOneDiv>

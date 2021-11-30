@@ -6,6 +6,7 @@ export const SectionFiveTemplate = styled.div`
   margin: 0 auto;
   padding: 70px 0;
   display: flex;
+  align-items: center;
   flex-direction: row;
   // background-color: ${(props) => props.theme.color.black.A50};
   @media screen and (max-width: ${(props) => props.theme.screen.md}) {
@@ -42,7 +43,11 @@ export const SectionFiveButton = styled(Link)`
   }
 `;
 
+export const SectionFiveTitle = styled.h2`
+  font-family: "Raleway Bold";
+`;
+
 export const SectionFiveDescription = styled.div`
   max-width: 85%;
-  padding: 1.5% 0;
+  padding: 22px 0;
 `;

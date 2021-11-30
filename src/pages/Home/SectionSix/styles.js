@@ -9,6 +9,7 @@ export const SectionSixTemplate = styled.div`
   display: flex;
   flex-direction: row;
   background-color: ${(props) => props.theme.color.orange};
+  color: ${(props) => props.theme.color.blue.A500};
   @media screen and (max-width: ${(props) => props.theme.screen.md}) {
     flex-direction: column;
   }
