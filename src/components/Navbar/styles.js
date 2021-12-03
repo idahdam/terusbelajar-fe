@@ -57,8 +57,7 @@ export const NavItem = styled(Link)`
   padding: 8px;
   text-align: center;
   font-weight: ${(props) => (props.active ? `bold` : `500`)};
-  color: ${(props) =>
-    props.active ? `${theme.color.orange.A500}` : `${theme.color.orange.A500}`};
+  color: ${(props) => (props.active ? `${theme.color.orange.A500}` : `${theme.color.orange.A500}`)};
   padding: ${(props) => (props.active ? "10px 5px 15px" : "10px 5px")};
 `;
 
@@ -74,6 +73,7 @@ export const NavItemButtonSign = styled(Link)`
   min-width: 87px;
   height: fit-content;
   color: ${(props) => props.theme.color.white};
+  font-family: "Glacial Bold";
 `;
 
 export const NavItemButtonLogin = styled(Link)`

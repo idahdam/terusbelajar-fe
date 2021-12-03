@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  NotFoundContainer,
-  NotFoundText,
-  NotFoundTextContainer,
-  NotFoundTitle,
-} from "./styles";
+import { NotFoundContainer, NotFoundText, NotFoundTextContainer, NotFoundTitle } from "./styles";
 const NotFoundComp = () => {
   return (
     <NotFoundContainer>

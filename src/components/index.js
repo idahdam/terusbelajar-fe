@@ -8,3 +8,4 @@ export { default as ScrollToTop } from "./ScrollToTop";
 export { default as Dropdown } from "./Dropdown";
 export { default as Program } from "./Program";
 export { default as NotFoundComp } from "./NotFound";
+export { default as ProductType } from "./ProductType";

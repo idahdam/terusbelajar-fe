@@ -52,6 +52,7 @@ export const CarouselButton = styled(Link)`
   @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
     margin: 0 auto;
   }
+  font-family: "Glacial Bold";
 `;
 
 export const CarouselTitle = styled.div`

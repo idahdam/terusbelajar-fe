@@ -16,6 +16,7 @@ const theme = {
     orange: {
       A50: "#FFEDEC",
       A500: "#FF443A",
+      A400: "#FF6961",
     },
     green: {
       A900: "#277110",

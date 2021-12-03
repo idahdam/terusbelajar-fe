@@ -36,12 +36,7 @@ const Navbar = (props) => {
           <NavItem to="/" active={pathname === "/"}>
             Home
           </NavItem>
-          <NavItem
-            to="/program"
-            active={
-              pathname === "/program" || pathname.includes("/g-incubation")
-            }
-          >
+          <NavItem to="/program" active={pathname === "/program" || pathname.includes("/g-incubation")}>
             Program
           </NavItem>
           <NavItem to="/about-us" active={pathname === "/about-us"}>

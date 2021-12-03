@@ -1,7 +1,12 @@
 import React from "react";
+import SectionOne from "./SectionOne";
 
-const About = () => {
-  return <div>About page</div>;
+const AboutUs = () => {
+  return (
+    <>
+      <SectionOne />
+    </>
+  );
 };
 
-export default About;
+export default AboutUs;
