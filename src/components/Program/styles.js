@@ -16,5 +16,4 @@ export const ProgramImage = styled.div`
   width: 64px;
   height: 64px;
   border-radius: 100%;
-  background-color: #ff8585;
 `;
