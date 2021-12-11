@@ -1,5 +1,5 @@
 import React from "react";
-import aboutUsImg from "../../../assets/images/aboutUs.png";
+import aboutUsImg from "../../../assets/images/aboutUsHero.png";
 import { SectionOneImage, SectionOneText } from "./styles";
 
 const SectionOne = () => {

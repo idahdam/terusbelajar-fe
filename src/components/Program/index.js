@@ -5,7 +5,7 @@ const Program = (props) => {
   return (
     <>
       <ProgramCard>
-        <ProgramImage />
+        <ProgramImage src={props.image} />
         <ProgramTitle>{props.title}</ProgramTitle>
         <h6>{props.text}</h6>
       </ProgramCard>
