@@ -5,6 +5,7 @@ import SectionThree from "./SectionThree";
 import SectionTwo from "./SectionTwo";
 import SectionFour from "./SectionFour";
 import SectionFive from "./SectionFive";
+import SectionSix from "./SectionSix";
 import { datas } from "./data";
 
 const Product = () => {
@@ -26,6 +27,7 @@ const Product = () => {
       <SectionThree data={data.SectionThree} />
       <SectionFour data={data.SectionFour} />
       <SectionFive data={data.SectionFive} />
+      <SectionSix data={data.SectionSix} />
     </>
   );
 };

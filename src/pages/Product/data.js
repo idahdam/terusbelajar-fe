@@ -128,8 +128,10 @@ export const datas = [
     },
     SectionFive: {
       title: "FAQ",
-      description: "Description",
+      description:
+        "Condimentum leo tincidunt malesuada enim, sagittis, vestibulum amet in. Lorem sed sit lectus massa risus, nibh.",
       button: "Button",
+      link: "/",
       items: [
         {
           num: 1,

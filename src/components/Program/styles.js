@@ -12,8 +12,9 @@ export const ProgramTitle = styled.div`
   margin-bottom: -7px;
 `;
 
-export const ProgramImage = styled.div`
+export const ProgramImage = styled.img`
   width: 64px;
   height: 64px;
   border-radius: 100%;
+  object-fit: contain;
 `;
