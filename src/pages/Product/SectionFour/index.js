@@ -1,6 +1,5 @@
 import React from "react";
 import { TestimonyBox } from "../../../components";
-import person from "../../../assets/images/person.jpg";
 import {
   SectionFourTestimony,
   SectionFourTemplate,

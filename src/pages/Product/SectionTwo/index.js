@@ -1,7 +1,5 @@
 import React from "react";
 import { RowImageText } from "../../../components";
-import homeOne from "../../../assets/images/home1.png";
-import homeTwo from "../../../assets/images/home2.png";
 
 const SectionTwo = (props) => {
   return (
