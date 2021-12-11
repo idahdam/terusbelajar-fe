@@ -23,7 +23,7 @@ function App() {
             <Sidebar toggling={toggling} isOpen={isOpen} />
             <Routes>
               <Route path="/" element={<Home />} exact />
-              <Route path="/program" element={<Product />} exact />
+              <Route path="/program/:name" element={<Product />} exact />
               <Route path="/about-us" element={<About />} exact />
               <Route path="/register" element={<Register />} exact />
               <Route path="*" element={<NotFound />} exact />

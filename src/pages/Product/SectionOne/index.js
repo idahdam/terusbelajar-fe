@@ -9,26 +9,24 @@ import {
   SectionOneDivCarousel,
 } from "./styles";
 
-const SectionOne = () => {
+const SectionOne = (props) => {
+  console.log(props);
   const [value, setValue] = useState(0);
-  const slides = [
-    <CarouselItem
-      title="Lorem Ipsum Dolor Sit Amet"
-      titleBold="consectetur"
-      description="Vel sed habitant sed mus et porta dignissim egestas neque sodales sed sit Adatas masurs"
-      buttonTitle="Button Title"
-      link="/"
-      image={imageHero}
-    />,
-    <CarouselItem
-      title="Lorem Ipsum Dolor Sit Amet"
-      titleBold="consectetur"
-      description="Vel sed habitant sed mus et porta dignissim egestas neque sodales sed sit Adatas masurs"
-      buttonTitle="Button Title"
-      link="/"
-      image={imageHero}
-    />,
-  ];
+  const slides = props.data.map((item) => {
+    return (
+      <>
+        <CarouselItem
+          title={item.title}
+          titleBold={item.titleBold}
+          description={item.description}
+          buttonTitle={item.buttonTitle}
+          link={item.link}
+          image={item.image}
+        />
+        ,
+      </>
+    );
+  });
   return (
     <SectionOneDiv>
       <SectionOneDivCarousel>

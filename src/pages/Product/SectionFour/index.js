@@ -1,48 +1,37 @@
 import React from "react";
 import { TestimonyBox } from "../../../components";
 import person from "../../../assets/images/person.jpg";
-import { SectionFourTestimony, SectionFourTemplate, SectionFourTemplateTestimonies, SectionFourSliderTestimonial, SectionFourTitle } from "./styles";
+import {
+  SectionFourTestimony,
+  SectionFourTemplate,
+  SectionFourTemplateTestimonies,
+  SectionFourSliderTestimonial,
+  SectionFourTitle,
+} from "./styles";
 
-const SectionFour = () => {
+const SectionFour = (props) => {
   return (
     <>
       <SectionFourTemplate>
-        <SectionFourTestimony width={"100%"}>
-          <SectionFourTitle>Why Us?</SectionFourTitle>
-          <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo id eleifend accumsan nisl, tincidunt.</h6>
+        <SectionFourTestimony width={props.data.width}>
+          <SectionFourTitle>{props.data.title}</SectionFourTitle>
+          <h6>{props.data.description}</h6>
         </SectionFourTestimony>
       </SectionFourTemplate>
       <SectionFourTemplateTestimonies>
-        <SectionFourSliderTestimonial>
-          <TestimonyBox
-            title="Lorem Ipsum Sit Dolor"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo id
-        eleifend accumsan nisl, tincidunt."
-            width="100%"
-            image={person}
-            program={true}
-          />
-        </SectionFourSliderTestimonial>
-        <SectionFourSliderTestimonial>
-          <TestimonyBox
-            title="Lorem Ipsum Sit Dolor"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo id
-        eleifend accumsan nisl, tincidunt."
-            width="100%"
-            image={person}
-            program={true}
-          />
-        </SectionFourSliderTestimonial>
-        <SectionFourSliderTestimonial>
-          <TestimonyBox
-            title="Lorem Ipsum Sit Dolor"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo id
-        eleifend accumsan nisl, tincidunt."
-            width="100%"
-            image={person}
-            program={true}
-          />
-        </SectionFourSliderTestimonial>
+        {props.data.cards.map((item) => {
+          return (
+            <SectionFourSliderTestimonial>
+              <TestimonyBox
+                title={item.title}
+                text={item.description}
+                width={item.width}
+                image={item.image}
+                program={item.program}
+              />
+            </SectionFourSliderTestimonial>
+          );
+        })}
       </SectionFourTemplateTestimonies>
     </>
   );
