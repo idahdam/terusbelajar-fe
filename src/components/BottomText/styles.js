@@ -1,24 +1,19 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-
-export const BottomTextContainer = styled.div``;
+import theme from "../../styles/theme";
 
 export const BottomTextTemplate = styled.div`
   width: 65%;
   margin: 0 auto;
   padding-bottom: 150px;
-  padding-top: ${(props) => (props.addHeight ? "0px" : "150px")};
-
+  padding-top: 150px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: ${(props) => (props.split ? "" : "center")};
-  @media screen and (max-width: ${(props) => props.theme.screen.md}) {
+  @media screen and (max-width: ${theme.screen.sm}) {
     flex-direction: column;
-  }
-  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
-    width: 80%;
   }
 `;
 
@@ -32,12 +27,6 @@ export const BottomTextTemplateButton = styled.div`
   display: flex;
   flex-direction: row;
   background-color: ${(props) => props.theme.color.orange};
-  @media screen and (max-width: ${(props) => props.theme.screen.md}) {
-    flex-direction: column;
-  }
-  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
-    width: 80%;
-  }
 `;
 
 export const BottomTextButton = styled(Link)`
@@ -46,10 +35,6 @@ export const BottomTextButton = styled(Link)`
   padding: 12px 24px;
   border-radius: 4px;
   width: fit-content;
-  margin-left: ${({ marginLeft }) => marginLeft};
-  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
-    margin: 0 auto;
-  }
   font-family: "Glacial Bold";
 `;
 
@@ -71,4 +56,5 @@ export const BottomTextRightImage = styled.div`
   background-position: center;
   background-size: ${(props) => (props.addHeight ? "cover" : "contain")};
   height: 388px;
+  width: 400px;
 `;
