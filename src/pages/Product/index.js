@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import React from "react";
 import SectionOne from "./SectionOne";
 import SectionThree from "./SectionThree";
 import SectionTwo from "./SectionTwo";
 import SectionFour from "./SectionFour";
 import SectionFive from "./SectionFive";
 import SectionSix from "./SectionSix";
-import { datas } from "./data";
 
 const Product = (props) => {
   return (
