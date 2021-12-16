@@ -4,13 +4,12 @@ import { Link } from "react-router-dom";
 export const CarouselTemplate = styled.div`
   max-width: ${({ maxWidth }) => maxWidth};
   width: ${({ width }) => width};
-  height: 400px;
+  height: 600px;
   display: flex;
   margin: 0 auto;
   flex-direction: row;
   column-gap: 10px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-left: 200px;
   overflow-y: hidden;
   background-color: ${({ color }) => color};
   background-image: url(${(props) => props.src});
@@ -18,9 +17,6 @@ export const CarouselTemplate = styled.div`
   background-position: ${({ position }) => position};
   background-size: 77% 77%;
   word-wrap: break-word;
-  @media screen and (max-width: ${(props) => props.theme.screen.sm}) {
-    flex-direction: column;
-  }
 `;
 
 export const CarouselHeader = styled.div`
@@ -36,9 +32,20 @@ export const CarouselHeader = styled.div`
   }
 `;
 
+export const CarouselText = styled.h1`
+  @media screen and (max-width: 1366px) {
+    font-size: 40px;
+    line-height: 116%;
+  }
+`;
+
 export const CarouselHighlightText = styled.span`
   color: ${({ color }) => color};
   font-family: "Raleway Bold";
+  @media screen and (max-width: 1366px) {
+    font-size: 40px;
+    line-height: 116%;
+  }
 `;
 
 export const CarouselButton = styled(Link)`

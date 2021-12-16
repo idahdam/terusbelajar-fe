@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const SectionFourTemplate = styled.div`
   width: 75%;
   margin: 0 auto;
+  margin-top: 100px;
   padding: 70px 0;
   font-family: "Raleway Bold";
   display: flex;
@@ -22,6 +23,7 @@ export const SectionFourTitle = styled.h2`
 export const SectionFourTemplateTestimonies = styled.div`
   width: 40%;
   margin: 0 auto;
+  margin-bottom: 100px;
   padding-bottom: 70px;
   display: flex;
   flex-direction: row;

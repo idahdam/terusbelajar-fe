@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import theme from "../../styles/theme";
 // import homeBanner from "../../../assets/homeBanner.png";
-import { CarouselTemplate, CarouselHeader, CarouselHighlightText, CarouselButton, CarouselTitle, CarouselDesc } from "./styles";
+import { CarouselTemplate, CarouselHeader, CarouselHighlightText, CarouselButton, CarouselTitle, CarouselDesc, CarouselText } from "./styles";
 
 const CarouselItem = (props) => {
   const [position, setPosition] = useState("50%");
@@ -29,12 +29,12 @@ const CarouselItem = (props) => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <CarouselTemplate width="100%" maxWidth="75%" position="150% 100%">
+      <CarouselTemplate width="100%" maxWidth="100%" position="">
         <CarouselHeader width={position}>
-          <h1>
+          <CarouselText>
             <CarouselTitle>{props.title} </CarouselTitle>
             <CarouselHighlightText color={theme.color.blue.A700}>{props.titleBold}</CarouselHighlightText>
-          </h1>
+          </CarouselText>
           <CarouselDesc>{props.description}</CarouselDesc>
           <CarouselButton to={props.link}>{props.buttonTitle}</CarouselButton>
         </CarouselHeader>

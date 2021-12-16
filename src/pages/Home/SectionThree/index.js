@@ -9,16 +9,27 @@ const SectionThree = () => {
       <SectionThreeTemplate>
         <SectionThreeApart>
           <SectionThreeTitle>Program</SectionThreeTitle>
-          <SectionThreeDescription>Condimentum leo tincidunt malesuada enim, sagittis, vestibulum amet in. Lorem sed sit lectus massa risus, nibh.</SectionThreeDescription>
-          <SectionThreeButton to="/register">Register</SectionThreeButton>
+          <SectionThreeDescription>
+            Mencari tahu kehidupan mahasiswa dan lingkungan dunia perkuliahan di berbagai kampus di dalam dan luar negeri kini bisa kamu akses dalam genggaman. Yuk lihat program dan layanan yang disediakan oleh Terusbelajar!
+          </SectionThreeDescription>
+          <SectionThreeButton to="/register">Daftar Sekarang</SectionThreeButton>
         </SectionThreeApart>
         <SectionThreeApart grid={true}>
-          <Program title="Lorem Ipsum Sit Dolor" image={person} text="Cursus odio nisi turpis eros. Amet pharetra tempor enim, est viverra. Pretium nisl aliquam posuere lectus." />
-          <Program title="Lorem Ipsum Sit Dolor" image={person} text="Cursus odio nisi turpis eros. Amet pharetra tempor enim, est viverra. Pretium nisl aliquam posuere lectus." />
-          <Program title="Lorem Ipsum Sit Dolor" image={person} text="Cursus odio nisi turpis eros. Amet pharetra tempor enim, est viverra. Pretium nisl aliquam posuere lectus." />
-          <Program title="Lorem Ipsum Sit Dolor" image={person} text="Cursus odio nisi turpis eros. Amet pharetra tempor enim, est viverra. Pretium nisl aliquam posuere lectus." />
-          <Program title="Lorem Ipsum Sit Dolor" image={person} text="Cursus odio nisi turpis eros. Amet pharetra tempor enim, est viverra. Pretium nisl aliquam posuere lectus." />
-          <Program title="Lorem Ipsum Sit Dolor" image={person} text="Cursus odio nisi turpis eros. Amet pharetra tempor enim, est viverra. Pretium nisl aliquam posuere lectus." />
+          <Program
+            title="Eksplorasi Kampus"
+            image={person}
+            text="Dapatkan informasi mengenai lingkungan kampus dan kehidupan mahasiswa di 9 universitas terbaik yang ada di Indonesia sekaligus. Di dalam program ini, kamu juga bisa mengeksplorasi 32 jurusan di rumpun Soshum dan Saintek yang mungkin sesuai dengan potensi dan minat yang kamu miliki!"
+          />
+          <Program
+            title="Study Abroad: Australia Edition"
+            image={person}
+            text="Dapatkan informasi mengenai universitas universitas terbaik di Australia dan cerita pengalaman mahasiswa yang berkuliah disana. Melalui program ini, kamu bisa mendapatkan informasi mengenai pilihan kampus, beasiswa, akomodasi, lingkungan, kegiatan mahasiswa, dan banyak hal lainnya yang bisa kamu dapatkan selama berkuliah di Australia."
+          />
+          <Program
+            title="Try Out"
+            image={person}
+            text="Dapatkan kesempatan untuk mengikuti Try Out gratis di Terusbelajar! Kamu juga bisa mendapatkan kunci jawaban, ranking nasional, dan report individual yang dapat memudahkanmu mempersiapkan diri mengikuti ujian dengan mengikuti paket paket Try Out lainnya yang disediakan oleh Terusbelajar."
+          />
         </SectionThreeApart>
       </SectionThreeTemplate>
     </SectionThreeContent>

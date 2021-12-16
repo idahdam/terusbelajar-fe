@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  BottomTextTemplate,
-  BottomTextButton,
-  BottomTextTemplateButton,
-  BottomTextText,
-  BottomTextLeft,
-  BottomTextRight,
-  BottomTextRightImage,
-} from "./styles";
+import { BottomTextTemplate, BottomTextButton, BottomTextTemplateButton, BottomTextText, BottomTextLeft, BottomTextRight, BottomTextRightImage } from "./styles";
 
 const BottomText = (props) => {
   return (
@@ -18,7 +10,7 @@ const BottomText = (props) => {
             <BottomTextLeft>
               <BottomTextText>{props.text}</BottomTextText>
               <BottomTextTemplateButton split={props.split}>
-                <BottomTextButton to="/register">Register</BottomTextButton>
+                <BottomTextButton to="/register">{props.button}</BottomTextButton>
               </BottomTextTemplateButton>
             </BottomTextLeft>
             {props.split ? (
@@ -31,18 +23,13 @@ const BottomText = (props) => {
           <>
             {props.split ? (
               <BottomTextRight>
-                <BottomTextRightImage
-                  src={props.image}
-                  addHeight={props.addHeight}
-                />
+                <BottomTextRightImage src={props.image} addHeight={props.addHeight} />
               </BottomTextRight>
             ) : null}
             <BottomTextLeft>
               <BottomTextText>{props.text}</BottomTextText>
               <BottomTextTemplateButton split={props.split}>
-                <BottomTextButton to={`${props.link}`}>
-                  {props.button}
-                </BottomTextButton>
+                <BottomTextButton to={`${props.link}`}>{props.button}</BottomTextButton>
               </BottomTextTemplateButton>
             </BottomTextLeft>
           </>

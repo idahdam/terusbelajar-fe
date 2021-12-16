@@ -17,8 +17,7 @@ function App() {
   useEffect(() => {
     setData(datas);
   }, []);
-  if (Object.keys(data).length === 0 && data.constructor === Object)
-    return null;
+  if (Object.keys(data).length === 0 && data.constructor === Object) return null;
   return (
     <Router>
       <ThemeProvider theme={theme}>
@@ -30,21 +29,9 @@ function App() {
             <Sidebar toggling={toggling} isOpen={isOpen} />
             <Routes>
               <Route path="/" element={<Home />} exact />
-              <Route
-                path="/program/eksplorasi-kampus"
-                element={<Product data={data[0]} />}
-                exact
-              />
-              <Route
-                path="/program/study-abroad"
-                element={<Product data={data[0]} />}
-                exact
-              />
-              <Route
-                path="/program/try-out"
-                element={<Product data={data[0]} />}
-                exact
-              />
+              <Route path="/program/eksplorasi-kampus" element={<Product data={data[0]} />} exact />
+              <Route path="/program/study-abroad" element={<Product data={data[1]} />} exact />
+              <Route path="/program/try-out" element={<Product data={data[2]} />} exact />
               <Route path="/about-us" element={<About />} exact />
               <Route path="/register" element={<Register />} exact />
               <Route path="*" element={<NotFound />} exact />

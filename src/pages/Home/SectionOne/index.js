@@ -8,8 +8,22 @@ import { SectionOneDiv, SectionOneDivDots, SectionOneDivCarousel } from "./style
 const SectionOne = () => {
   const [value, setValue] = useState(0);
   const slides = [
-    <CarouselItem title="Lorem Ipsum Dolor Sit Amet" titleBold="consectetur" description="Vel sed habitant sed mus et porta dignissim egestas neque sodales sed sit Adatas masurs" buttonTitle="Register" link="/" image={imageHero} />,
-    <CarouselItem title="Lorem Ipsum Dolor Sit Amet" titleBold="consectetur" description="Vel sed habitant sed mus et porta dignissim egestas neque sodales sed sit Adatas masurs" buttonTitle="Register" link="/" image={imageHero} />,
+    <CarouselItem
+      title="Memudahkan Setiap Pembelajar Untuk "
+      titleBold="#TerusBelajar"
+      description="Dengan layanan dan program yang aksesibel untuk semua, kamu bisa menyiapkan diri  dengan lebih mudah untuk memasuki dunia kampus di dalam dan di luar negeri bersama Terusbelajar!"
+      buttonTitle="Lihat layanan"
+      link="/"
+      image={imageHero}
+    />,
+    <CarouselItem
+      title="Platform Eksplorasi "
+      titleBold="Kampus dan Dunia Perkuliahan"
+      description="Ketahui lingkungan kampus dan kehidupan mahasiswa di berbagai universitas terbaik di dalam dan di luar negeri bersama Terusbelajar!"
+      buttonTitle="Lihat layanan"
+      link="/"
+      image={imageHero}
+    />,
   ];
   return (
     <SectionOneDiv>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const ProductTypeCard = styled.div`
-  height: 720px;
+  height: 920px;
   width: 380px;
   background-color: ${(props) => props.theme.color.white};
   border-radius: 4px;
@@ -13,10 +13,11 @@ export const ProductTypeCard = styled.div`
 export const ProductTypeHeader = styled.div`
   background-color: ${(props) => props.theme.color.orange.A50};
   width: 100%;
-  height: 182px;
+  height: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: center;
   border-radius: 4px;
 `;
@@ -24,11 +25,13 @@ export const ProductTypeHeader = styled.div`
 export const ProductTypeTitle = styled.h3`
   font-family: Raleway Bold;
   color: ${(props) => props.theme.color.blue.A500};
+  width: 80%;
 `;
 
 export const ProductTypeBody = styled.h6`
   font-family: "Glacial Regular";
   padding-bottom: 0;
+  width: 80%;
 `;
 
 export const ProductTypeBenefits = styled.div`
@@ -46,7 +49,7 @@ export const ProductTypeBenefitsList = styled.div`
   font-family: Glacial Bold;
   grid-template-columns: auto auto;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   grid-column-gap: 5%;
 `;
 

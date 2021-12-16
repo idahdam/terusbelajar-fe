@@ -20,9 +20,9 @@ const TestimonyBox = (props) => {
           <div className="bottom-text">
             <h6 className="bold">{props.name}</h6>
             <p>{props.title}</p>
-            <TestimonyRatingCenter>
+            {/* <TestimonyRatingCenter>
               <ReactStars count={5} size={40} isHalf={true} edit={false} activeColor={theme.color.blue.A500} value={props.rating} />
-            </TestimonyRatingCenter>
+            </TestimonyRatingCenter> */}
           </div>
         </div>
       )}

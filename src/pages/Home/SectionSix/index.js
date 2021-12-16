@@ -4,7 +4,7 @@ import { BottomText } from "../../../components";
 const SectionSix = () => {
   return (
     <>
-      <BottomText split={false} text={"Dolor arcu, nisi, id habitant ac. Cursus cum quis velit facilisis. Nunc id dolor egestas pellentesqueEu sed egestas quam egestas risus, ornare sit nunc"} left={true} />
+      <BottomText split={false} text={"Bergabung bersama Terusbelajar dan dapatkan berbagai kemudahan dalam mengejar kampus tujuan!"} left={true} button={"Lihat Layanan"} />
     </>
   );
 };

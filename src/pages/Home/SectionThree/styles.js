@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const SectionThreeTemplate = styled.div`
-  width: 65%;
+  width: 100%;
   margin: 0 auto;
-  padding: 70px 0;
+  padding: 70px 10%;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -23,9 +23,9 @@ export const SectionThreeContent = styled.div`
 
 export const SectionThreeApart = styled.div`
   display: ${({ grid }) => (grid ? "grid" : null)};
-  grid-template: auto / 230px 230px 230px;
+  grid-template-columns: auto auto auto;
   grid-gap: 24px;
-  width: 50%;
+  width: ${({ grid }) => (grid ? "60%" : "40%")};
   margin-left: ${(props) => (props.benefit ? "auto" : "0")};
   @media screen and (max-width: ${(props) => props.theme.screen.md}) {
     width: 100%;

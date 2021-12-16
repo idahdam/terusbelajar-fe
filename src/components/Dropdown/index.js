@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import {
-  DropdownSection,
-  DropDownContent,
-  DropDownSymbol,
-  DropDownContentText,
-} from "./styles";
+import { DropdownSection, DropDownContent, DropDownSymbol, DropDownContentText } from "./styles";
 
 const Dropdown = (props) => {
   const [open, setOpen] = useState(false);

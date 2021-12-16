@@ -9,7 +9,7 @@ const SectionFive = () => {
         <SectionFiveApart>
           <SectionFiveTitle>FAQ</SectionFiveTitle>
           <SectionFiveDescription>Condimentum leo tincidunt malesuada enim, sagittis, vestibulum amet in. Lorem sed sit lectus massa risus, nibh.</SectionFiveDescription>
-          <SectionFiveButton to="/">Contact Us</SectionFiveButton>
+          <SectionFiveButton to="/">Hubungi Kami</SectionFiveButton>
         </SectionFiveApart>
         <SectionFiveApart>
           <Dropdown num="1" name="Hello" children="Lorem ipsum" />

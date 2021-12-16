@@ -27,9 +27,9 @@ const SectionFour = () => {
   return (
     <>
       <SectionFourTemplate>
-        <SectionFourTestimony width={"100%"}>
-          <SectionFourTitle>Testimonies</SectionFourTitle>
-          <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo id eleifend accumsan nisl, tincidunt.</h6>
+        <SectionFourTestimony width={"80%"}>
+          <SectionFourTitle>Hadir Untuk Memudahkanmu Terus Belajar</SectionFourTitle>
+          <h6>Berawal dari mimpi sederhana untuk membantu ribuan pelajar di Indonesia untuk terus belajar hingga di tingkat perkuliahan, kami hadir untuk bisa memudahkanmu mempersiapkan diri berkuliah di kampus impian!</h6>
         </SectionFourTestimony>
       </SectionFourTemplate>
       <SectionFourTemplateTestimonies>
@@ -37,8 +37,10 @@ const SectionFour = () => {
           <TestimonyBox
             testi="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo id
         eleifend accumsan nisl, tincidunt."
-            name="Idahdam"
-            title="Teknik Komputer - Universitas Indonesia"
+            name="Salman Al Fathan
+            (Chief Executive Officer)
+            "
+            title="Ketua BEM FISIP UI 2020"
             rating="4"
             width="100%"
             image={person}
@@ -48,8 +50,10 @@ const SectionFour = () => {
           <TestimonyBox
             testi="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo id
         eleifend accumsan nisl, tincidunt."
-            name="Idahdam"
-            title="Teknik Komputer - Universitas Indonesia"
+            name="Rifqi Muzakki
+            (Product Developer Manager Study Abroad)
+            "
+            title="Presiden PPIA Queensland 2019 "
             rating="5"
             width="100%"
             image={person}
@@ -59,8 +63,10 @@ const SectionFour = () => {
           <TestimonyBox
             testi="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo id
         eleifend accumsan nisl, tincidunt."
-            name="Idahdam"
-            title="Teknik Komputer - Universitas Indonesia"
+            name="Yudi Iswara Adhyaksa
+            (Product Developer Manager Eksplorasi Kampus)
+            "
+            title="Wisudawan Terbaik FISIP UI 2021"
             rating="3"
             width="100%"
             image={person}

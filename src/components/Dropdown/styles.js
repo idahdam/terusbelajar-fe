@@ -38,11 +38,11 @@ export const DropDownContent = styled.div`
   border: 1px solid rgba(0, 0, 0, 0.16);
   box-sizing: border-box;
   border-radius: 4px;
-  animation: ${(props) =>
-    props.open ? "growDown .3s ease-out" : "growUp .3s ease-in"};
+  animation: ${(props) => (props.open ? "growDown .3s ease-out" : "growUp .3s ease-in")};
   transform-origin: top center;
 `;
 
 export const DropDownContentText = styled.h6`
   color: white;
+  white-space: pre-wrap;
 `;

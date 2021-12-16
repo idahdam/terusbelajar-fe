@@ -2,11 +2,7 @@ import React, { useState } from "react";
 import Carousel, { Dots, autoplayPlugin } from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 import { CarouselItem } from "../../../components";
-import {
-  SectionOneDiv,
-  SectionOneDivDots,
-  SectionOneDivCarousel,
-} from "./styles";
+import { SectionOneDiv, SectionOneDivDots, SectionOneDivCarousel } from "./styles";
 
 const SectionOne = (props) => {
   console.log(props);
@@ -14,15 +10,7 @@ const SectionOne = (props) => {
   const slides = props.data.map((item) => {
     return (
       <>
-        <CarouselItem
-          title={item.title}
-          titleBold={item.titleBold}
-          description={item.description}
-          buttonTitle={item.buttonTitle}
-          link={item.link}
-          image={item.image}
-        />
-        ,
+        <CarouselItem title={item.title} titleBold={item.titleBold} description={item.description} buttonTitle={item.buttonTitle} link={item.link} image={item.image} />,
       </>
     );
   });
