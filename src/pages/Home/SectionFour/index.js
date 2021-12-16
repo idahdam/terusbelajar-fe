@@ -4,6 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import person from "../../../assets/images/person.jpg";
 import { TestimonyBox } from "../../../components";
 import { SectionFourTestimony, SectionFourTemplate, SectionFourTemplateTestimonies, SectionFourSliderTestimonial, SectionFourTitle } from "./styles";
+import quotationMark from "../../../assets/images/quotationMark.png";
 
 const SectionFour = () => {
   const responsive = {
@@ -27,7 +28,7 @@ const SectionFour = () => {
   return (
     <>
       <SectionFourTemplate>
-        <SectionFourTestimony width={"80%"}>
+        <SectionFourTestimony width={"80%"} src={quotationMark}>
           <SectionFourTitle>Hadir Untuk Memudahkanmu Terus Belajar</SectionFourTitle>
           <h6>Berawal dari mimpi sederhana untuk membantu ribuan pelajar di Indonesia untuk terus belajar hingga di tingkat perkuliahan, kami hadir untuk bisa memudahkanmu mempersiapkan diri berkuliah di kampus impian!</h6>
         </SectionFourTestimony>

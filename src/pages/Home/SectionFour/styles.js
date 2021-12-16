@@ -9,6 +9,7 @@ export const SectionFourTemplate = styled.div`
   display: flex;
   flex-direction: row;
   column-gap: 24px;
+
   @media screen and (max-width: ${(props) => props.theme.screen.md}) {
     width: 80%;
     flex-direction: column;
@@ -40,7 +41,7 @@ export const SectionFourTestimony = styled.div`
   text-align: center;
   background-image: url(${(props) => props.src});
   background-repeat: no-repeat;
-  background-position: 80% 80%;
+  background-position: 100% 0%;
   height: fit-content;
   margin-bottom: auto;
 `;
