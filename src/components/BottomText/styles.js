@@ -13,7 +13,12 @@ export const BottomTextTemplate = styled.div`
   justify-content: center;
   text-align: ${(props) => (props.split ? "" : "center")};
   @media screen and (max-width: ${theme.screen.sm}) {
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    text-align: center;
   }
 `;
 
@@ -27,6 +32,9 @@ export const BottomTextTemplateButton = styled.div`
   display: flex;
   flex-direction: row;
   background-color: ${(props) => props.theme.color.orange};
+  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
+    justify-content: center;
+  }
 `;
 
 export const BottomTextButton = styled(Link)`
@@ -57,4 +65,7 @@ export const BottomTextRightImage = styled.div`
   background-size: ${(props) => (props.addHeight ? "cover" : "contain")};
   height: 388px;
   width: 400px;
+  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
+    width: 250px;
+  }
 `;

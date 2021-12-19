@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const ProductTypeCard = styled.div`
-  width: 380px;
+  width: 100%;
   background-color: ${(props) => props.theme.color.white};
   border-radius: 4px;
   flex-direction: column;

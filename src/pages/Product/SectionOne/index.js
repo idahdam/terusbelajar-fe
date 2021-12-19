@@ -21,16 +21,16 @@ const SectionOne = (props) => {
           value={value}
           slides={slides}
           onChange={setValue}
-          // plugins={[
-          //   "infinite",
-          //   {
-          //     resolve: autoplayPlugin,
-          //     options: {
-          //       interval: 3000,
-          //     },
-          //   },
-          // ]}
-          // animationSpeed={1000}
+          plugins={[
+            "infinite",
+            {
+              resolve: autoplayPlugin,
+              options: {
+                interval: 3000,
+              },
+            },
+          ]}
+          animationSpeed={1000}
         />
       </SectionOneDivCarousel>
       <SectionOneDivDots>

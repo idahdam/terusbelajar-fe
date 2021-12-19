@@ -39,15 +39,7 @@ const Navbar = (props) => {
             Home
           </NavItem>
           {pathname === "/" ? (
-            <NavItemScroll
-              activeClass="active"
-              to="programs"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              active={pathname === "/program" || pathname.includes("/program")}
-            >
+            <NavItemScroll activeClass="active" to="programs" spy={true} smooth={true} offset={-70} duration={500} active={pathname === "/program" || pathname.includes("/program")}>
               Program
             </NavItemScroll>
           ) : null}

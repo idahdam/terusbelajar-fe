@@ -9,4 +9,8 @@ export const SectionThreeCard = styled.div`
   padding-bottom: 90px;
   padding-left: 2%;
   padding-right: 2%;
+  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
+    flex-direction: column;
+    row-gap: 30px;
+  }
 `;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "react-multi-carousel/lib/styles.css";
-import Carousel, { Dots, autoplayPlugin } from "@brainhubeu/react-carousel";
+import Carousel, { Dots } from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 import person from "../../../assets/images/person.jpg";
 import { TestimonyBox } from "../../../components";

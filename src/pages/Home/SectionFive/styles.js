@@ -9,12 +9,13 @@ export const SectionFiveTemplate = styled.div`
   display: flex;
   align-items: center;
   flex-direction: row;
-  // background-color: ${(props) => props.theme.color.black.A50};
   @media screen and (max-width: ${(props) => props.theme.screen.md}) {
     flex-direction: column;
   }
   @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
     width: 80%;
+    text-align: center;
+    padding-bottom: 0;
   }
 `;
 
@@ -27,7 +28,7 @@ export const SectionFiveApart = styled.div`
   margin-left: ${(props) => (props.benefit ? "auto" : "0")};
   @media screen and (max-width: ${(props) => props.theme.screen.md}) {
     width: 100%;
-    margin-left: ${(props) => (props.benefit ? "0" : "0")};
+    margin-bottom: 50px;
   }
 `;
 
@@ -52,4 +53,7 @@ export const SectionFiveTitle = styled.h2`
 export const SectionFiveDescription = styled.div`
   max-width: 85%;
   padding: 22px 0;
+  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
+    max-width: 100%;
+  }
 `;

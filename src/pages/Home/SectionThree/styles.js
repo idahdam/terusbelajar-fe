@@ -55,9 +55,9 @@ export const SectionThreeTitle = styled.h2`
 `;
 
 export const SectionThreeDescription = styled.h6`
-  width: 85%;
+  max-width: 85%;
   padding: 22px 0;
   @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
-    width: 100%;
+    max-width: 100%;
   }
 `;
