@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/images/terusBelajarLogo.png";
 // import profilephoto from "../../assets/terusBelajarLogo.png";
 import { FaBars } from "react-icons/fa";
@@ -22,6 +22,9 @@ import { Link, useLocation } from "react-router-dom";
 const Navbar = (props) => {
   // const [navbar, setNavbar] = useState(false);
   // const history = useNavigate();
+  const [home, setHome] = useState(true);
+  const [program, setProgram] = useState(false);
+  const [aboutUs, setAboutUs] = useState(false);
   const location = useLocation();
   const { pathname } = useLocation();
 
@@ -43,12 +46,25 @@ const Navbar = (props) => {
               smooth={true}
               offset={-70}
               duration={500}
-              // active={pathname === "/" || pathname.includes("/")}
+              active={home}
+              onClick={() => {
+                setHome(true);
+                setProgram(false);
+                setAboutUs(false);
+              }}
             >
               Home
             </NavItemScroll>
           ) : (
-            <NavItem to="/" active={pathname === "/"}>
+            <NavItem
+              to="/"
+              active={home}
+              onClick={() => {
+                setHome(true);
+                setProgram(false);
+                setAboutUs(false);
+              }}
+            >
               Home
             </NavItem>
           )}
@@ -60,7 +76,12 @@ const Navbar = (props) => {
               smooth={true}
               offset={-70}
               duration={500}
-              // active={pathname === "/" || pathname.includes("/")}
+              active={program}
+              onClick={() => {
+                setHome(false);
+                setProgram(true);
+                setAboutUs(false);
+              }}
             >
               Program
             </NavItemScroll>
@@ -68,7 +89,12 @@ const Navbar = (props) => {
 
           <NavItem
             to="/about-us"
-            // active={pathname === "/about-us"}
+            active={aboutUs}
+            onClick={() => {
+              setHome(false);
+              setProgram(false);
+              setAboutUs(true);
+            }}
           >
             About Us
           </NavItem>
