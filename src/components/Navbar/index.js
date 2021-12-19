@@ -98,7 +98,7 @@ const Navbar = (props) => {
           >
             About Us
           </NavItem>
-          <NavItemButtonSign to="/register">Register</NavItemButtonSign>
+          <NavItemButtonSign to="/">Register</NavItemButtonSign>
         </NavItemList>
       </NavContent>
     </Nav>
