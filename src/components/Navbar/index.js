@@ -13,7 +13,6 @@ import {
   NavItemButtonSign,
   MobileIcon,
   NavItemScroll,
-  NavItemHref,
   // NavbarDropdownContent,
   // NavbarProfilePhoto,
 } from "./styles";
@@ -25,7 +24,6 @@ const Navbar = (props) => {
   const [home, setHome] = useState(true);
   const [program, setProgram] = useState(false);
   const [aboutUs, setAboutUs] = useState(false);
-  const location = useLocation();
   const { pathname } = useLocation();
 
   return (

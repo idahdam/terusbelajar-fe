@@ -21,7 +21,7 @@ export const SectionFourTitle = styled.h2`
 `;
 
 export const SectionFourTemplateTestimonies = styled.div`
-  width: 40%;
+  width: 50%;
   margin: 0 auto;
   margin-bottom: 100px;
   padding-bottom: 70px;
@@ -32,6 +32,9 @@ export const SectionFourTemplateTestimonies = styled.div`
     width: 80%;
     flex-direction: column;
     row-gap: 24px;
+  }
+  @media screen and (max-width: 1366px) {
+    width: 60%;
   }
 `;
 
