@@ -12,6 +12,8 @@ import {
   // NavItemButtonLogout,
   NavItemButtonSign,
   MobileIcon,
+  NavItemScroll,
+  NavItemHref,
   // NavbarDropdownContent,
   // NavbarProfilePhoto,
 } from "./styles";
@@ -20,7 +22,7 @@ import { Link, useLocation } from "react-router-dom";
 const Navbar = (props) => {
   // const [navbar, setNavbar] = useState(false);
   // const history = useNavigate();
-  // const location = useLocation();
+  const location = useLocation();
   const { pathname } = useLocation();
 
   return (
@@ -36,12 +38,20 @@ const Navbar = (props) => {
           <NavItem to="/" active={pathname === "/"}>
             Home
           </NavItem>
-          <NavItem
-            to="/program/eksplorasi-kampus"
-            active={pathname === "/program" || pathname.includes("/program")}
-          >
-            Program
-          </NavItem>
+          {pathname === "/" ? (
+            <NavItemScroll
+              activeClass="active"
+              to="programs"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              active={pathname === "/program" || pathname.includes("/program")}
+            >
+              Program
+            </NavItemScroll>
+          ) : null}
+
           <NavItem to="/about-us" active={pathname === "/about-us"}>
             About Us
           </NavItem>

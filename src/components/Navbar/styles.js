@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll";
 import theme from "../../styles/theme";
 
 export const Nav = styled.nav`
@@ -9,6 +10,7 @@ export const Nav = styled.nav`
   position: sticky;
   z-index: 1500;
   top: 0;
+  const ScrollLink = Scroll.ScrollLink;
   background: ${(props) => props.theme.color.orange.A50};
 `;
 
@@ -57,7 +59,44 @@ export const NavItem = styled(Link)`
   padding: 8px;
   text-align: center;
   font-weight: ${(props) => (props.active ? `bold` : `500`)};
-  color: ${(props) => (props.active ? `${theme.color.orange.A500}` : `${theme.color.orange.A500}`)};
+  color: ${(props) =>
+    props.active ? `${theme.color.orange.A500}` : `${theme.color.orange.A500}`};
+  padding: ${(props) => (props.active ? "10px 5px 15px" : "10px 5px")};
+`;
+
+export const NavItemHref = styled.a`
+  padding: 8px;
+  margin: 0 5px;
+  border: 1px solid ${(props) => props.theme.color.orange.A50};
+  text-align: center;
+  font-weight: 500;
+  border-radius: 4px;
+  min-width: fit-content;
+  color: ${(props) => props.theme.color.orange.A500};
+  display: block;
+  padding: 8px;
+  text-align: center;
+  font-weight: ${(props) => (props.active ? `bold` : `500`)};
+  color: ${(props) =>
+    props.active ? `${theme.color.orange.A500}` : `${theme.color.orange.A500}`};
+  padding: ${(props) => (props.active ? "10px 5px 15px" : "10px 5px")};
+`;
+
+export const NavItemScroll = styled(LinkScroll)`
+  padding: 8px;
+  margin: 0 5px;
+  border: 1px solid ${(props) => props.theme.color.orange.A50};
+  text-align: center;
+  font-weight: 500;
+  border-radius: 4px;
+  min-width: fit-content;
+  color: ${(props) => props.theme.color.orange.A500};
+  display: block;
+  padding: 8px;
+  text-align: center;
+  font-weight: ${(props) => (props.active ? `bold` : `500`)};
+  color: ${(props) =>
+    props.active ? `${theme.color.orange.A500}` : `${theme.color.orange.A500}`};
   padding: ${(props) => (props.active ? "10px 5px 15px" : "10px 5px")};
 `;
 
