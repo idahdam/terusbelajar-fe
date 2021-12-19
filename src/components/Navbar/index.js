@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../../assets/images/terusBelajarLogo.png";
 // import profilephoto from "../../assets/terusBelajarLogo.png";
 import { FaBars } from "react-icons/fa";
@@ -21,11 +21,20 @@ import { Link, useLocation } from "react-router-dom";
 const Navbar = (props) => {
   // const [navbar, setNavbar] = useState(false);
   // const history = useNavigate();
-  const [home, setHome] = useState(true);
+  const [home, setHome] = useState(false);
   const [program, setProgram] = useState(false);
   const [aboutUs, setAboutUs] = useState(false);
   const { pathname } = useLocation();
 
+  useEffect(() => {
+    if (pathname === "/") {
+      setHome(true);
+    } else if (pathname === "/about-us") {
+      setAboutUs(true);
+    } else {
+      setProgram(true);
+    }
+  }, []);
   return (
     <Nav>
       <NavContent>
@@ -96,7 +105,7 @@ const Navbar = (props) => {
           >
             About Us
           </NavItem>
-          <NavItemButtonSign to="/register">Register</NavItemButtonSign>
+          <NavItemButtonSign to="/">Register</NavItemButtonSign>
         </NavItemList>
       </NavContent>
     </Nav>
