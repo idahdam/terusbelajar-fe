@@ -9,8 +9,7 @@ export const datas = [
       {
         title: "Kenal Lebih Dekat Dengan Kampus Impian Bersama Program ",
         titleBold: "Eksplorasi Kampus",
-        description:
-          "Cari tahu seluk beluk kehidupan akademis dan non-akademis mahasiswa di 32 jurusan dari 9 universitas terbaik di Indonesia melalui rangkaian acara Eksplorasi Kampus dari Terusbelajar!",
+        description: "Cari tahu seluk beluk kehidupan akademis dan non-akademis mahasiswa di 32 jurusan dari 9 universitas terbaik di Indonesia melalui rangkaian acara Eksplorasi Kampus dari Terusbelajar!",
         buttonTitle: "Daftar sekarang!",
         link: "/",
         image: imageHero,
@@ -20,26 +19,22 @@ export const datas = [
       {
         image: homeOne,
         left: true,
-        title:
-          "Mulai dari pilihan mata kuliah, kegiatan organisasi, hingga kultur lingkungan dan kehidupan sehari hari mahasiswa, semuanya bisa kamu dapatkan disini!",
+        title: "Mulai dari pilihan mata kuliah, kegiatan organisasi, hingga kultur lingkungan dan kehidupan sehari hari mahasiswa, semuanya bisa kamu dapatkan disini!",
         description:
           "Pelajari lingkungan kampus dan kehidupan mahasiswa di 9 universitas favorit di Indonesia melalui rangkaian talkshow BelajarKampus. Bersama dengan mahasiswa dan mahasiswi terbaik yang memiliki segudang pengalaman, kamu bisa mendapatkan cerita cerita yang tidak akan bisa kamu temui di artikel berita dan website resmi kampus manapun! Sebab disini, kamu akan mendapat cerita pengalaman unfiltered langsung dari sudut pandang mahasiswanya!",
       },
       {
         image: homeOne,
         left: false,
-        title:
-          "Kamu masih ragu buat milih jurusan? Tenang, disini kamu bisa eksplor jurusan jurusan favorit terbaik di Indonesia sekaligus!",
+        title: "Kamu masih ragu buat milih jurusan? Tenang, disini kamu bisa eksplor jurusan jurusan favorit terbaik di Indonesia sekaligus!",
         description:
           "Cari tahu lebih dalam mengenai 32 jurusan dari rumpun Soshum dan Saintek di Indonesia melalui rangkaian sesi diskusi dan talkshow BelajarRumpun! Mulai dari spesifikasi akademis, kegiatan organisasi, kultur tongkrongan, hingga kehidupan sehari hari mahasiswa dari jurusan dan kampus yang berbeda-beda, semuanya bisa kamu dapatkan disini!",
       },
       {
         image: homeOne,
         left: true,
-        title:
-          "Nggak cuma itu, disini kamu juga bisa dapetin skill yang kamu butuhin supaya bisa stand out selama masa perkuliahan!",
-        description:
-          "Lewat rangkaian workshop BelajarBisa, kamu bisa dapetin pelatihan soft skill komunikasi, kepemimpinan, personal branding, critical thinking, hingga tips dan trik mencari beasiswa selama masa perkuliahan!",
+        title: "Nggak cuma itu, disini kamu juga bisa dapetin skill yang kamu butuhin supaya bisa stand out selama masa perkuliahan!",
+        description: "Lewat rangkaian workshop BelajarBisa, kamu bisa dapetin pelatihan soft skill komunikasi, kepemimpinan, personal branding, critical thinking, hingga tips dan trik mencari beasiswa selama masa perkuliahan!",
       },
     ],
     SectionThree: [
@@ -51,20 +46,17 @@ export const datas = [
           {
             logo: "",
             benefitsHeader: "BelajarJurusan Satu Rumpun",
-            benefitsBody:
-              "4 rangkaian talkshow dan sesi diskusi yang membahas 16 jurusan favorit dari satu rumpun (Soshum/Saintek) di berbagai Universitas terbaik di Indonesia",
+            benefitsBody: "4 rangkaian talkshow dan sesi diskusi yang membahas 16 jurusan favorit dari satu rumpun (Soshum/Saintek) di berbagai Universitas terbaik di Indonesia",
           },
           {
             logo: "",
             benefitsHeader: "Booklet BelajarKampus",
-            benefitsBody:
-              "Booklet dengan puluhan cerita kehidupan mahasiswa dan lingkungan kampus di UI, IPB, UNPAD, ITB,  ITS, Unair, Undip, Unibraw, dan UNS serta 32 jurusan yang tersebar di seluruh Indonesia",
+            benefitsBody: "Booklet dengan puluhan cerita kehidupan mahasiswa dan lingkungan kampus di UI, IPB, UNPAD, ITB,  ITS, Unair, Undip, Unibraw, dan UNS serta 32 jurusan yang tersebar di seluruh Indonesia",
           },
           {
             logo: "",
             benefitsHeader: "Sertifikat Partisipasi",
-            benefitsBody:
-              "Sertifikat yang bisa kamu gunakan sebagai bukti keikutsertaan kegiatan Eksplorasi Kampus Terusbelajar.",
+            benefitsBody: "Sertifikat yang bisa kamu gunakan sebagai bukti keikutsertaan kegiatan Eksplorasi Kampus Terusbelajar.",
           },
         ],
       },
@@ -76,20 +68,17 @@ export const datas = [
           {
             logo: "",
             benefitsHeader: "BelajarJurusan Dua Rumpun",
-            benefitsBody:
-              "8 rangkaian talkshow dan sesi diskusi yang membahas 32 jurusan favorit dari rumpun Soshum dan Saintek di berbagai Universitas terbaik di Indonesia",
+            benefitsBody: "8 rangkaian talkshow dan sesi diskusi yang membahas 32 jurusan favorit dari rumpun Soshum dan Saintek di berbagai Universitas terbaik di Indonesia",
           },
           {
             logo: "",
             benefitsHeader: "Booklet BelajarKampus",
-            benefitsBody:
-              "Booklet dengan puluhan cerita kehidupan mahasiswa dan lingkungan kampus di UI, IPB, UNPAD, ITB,  ITS, Unair, Undip, Unibraw, dan UNS serta 32 jurusan favorit yang tersebar di seluruh Indonesia",
+            benefitsBody: "Booklet dengan puluhan cerita kehidupan mahasiswa dan lingkungan kampus di UI, IPB, UNPAD, ITB,  ITS, Unair, Undip, Unibraw, dan UNS serta 32 jurusan favorit yang tersebar di seluruh Indonesia",
           },
           {
             logo: "",
             benefitsHeader: "Sertifikat Partisipasi",
-            benefitsBody:
-              "Sertifikat yang bisa kamu gunakan sebagai bukti keikutsertaan kegiatan Eksplorasi Kampus Terusbelajar.",
+            benefitsBody: "Sertifikat yang bisa kamu gunakan sebagai bukti keikutsertaan kegiatan Eksplorasi Kampus Terusbelajar.",
           },
         ],
       },
@@ -101,8 +90,7 @@ export const datas = [
           {
             logo: "",
             benefitsHeader: "BelajarJurusan Satu Rumpun",
-            benefitsBody:
-              "4 rangkaian talkshow dan sesi diskusi yang membahas 16 jurusan favorit dari satu rumpun (Soshum/Saintek) di berbagai Universitas terbaik di Indonesia",
+            benefitsBody: "4 rangkaian talkshow dan sesi diskusi yang membahas 16 jurusan favorit dari satu rumpun (Soshum/Saintek) di berbagai Universitas terbaik di Indonesia",
           },
           {
             logo: "",
@@ -119,14 +107,12 @@ export const datas = [
           {
             logo: "",
             benefitsHeader: "Sertifikat Partisipasi",
-            benefitsBody:
-              "Sertifikat yang bisa kamu gunakan sebagai bukti keikutsertaan kegiatan Eksplorasi Kampus Terusbelajar.",
+            benefitsBody: "Sertifikat yang bisa kamu gunakan sebagai bukti keikutsertaan kegiatan Eksplorasi Kampus Terusbelajar.",
           },
           {
             logo: "",
             benefitsHeader: "Booklet BelajarKampus",
-            benefitsBody:
-              "Booklet dengan puluhan cerita kehidupan mahasiswa dan lingkungan kampus di UI, IPB, UNPAD, ITB,  ITS, Unair, Undip, Unibraw, dan UNS serta 32 jurusan favorit yang tersebar di seluruh Indonesia",
+            benefitsBody: "Booklet dengan puluhan cerita kehidupan mahasiswa dan lingkungan kampus di UI, IPB, UNPAD, ITB,  ITS, Unair, Undip, Unibraw, dan UNS serta 32 jurusan favorit yang tersebar di seluruh Indonesia",
           },
         ],
       },
@@ -138,8 +124,7 @@ export const datas = [
           {
             logo: "",
             benefitsHeader: "BelajarJurusan Satu Rumpun",
-            benefitsBody:
-              "4 rangkaian talkshow dan sesi diskusi yang membahas 16 jurusan favorit dari satu rumpun (Soshum/Saintek) di berbagai Universitas terbaik di Indonesia",
+            benefitsBody: "4 rangkaian talkshow dan sesi diskusi yang membahas 16 jurusan favorit dari satu rumpun (Soshum/Saintek) di berbagai Universitas terbaik di Indonesia",
           },
           {
             logo: "",
@@ -150,8 +135,7 @@ export const datas = [
           {
             logo: "",
             benefitsHeader: "Booklet BelajarKampus",
-            benefitsBody:
-              "Booklet dengan puluhan cerita kehidupan mahasiswa dan lingkungan kampus di UI, IPB, UNPAD, ITB,  ITS, Unair, Undip, Unibraw, dan UNS serta 32 jurusan favorit yang tersebar di seluruh Indonesia",
+            benefitsBody: "Booklet dengan puluhan cerita kehidupan mahasiswa dan lingkungan kampus di UI, IPB, UNPAD, ITB,  ITS, Unair, Undip, Unibraw, dan UNS serta 32 jurusan favorit yang tersebar di seluruh Indonesia",
           },
           {
             logo: "",
@@ -162,14 +146,12 @@ export const datas = [
           {
             logo: "",
             benefitsHeader: "Sertifikat Partisipasi",
-            benefitsBody:
-              "Sertifikat yang bisa kamu gunakan sebagai bukti keikutsertaan kegiatan Eksplorasi Kampus Terusbelajar.",
+            benefitsBody: "Sertifikat yang bisa kamu gunakan sebagai bukti keikutsertaan kegiatan Eksplorasi Kampus Terusbelajar.",
           },
           {
             logo: "",
             benefitsHeader: "Try Out UTBK Terusbelajar",
-            benefitsBody:
-              "Bonus Try Out UTBK gratis satu kali dari Terusbelajar khusus untuk kamu!",
+            benefitsBody: "Bonus Try Out UTBK gratis satu kali dari Terusbelajar khusus untuk kamu!",
           },
         ],
       },
@@ -181,8 +163,7 @@ export const datas = [
           {
             logo: "",
             benefitsHeader: "BelajarJurusan Satu Rumpun",
-            benefitsBody:
-              "8 rangkaian talkshow dan sesi diskusi yang membahas 32 jurusan favorit dari rumpun Soshum dan Saintek di berbagai Universitas terbaik di Indonesia",
+            benefitsBody: "8 rangkaian talkshow dan sesi diskusi yang membahas 32 jurusan favorit dari rumpun Soshum dan Saintek di berbagai Universitas terbaik di Indonesia",
           },
           {
             logo: "",
@@ -193,8 +174,7 @@ export const datas = [
           {
             logo: "",
             benefitsHeader: "Booklet BelajarKampus",
-            benefitsBody:
-              "Booklet dengan puluhan cerita kehidupan mahasiswa dan lingkungan kampus di UI, IPB, UNPAD, ITB,  ITS, Unair, Undip, Unibraw, dan UNS serta 32 jurusan favorit yang tersebar di seluruh Indonesia",
+            benefitsBody: "Booklet dengan puluhan cerita kehidupan mahasiswa dan lingkungan kampus di UI, IPB, UNPAD, ITB,  ITS, Unair, Undip, Unibraw, dan UNS serta 32 jurusan favorit yang tersebar di seluruh Indonesia",
           },
           {
             logo: "",
@@ -205,14 +185,12 @@ export const datas = [
           {
             logo: "",
             benefitsHeader: "Sertifikat Partisipasi",
-            benefitsBody:
-              "Sertifikat yang bisa kamu gunakan sebagai bukti keikutsertaan kegiatan Eksplorasi Kampus Terusbelajar.",
+            benefitsBody: "Sertifikat yang bisa kamu gunakan sebagai bukti keikutsertaan kegiatan Eksplorasi Kampus Terusbelajar.",
           },
           {
             logo: "",
             benefitsHeader: "Try Out UTBK Terusbelajar",
-            benefitsBody:
-              "Bonus Try Out UTBK gratis satu kali dari Terusbelajar khusus untuk kamu!",
+            benefitsBody: "Bonus Try Out UTBK gratis satu kali dari Terusbelajar khusus untuk kamu!",
           },
         ],
       },
@@ -220,8 +198,7 @@ export const datas = [
     SectionFour: {
       title: "Yuk gabung!",
       width: "100%",
-      description:
-        "Dapetin cerita dari kampus kampus terbaik dan pelatihan pengembangan diri langsung dari mahasiswa mahasiswi berpengalaman dari seluruh Indonesia!",
+      description: "Dapetin cerita dari kampus kampus terbaik dan pelatihan pengembangan diri langsung dari mahasiswa mahasiswi berpengalaman dari seluruh Indonesia!",
       cards: [
         {
           image: person,
@@ -254,8 +231,7 @@ export const datas = [
     },
     SectionFive: {
       title: "FAQ",
-      description:
-        "Masih ragu untuk bergabung dan mengikuti Eksplorasi Kampus? Simak FAQ berikut untuk meyakini diri kamu dan bergabung!",
+      description: "Masih ragu untuk bergabung dan mengikuti Eksplorasi Kampus? Simak FAQ berikut untuk meyakini diri kamu dan bergabung!",
       button: "Hubungi Kami (linked to WhatsApp)",
       link: "/",
       items: [
@@ -286,20 +262,17 @@ export const datas = [
         {
           num: 5,
           name: "Apakah saya dapat membeli tiket dalam bentuk satuan untuk BelajarRumpun dan BelajarKampus?",
-          children:
-            "Tidak, tiket yang kami tawarkan dalam layanan BelajarRumpun dan BelajarKampus hanya tersedia dalam bentuk paket. Yuk cek paket paket yang bisa kamu dapatkan di Eksplorasi Kampus di atas!",
+          children: "Tidak, tiket yang kami tawarkan dalam layanan BelajarRumpun dan BelajarKampus hanya tersedia dalam bentuk paket. Yuk cek paket paket yang bisa kamu dapatkan di Eksplorasi Kampus di atas!",
         },
         {
           num: 6,
           name: "Apakah saya dapat membatalkan tiket yang sudah saya beli dan melakukan refund?",
-          children:
-            "Terusbelajar tidak menyediakan opsi refund untuk tiket yang sudah dibeli.",
+          children: "Terusbelajar tidak menyediakan opsi refund untuk tiket yang sudah dibeli.",
         },
         {
           num: 7,
           name: "Ke mana saya dapat menghubungi Team Eksplorasi Kampus jika saya memiliki pertanyaan lebih lanjut?",
-          children:
-            "Silakan hubungi kami melalui kontak berikut ini: \nWhatsApp\t: \nE-mail\t\t\t:",
+          children: "Silakan hubungi kami melalui kontak berikut ini: \nWhatsApp\t: \nE-mail\t\t\t:",
         },
       ],
     },
@@ -316,11 +289,9 @@ export const datas = [
   {
     SectionOne: [
       {
-        title:
-          "Yuk jelajahi lingkungan kampus dan kehidupan mahasiswa di Australia bersama program ",
+        title: "Yuk jelajahi lingkungan kampus dan kehidupan mahasiswa di Australia bersama program ",
         titleBold: "Study Abroad Life in Australia",
-        description:
-          "Siapkan persiapanmu untuk studi di Australia melalui layanan paket workshop pertama di Indonesia yang menyambungkan calon pelajar dengan kehidupan di Australia secara luas dalam waktu singkat.",
+        description: "Siapkan persiapanmu untuk studi di Australia melalui layanan paket workshop pertama di Indonesia yang menyambungkan calon pelajar dengan kehidupan di Australia secara luas dalam waktu singkat.",
         buttonTitle: "Daftar sekarang!",
         link: "/",
         image: imageHero,
@@ -330,24 +301,21 @@ export const datas = [
       {
         image: homeOne,
         left: true,
-        title:
-          "Eksplor Pilihan Kampus, Beasiswa, Tempat Tinggal, hingga Kultur dan Lingkungan Mahasiswa di Australia disini!",
+        title: "Eksplor Pilihan Kampus, Beasiswa, Tempat Tinggal, hingga Kultur dan Lingkungan Mahasiswa di Australia disini!",
         description:
           "Kamu masih belum tahu pilihan kampus dan jurusan terbaik untukmu di Australia? Layanan Study Abroad dari Terusbelajar siap membantu kamu! Melalui delapan sesi small group workshop, kamu bisa mendapat informasi mengenai pilihan institusi pendidikan, beasiswa, ketersediaan akomodasi, pengenalan lingkungan, hingga peluang part time job yang tersedia untukmu di Australia!",
       },
       {
         image: homeOne,
         left: false,
-        title:
-          "Mempersiapkan Diri Untuk Menjalani Kehidupan Mahasiswa di Australia dengan Lebih Mudah",
+        title: "Mempersiapkan Diri Untuk Menjalani Kehidupan Mahasiswa di Australia dengan Lebih Mudah",
         description:
           "Belajar ke luar negeri itu kesempatan sekali seumur hidup. Disini, kamu bisa mendapatkan bimbingan untuk mengatur keuangan, belajar secara efektif, dan terjun penuh ke dalam budaya dan masyarakat di sana. Yuk belajar langsung dari mahasiswa dan alumni berpengalaman kuliah di Australia!",
       },
       {
         image: homeOne,
         left: true,
-        title:
-          "Terhubung Dengan Mahasiswa Indonesia di Australia yang Siap Membantumu Mempersiapkan Segalanya",
+        title: "Terhubung Dengan Mahasiswa Indonesia di Australia yang Siap Membantumu Mempersiapkan Segalanya",
         description:
           "Melalui rangkaian Oceans Connected dari program Study Abroad, kamu bisa terhubung dengan pelajar dan alumni yang tergabung di berbagai komunitas pelajar disana! Nggak cuma itu, kamu juga bisa mendapatkan penjelasan sistem akademik di Australia dari seorang Profesor di University of Queensland loh!",
       },
@@ -361,20 +329,17 @@ export const datas = [
           {
             logo: "",
             benefitsHeader: "Workshop: Life at Australia",
-            benefitsBody:
-              "8 rangkaian exclusive workshop yang membahas berbagai hal esensial yang perlu kamu ketahui sebelum berkuliah di Australia. Lihat topik topik workshop di FAQ.",
+            benefitsBody: "8 rangkaian exclusive workshop yang membahas berbagai hal esensial yang perlu kamu ketahui sebelum berkuliah di Australia. Lihat topik topik workshop di FAQ.",
           },
           {
             logo: "",
             benefitsHeader: "Booklet: Life at Australia",
-            benefitsBody:
-              "Booklet dengan puluhan cerita kehidupan mahasiswa dan lingkungan kampus di Australia, dapatkan pula panduan lengkap persiapan kuliah di Australia di dalamnya!",
+            benefitsBody: "Booklet dengan puluhan cerita kehidupan mahasiswa dan lingkungan kampus di Australia, dapatkan pula panduan lengkap persiapan kuliah di Australia di dalamnya!",
           },
           {
             logo: "",
             benefitsHeader: "Oceans Connected: Networking Opportunities",
-            benefitsBody:
-              "2 rangkaian sesi networking dengan pengurus aktif Perhimpunan Pelajar Indonesia (PPI) Australia, warga diaspora, hingga akademisi yang mengajar dan berkarya langsung di Australia.",
+            benefitsBody: "2 rangkaian sesi networking dengan pengurus aktif Perhimpunan Pelajar Indonesia (PPI) Australia, warga diaspora, hingga akademisi yang mengajar dan berkarya langsung di Australia.",
           },
         ],
       },
@@ -386,14 +351,12 @@ export const datas = [
           {
             logo: "",
             benefitsHeader: "Workshop: Life at Australia",
-            benefitsBody:
-              "8 rangkaian exclusive workshop yang membahas berbagai hal esensial yang perlu kamu ketahui sebelum berkuliah di Australia. Lihat topik topik workshop di FAQ.",
+            benefitsBody: "8 rangkaian exclusive workshop yang membahas berbagai hal esensial yang perlu kamu ketahui sebelum berkuliah di Australia. Lihat topik topik workshop di FAQ.",
           },
           {
             logo: "",
             benefitsHeader: "Booklet: Life at Australia",
-            benefitsBody:
-              "Booklet dengan puluhan cerita kehidupan mahasiswa dan lingkungan kampus di Australia, dapatkan pula panduan lengkap persiapan kuliah di Australia di dalamnya!",
+            benefitsBody: "Booklet dengan puluhan cerita kehidupan mahasiswa dan lingkungan kampus di Australia, dapatkan pula panduan lengkap persiapan kuliah di Australia di dalamnya!",
           },
         ],
       },
@@ -401,8 +364,7 @@ export const datas = [
     SectionFour: {
       title: "Yuk gabung!",
       width: "100%",
-      description:
-        "Study Abroad dari Terusbelajar menyediakan paket workshop pertama di Indonesia yang menyambungkan calon pelajar dengan kehidupan di Australia secara menyeluruh dan komprehensif dalam waktu yang singkat!",
+      description: "Study Abroad dari Terusbelajar menyediakan paket workshop pertama di Indonesia yang menyambungkan calon pelajar dengan kehidupan di Australia secara menyeluruh dan komprehensif dalam waktu yang singkat!",
       cards: [
         {
           image: person,
@@ -435,8 +397,7 @@ export const datas = [
     },
     SectionFive: {
       title: "FAQ",
-      description:
-        "Masih ragu untuk bergabung dengan Study Abroad? Simak FAQ berikut agar lebih yakin.",
+      description: "Masih ragu untuk bergabung dengan Study Abroad? Simak FAQ berikut agar lebih yakin.",
       button: "Simak FAQ",
       link: "/",
       items: [
@@ -449,20 +410,17 @@ export const datas = [
         {
           num: 2,
           name: "Kapan dan berapa lama seluruh layanan Eksplorasi Kampus akan berlangsung?",
-          children:
-            "Catat timeline pelaksanaan dan tanggal-tanggal Study Abroad, ya!",
+          children: "Catat timeline pelaksanaan dan tanggal-tanggal Study Abroad, ya!",
         },
         {
           num: 3,
           name: "Platform apa yang akan digunakan dalam layanan Study Abroad?",
-          children:
-            "Study Abroad menggunakan Zoom Meetings sebagai sarana pelaksanaan workshops dan sesi netowrking session.",
+          children: "Study Abroad menggunakan Zoom Meetings sebagai sarana pelaksanaan workshops dan sesi netowrking session.",
         },
         {
           num: 4,
           name: "Apa yang akan saya pelajari di Study Abroad?",
-          children:
-            "Study Abroad akan melayani kamu dalam 8x sesi workshops dan mencakup pembahasan mengenai\n(1) pemilihan institusi\n(2) persiapan akomodasi, dan\n(3) pengenalan lingkungan di Australia.",
+          children: "Study Abroad akan melayani kamu dalam 8x sesi workshops dan mencakup pembahasan mengenai\n(1) pemilihan institusi\n(2) persiapan akomodasi, dan\n(3) pengenalan lingkungan di Australia.",
         },
         {
           num: 5,
@@ -473,8 +431,7 @@ export const datas = [
         {
           num: 6,
           name: "Apakah Study Abroad akan dilengkapi dengan persiapan IELTS/TOEFL?",
-          children:
-            "Tidak. Pelatihan TOEFL dan IELTS tidak akan tersedia dalam layanan Study Abroad",
+          children: "Tidak. Pelatihan TOEFL dan IELTS tidak akan tersedia dalam layanan Study Abroad",
         },
         {
           num: 7,
@@ -485,8 +442,7 @@ export const datas = [
         {
           num: 8,
           name: "Ke mana saya dapat menghubungi Team Eksplorasi Kampus jika saya memiliki pertanyaan lebih lanjut?",
-          children:
-            "Silakan hubungi kami melalui kontak berikut ini: \nWhatsApp\t: \nE-mail\t\t\t:",
+          children: "Silakan hubungi kami melalui kontak berikut ini: \nWhatsApp\t: \nE-mail\t\t\t:",
         },
       ],
     },
@@ -505,26 +461,7 @@ export const datas = [
       {
         title: "TryOut ",
         titleBold: "TerusBelajar",
-        description:
-          "Membantu kamu mengenali dan menggali potensi akan pemahaman materi-materi UTBK. Uji kemampuanmu dan raih PTN impianmu.",
-        buttonTitle: "Yuk, daftarkan sekarang!",
-        link: "/",
-        image: imageHero,
-      },
-      {
-        title: "TryOut ",
-        titleBold: "TerusBelajar",
-        description:
-          "Membantu kamu mengenali dan menggali potensi akan pemahaman materi-materi UTBK. Uji kemampuanmu dan raih PTN impianmu.",
-        buttonTitle: "Yuk, daftarkan sekarang!",
-        link: "/",
-        image: imageHero,
-      },
-      {
-        title: "TryOut ",
-        titleBold: "TerusBelajar",
-        description:
-          "Membantu kamu mengenali dan menggali potensi akan pemahaman materi-materi UTBK. Uji kemampuanmu dan raih PTN impianmu.",
+        description: "Membantu kamu mengenali dan menggali potensi akan pemahaman materi-materi UTBK. Uji kemampuanmu dan raih PTN impianmu.",
         buttonTitle: "Yuk, daftarkan sekarang!",
         link: "/",
         image: imageHero,
@@ -535,15 +472,13 @@ export const datas = [
         image: homeOne,
         left: true,
         title: "Soal-soal dibuat langsung oleh mahasiswa Universitas Indonesia",
-        description:
-          "Ingin mengetahui kemampuanmu? yuk cari tahu sejauh apa kemampuanmu dengan soal-soal UTBK yang dibuat langsung oleh mahasiswa Universitas Indonesia",
+        description: "Ingin mengetahui kemampuanmu? yuk cari tahu sejauh apa kemampuanmu dengan soal-soal UTBK yang dibuat langsung oleh mahasiswa Universitas Indonesia",
       },
       {
         image: homeOne,
         left: false,
         title: "Bebas waktu pengerjaan",
-        description:
-          "Pengen ngerjain nyantai tapi tetep kerasa UTBK asli? tenang, kamu bisa ngerjain TO-nya kapanpun dengan waktu 195 menit, seperti UTBK beneran!",
+        description: "Pengen ngerjain nyantai tapi tetep kerasa UTBK asli? tenang, kamu bisa ngerjain TO-nya kapanpun dengan waktu 195 menit, seperti UTBK beneran!",
       },
     ],
     SectionThree: [
@@ -555,27 +490,22 @@ export const datas = [
           {
             logo: "",
             benefitsHeader: "Syarat 1",
-            benefitsBody:
-              "Tag 3 teman pada kolom komentar postingan TryOut di Instagram TerusBelajar",
+            benefitsBody: "Tag 3 teman pada kolom komentar postingan TryOut di Instagram TerusBelajar",
           },
           {
             logo: "",
             benefitsHeader: "Syarat 2",
-            benefitsBody:
-              "Upload story TryOut di Instagram dan tag 3 teman kamu serta @terusbelajar.idn",
+            benefitsBody: "Upload story TryOut di Instagram dan tag 3 teman kamu serta @terusbelajar.idn",
           },
           {
             logo: "",
-            benefitsHeader:
-              "Soal High Thinking Order Skills (HOTS) dibuat anak UI",
-            benefitsBody:
-              "Dibuat langsung oleh mahasiswa prestatif dari UI sesuai standar UTBK 2022!",
+            benefitsHeader: "Soal High Thinking Order Skills (HOTS) dibuat anak UI",
+            benefitsBody: "Dibuat langsung oleh mahasiswa prestatif dari UI sesuai standar UTBK 2022!",
           },
           {
             logo: "",
             benefitsHeader: "Sistem Ujian CAT/CBT dan Real Time",
-            benefitsBody:
-              "Menggunakan sistem terkomputerisasi dan waktu pengerjaan seperti UTBK 2022!",
+            benefitsBody: "Menggunakan sistem terkomputerisasi dan waktu pengerjaan seperti UTBK 2022!",
           },
         ],
       },
@@ -587,26 +517,22 @@ export const datas = [
           {
             logo: "",
             benefitsHeader: "Soal High Thinking Order Skills (HOTS)",
-            benefitsBody:
-              "Dibuat langsung oleh mahasiswa prestatif dari UI sesuai standar UTBK 2022!",
+            benefitsBody: "Dibuat langsung oleh mahasiswa prestatif dari UI sesuai standar UTBK 2022!",
           },
           {
             logo: "",
             benefitsHeader: "Sistem Ujian CAT/CBT dan Real Time",
-            benefitsBody:
-              "Menggunakan sistem terkomputerisasi dan waktu pengerjaan seperti UTBK 2022!",
+            benefitsBody: "Menggunakan sistem terkomputerisasi dan waktu pengerjaan seperti UTBK 2022!",
           },
           {
             logo: "",
             benefitsHeader: "Kunci Jawaban Soal",
-            benefitsBody:
-              "Kamu bisa mengetahui soal-soal serta kunci jawaban untuk mempelajari ulang materi yang belum dikuasai",
+            benefitsBody: "Kamu bisa mengetahui soal-soal serta kunci jawaban untuk mempelajari ulang materi yang belum dikuasai",
           },
           {
             logo: "",
             benefitsHeader: "Ranking Nasional",
-            benefitsBody:
-              "Mengetahui kemampuan pesaing itu perlu, makanya, fitur ranking nasional ini hadir buat kamu!",
+            benefitsBody: "Mengetahui kemampuan pesaing itu perlu, makanya, fitur ranking nasional ini hadir buat kamu!",
           },
         ],
       },
@@ -618,26 +544,22 @@ export const datas = [
           {
             logo: "",
             benefitsHeader: "3x TryOut Cumlaude",
-            benefitsBody:
-              "Dengan harga yang lebih terjangkau, kamu bisa ikut 3x TryOut Cumlaude",
+            benefitsBody: "Dengan harga yang lebih terjangkau, kamu bisa ikut 3x TryOut Cumlaude",
           },
           {
             logo: "",
             benefitsHeader: "Gratis 1x TryOut Cumlaude",
-            benefitsBody:
-              "Plus, kamu akan mendapatkan 1x Gratis TryOut Cumlaude yang bisa kamu manfaatkan untuk lebih mengetahui kemampuan kamu!",
+            benefitsBody: "Plus, kamu akan mendapatkan 1x Gratis TryOut Cumlaude yang bisa kamu manfaatkan untuk lebih mengetahui kemampuan kamu!",
           },
           {
             logo: "",
             benefitsHeader: "Cukup Satu Kali Daftar",
-            benefitsBody:
-              "Gak perlu repot-repot, cukup daftar satu kali, akan bisa ikut TryOut Cumlaude berkali-kali!",
+            benefitsBody: "Gak perlu repot-repot, cukup daftar satu kali, akan bisa ikut TryOut Cumlaude berkali-kali!",
           },
           {
             logo: "",
             benefitsHeader: "Mendapatkan Fitur TryOut Cumlaude",
-            benefitsBody:
-              "Kamu akan mendapatkan fitur yang sama dengan TryOut Cumlaude",
+            benefitsBody: "Kamu akan mendapatkan fitur yang sama dengan TryOut Cumlaude",
           },
         ],
       },
@@ -649,32 +571,27 @@ export const datas = [
           {
             logo: "",
             benefitsHeader: "Soal High Thinking Order Skills (HOTS)",
-            benefitsBody:
-              "Dibuat langsung oleh mahasiswa prestatif dari UI sesuai standar UTBK 2022!",
+            benefitsBody: "Dibuat langsung oleh mahasiswa prestatif dari UI sesuai standar UTBK 2022!",
           },
           {
             logo: "",
             benefitsHeader: "Sistem Ujian CAT/CBT dan Real Time",
-            benefitsBody:
-              "Menggunakan sistem terkomputerisasi dan waktu pengerjaan seperti UTBK 2022!",
+            benefitsBody: "Menggunakan sistem terkomputerisasi dan waktu pengerjaan seperti UTBK 2022!",
           },
           {
             logo: "",
             benefitsHeader: "Kunci Jawaban Soal",
-            benefitsBody:
-              "Kamu bisa mengetahui soal-soal serta kunci jawaban untuk mempelajari ulang materi yang belum dikuasai",
+            benefitsBody: "Kamu bisa mengetahui soal-soal serta kunci jawaban untuk mempelajari ulang materi yang belum dikuasai",
           },
           {
             logo: "",
             benefitsHeader: "Ranking Nasional",
-            benefitsBody:
-              "Mengetahui kemampuan pesaing itu perlu, makanya, fitur ranking nasional ini hadir buat kamu!",
+            benefitsBody: "Mengetahui kemampuan pesaing itu perlu, makanya, fitur ranking nasional ini hadir buat kamu!",
           },
           {
             logo: "",
             benefitsHeader: "Report Individu",
-            benefitsBody:
-              "Buat kamu yang ingin mengetahui kelebihan-kekurangan dalam penguasaan materi, analisis dari Report Individu ini bisa membantu kamu!",
+            benefitsBody: "Buat kamu yang ingin mengetahui kelebihan-kekurangan dalam penguasaan materi, analisis dari Report Individu ini bisa membantu kamu!",
           },
         ],
       },
@@ -686,26 +603,22 @@ export const datas = [
           {
             logo: "",
             benefitsHeader: "3x TryOut Mapres",
-            benefitsBody:
-              "Dengan harga yang lebih terjangkau, kamu bisa ikut 3x TryOut Mapres",
+            benefitsBody: "Dengan harga yang lebih terjangkau, kamu bisa ikut 3x TryOut Mapres",
           },
           {
             logo: "",
             benefitsHeader: "Gratis 1x TryOut Mapres",
-            benefitsBody:
-              "Plus, kamu akan mendapatkan 1x Gratis TryOut Mapres yang bisa kamu manfaatkan untuk lebih mengetahui kemampuan kamu!",
+            benefitsBody: "Plus, kamu akan mendapatkan 1x Gratis TryOut Mapres yang bisa kamu manfaatkan untuk lebih mengetahui kemampuan kamu!",
           },
           {
             logo: "",
             benefitsHeader: "Cukup Satu Kali Daftar",
-            benefitsBody:
-              "Gak perlu repot-repot, cukup daftar satu kali, akan bisa ikut TryOut Cumlaude berkali-kali!",
+            benefitsBody: "Gak perlu repot-repot, cukup daftar satu kali, akan bisa ikut TryOut Cumlaude berkali-kali!",
           },
           {
             logo: "",
             benefitsHeader: "Mendapatkan Fitur TryOut Mapres",
-            benefitsBody:
-              "Kamu akan mendapatkan fitur yang sama dengan TryOut Mapres",
+            benefitsBody: "Kamu akan mendapatkan fitur yang sama dengan TryOut Mapres",
           },
         ],
       },
@@ -713,59 +626,51 @@ export const datas = [
     SectionFour: {
       title: "Kenapa TryOut di TerusBelajar?",
       width: "100%",
-      description:
-        "Karena kamu bisa mendapatkan berbagai fitur yang bisa menunjang kemampuan kamu untuk siap menggapai PTN impian!",
+      description: "Karena kamu bisa mendapatkan berbagai fitur yang bisa menunjang kemampuan kamu untuk siap menggapai PTN impian!",
       cards: [
         {
           image: person,
           program: true,
           width: "100%",
           title: "Soal sesuai standar, dibuat langsung oleh mahasiswa UI",
-          description:
-            "Gak perlu ragu lagi soal kualitas soal TryOut di TerusBelajar, karena sudah sesuai standar UTBK dan dibuat langsung oleh ahlinya!",
+          description: "Gak perlu ragu lagi soal kualitas soal TryOut di TerusBelajar, karena sudah sesuai standar UTBK dan dibuat langsung oleh ahlinya!",
         },
         {
           image: person,
           program: true,
           width: "100%",
           title: "Mendapatkan kunci jawaban untuk mengevaluasi diri",
-          description:
-            "Penasaran sama soal-soal? tenang aja, soal-soalnya bisa kami berikan, beserta kunci jawabannya!",
+          description: "Penasaran sama soal-soal? tenang aja, soal-soalnya bisa kami berikan, beserta kunci jawabannya!",
         },
         {
           image: person,
           program: true,
           width: "100%",
           title: "Report individu untuk meningkatkan diri",
-          description:
-            "Ingin tahu sudah sejauh apa kemampuanmu? tenang, kami akan kirimkan report hasil TryOut kamu besera analisisnya!",
+          description: "Ingin tahu sudah sejauh apa kemampuanmu? tenang, kami akan kirimkan report hasil TryOut kamu besera analisisnya!",
         },
       ],
     },
     SectionFive: {
       title: "FAQ",
-      description:
-        "Masih ragu untuk mengikuti TryOut TerusBerlajar? Simak FAQ berikut untuk meyakini diri kamu dan bergabung!",
+      description: "Masih ragu untuk mengikuti TryOut TerusBerlajar? Simak FAQ berikut untuk meyakini diri kamu dan bergabung!",
       button: "Hubungi Kami (linked to WhatsApp)",
       link: "/",
       items: [
         {
           num: 1,
           name: "Apa perbedaan TryOut Maba, Cumlaude, dan Mapres?",
-          children:
-            "Pada TryOut Maba, ada persyaratan yang harus kamu lakukan untuk bisa ikut serta dan kamu tidak bisa mendapatkan berbagai fitur lebih yang berada di TryOut Cumlaude dan Mapres.",
+          children: "Pada TryOut Maba, ada persyaratan yang harus kamu lakukan untuk bisa ikut serta dan kamu tidak bisa mendapatkan berbagai fitur lebih yang berada di TryOut Cumlaude dan Mapres.",
         },
         {
           num: 2,
           name: "Apakah pengerjaan bisa melalui laptop?",
-          children:
-            "Tentunya bisa, pengerjaan bisa dilakukan melalui PC, Laptop, dan Smartphone milikmu.",
+          children: "Tentunya bisa, pengerjaan bisa dilakukan melalui PC, Laptop, dan Smartphone milikmu.",
         },
         {
           num: 3,
           name: "Kapan saya bisa mengerjakan TryOut TerusBelajar?",
-          children:
-            "Kamu bisa mengerjakan TryOut kapanpun dalam rentang waktu hari Jum’at sampai Minggu. Kami merekomendasikan untuk mengerjakan secara langsung dengan rentang waktu yang tersedia, jangan dicicil.",
+          children: "Kamu bisa mengerjakan TryOut kapanpun dalam rentang waktu hari Jum’at sampai Minggu. Kami merekomendasikan untuk mengerjakan secara langsung dengan rentang waktu yang tersedia, jangan dicicil.",
         },
       ],
     },
