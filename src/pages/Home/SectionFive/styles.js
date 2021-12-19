@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 export const SectionFiveTemplate = styled.div`
   width: 65%;
   margin: 0 auto;
+  margin-top: 100px;
   padding: 70px 0;
   display: flex;
   align-items: center;

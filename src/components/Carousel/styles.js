@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const CarouselTemplate = styled.div`
   max-width: ${({ maxWidth }) => maxWidth};
   width: ${({ width }) => width};
-  height: 600px;
+  height: 700px;
   display: flex;
   margin: 0 auto;
   flex-direction: row;
@@ -17,6 +17,14 @@ export const CarouselTemplate = styled.div`
   background-position: ${({ position }) => position};
   background-size: 77% 77%;
   word-wrap: break-word;
+  @media screen and (max-width: 1366px) {
+    height: 500px;
+  }
+  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
+    padding-left: 2%;
+    align-items: flex-end;
+    padding-bottom: 30px;
+  }
 `;
 
 export const CarouselHeader = styled.div`
@@ -57,7 +65,7 @@ export const CarouselButton = styled(Link)`
   width: fit-content;
   margin-left: ${({ marginLeft }) => marginLeft};
   @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
-    margin: 0 auto;
+    margin: 0;
   }
   font-family: "Glacial Bold";
 `;
@@ -70,4 +78,7 @@ export const CarouselDesc = styled.div`
   font-family: "Glacial Bold";
   margin: 8px 0 32px 0;
   color: rgba(0, 0, 0, 0.7);
+  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
+    margin-bottom: 18px;
+  }
 `;

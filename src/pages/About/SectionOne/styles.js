@@ -10,7 +10,7 @@ export const SectionOneImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   @media screen and (max-width: 1366px) {
-    height: 400px;
+    height: 500px;
   }
 `;
 

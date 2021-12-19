@@ -42,6 +42,9 @@ const GlobalStyles = createGlobalStyle`
     -webkit-text-decoration-color: #fff;
     text-decoration-color: #fff;
   }
+  div {
+    white-space: pre-wrap;
+  }
   body {
     font-family: ${(props) => props.theme.font.primary};
     padding: 0;

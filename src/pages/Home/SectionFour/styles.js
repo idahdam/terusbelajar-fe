@@ -9,10 +9,8 @@ export const SectionFourTemplate = styled.div`
   display: flex;
   flex-direction: row;
   column-gap: 24px;
-
-  @media screen and (max-width: ${(props) => props.theme.screen.md}) {
-    width: 80%;
-    flex-direction: column;
+  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
+    width: 100%;
   }
 `;
 
@@ -22,16 +20,13 @@ export const SectionFourTitle = styled.h2`
 `;
 
 export const SectionFourTemplateTestimonies = styled.div`
-  width: 40%;
+  width: 60%;
   margin: 0 auto;
-  margin-bottom: 100px;
-  padding-bottom: 70px;
   display: flex;
   flex-direction: row;
-  column-gap: 24px;
-  @media screen and (max-width: ${(props) => props.theme.screen.md}) {
+  justify-content: center;
+  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
     width: 80%;
-    flex-direction: column;
   }
 `;
 
@@ -47,13 +42,7 @@ export const SectionFourTestimony = styled.div`
 `;
 
 export const SectionFourSliderTestimonial = styled.div`
-  max-width: 30%;
-  flex: 1;
+  width: 720px;
   height: 100%;
-  div.react-multi-carousel-list {
-    padding: 10px 10px 30px 10px;
-  }
-  @media screen and (max-width: ${(props) => props.theme.screen.md}) {
-    width: 100%;
-  }
+  padding-bottom: 50px;
 `;

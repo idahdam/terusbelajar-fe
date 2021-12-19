@@ -8,12 +8,8 @@ export const SectionThreeTemplate = styled.div`
   display: flex;
   align-items: center;
   flex-direction: row;
-  // background-color: ${(props) => props.theme.color.black.A50};
   @media screen and (max-width: ${(props) => props.theme.screen.md}) {
     flex-direction: column;
-  }
-  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
-    width: 80%;
   }
 `;
 
@@ -28,8 +24,14 @@ export const SectionThreeApart = styled.div`
   width: ${({ grid }) => (grid ? "60%" : "40%")};
   margin-left: ${(props) => (props.benefit ? "auto" : "0")};
   @media screen and (max-width: ${(props) => props.theme.screen.md}) {
-    width: 100%;
+    width: ${({ grid }) => (grid ? "80%" : "100%")};
     margin-left: ${(props) => (props.benefit ? "0" : "0")};
+  }
+  @media screen and (max-width: ${(props) => props.theme.screen.sm}) {
+    grid-template-columns: auto;
+  }
+  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
+    text-align: ${({ grid }) => (grid ? "" : "center")};
   }
 `;
 
@@ -40,11 +42,11 @@ export const SectionThreeButton = styled(Link)`
   padding: 12px 24px;
   border-radius: 4px;
   width: fit-content;
-  margin-left: ${({ marginLeft }) => marginLeft};
+  font-family: "Glacial Bold";
   @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
     margin: 0 auto;
+    margin-bottom: 72px;
   }
-  font-family: "Glacial Bold";
 `;
 
 export const SectionThreeTitle = styled.h2`
@@ -52,7 +54,10 @@ export const SectionThreeTitle = styled.h2`
   color: ${(props) => props.theme.color.blue.A500};
 `;
 
-export const SectionThreeDescription = styled.div`
-  max-width: 85%;
+export const SectionThreeDescription = styled.h6`
+  width: 85%;
   padding: 22px 0;
+  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
+    width: 100%;
+  }
 `;

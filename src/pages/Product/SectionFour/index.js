@@ -1,12 +1,6 @@
 import React from "react";
 import { TestimonyBox } from "../../../components";
-import {
-  SectionFourTestimony,
-  SectionFourTemplate,
-  SectionFourTemplateTestimonies,
-  SectionFourSliderTestimonial,
-  SectionFourTitle,
-} from "./styles";
+import { SectionFourTestimony, SectionFourTemplate, SectionFourTemplateTestimonies, SectionFourSliderTestimonial, SectionFourTitle } from "./styles";
 
 const SectionFour = (props) => {
   return (
@@ -21,13 +15,7 @@ const SectionFour = (props) => {
         {props.data.cards.map((item) => {
           return (
             <SectionFourSliderTestimonial>
-              <TestimonyBox
-                title={item.title}
-                text={item.description}
-                width={item.width}
-                image={item.image}
-                program={item.program}
-              />
+              <TestimonyBox title={item.title} text={item.description} width={item.width} image={item.image} program={item.program} italic={item.italic} />
             </SectionFourSliderTestimonial>
           );
         })}

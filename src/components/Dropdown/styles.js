@@ -44,5 +44,4 @@ export const DropDownContent = styled.div`
 
 export const DropDownContentText = styled.h6`
   color: white;
-  white-space: pre-wrap;
 `;

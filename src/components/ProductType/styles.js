@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const ProductTypeCard = styled.div`
-  height: 920px;
   width: 380px;
   background-color: ${(props) => props.theme.color.white};
   border-radius: 4px;
@@ -13,7 +12,7 @@ export const ProductTypeCard = styled.div`
 export const ProductTypeHeader = styled.div`
   background-color: ${(props) => props.theme.color.orange.A50};
   width: 100%;
-  height: 180px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,11 +34,13 @@ export const ProductTypeBody = styled.h6`
 `;
 
 export const ProductTypeBenefits = styled.div`
+  height: 500px;
   margin-top: 10px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  overflow: auto;
 `;
 
 export const ProductTypeBenefitsList = styled.div`

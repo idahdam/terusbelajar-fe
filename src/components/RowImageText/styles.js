@@ -7,6 +7,9 @@ export const RowImageTemplates = styled.div`
   margin: 0 auto;
   padding: 70px 0;
   background-color: ${(props) => (props.white ? `${theme.color.white}` : `${theme.color.white}`)};
+  @media screen and (max-width: ${(props) => props.theme.screen.sm}) {
+    padding: 0;
+  }
 `;
 
 export const RowImageBoxContent = styled.div`
@@ -19,7 +22,7 @@ export const RowImageBoxContent = styled.div`
 
 export const RowImageBoxItem = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: ${(props) => (props.left ? "row" : "row-reverse")};
   column-gap: 24px;
   width: 100%;
   align-items: center;
@@ -63,6 +66,9 @@ export const RowImageButton = styled(Link)`
 export const RowImageBoxText = styled.div`
   width: 50%;
   color: ${(props) => props.theme.color.blue.A500};
+  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
+    width: 100%;
+  }
 `;
 
 export const RowImageBoxTitle = styled.h2`

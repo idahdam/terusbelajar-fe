@@ -8,12 +8,14 @@ export const TestimonyBoxWidth = styled.div`
   padding: 24px;
   text-align: center;
   background-color: ${(props) => props.theme.color.white};
-  .bottom-text {
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
+`;
+
+export const TestimonyBoxContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
 `;
 
 export const TestimonyBoxImage = styled.img`
@@ -32,6 +34,7 @@ export const WhyUsTitle = styled.div`
   color: ${(props) => props.theme.color.blue.A500};
   margin-top: 20px;
   margin-bottom: 10px;
+  font-style: ${(props) => (props.italic ? "italic" : "")};
 `;
 
 export const WhyUsDesc = styled.div`

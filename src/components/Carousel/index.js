@@ -9,7 +9,7 @@ const CarouselItem = (props) => {
     if (window.innerWidth <= 1200) {
       setPosition("100%");
     } else {
-      setPosition("50%");
+      setPosition("60%");
     }
   };
 

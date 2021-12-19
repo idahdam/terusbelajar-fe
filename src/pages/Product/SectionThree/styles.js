@@ -7,4 +7,6 @@ export const SectionThreeCard = styled.div`
   background-color: ${(props) => props.theme.color.orange.A500};
   padding-top: 90px;
   padding-bottom: 90px;
+  padding-left: 2%;
+  padding-right: 2%;
 `;
