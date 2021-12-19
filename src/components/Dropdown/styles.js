@@ -38,7 +38,7 @@ export const DropDownSymbol = styled(RiArrowDropDownLine)`
 
 export const DropDownContent = styled.div`
   background-color: ${(props) => props.theme.color.orange.A500};
-  padding: 5px 15px;
+  padding: 5px 48px;
   margin-bottom: 24px;
   border: 1px solid rgba(0, 0, 0, 0.16);
   box-sizing: border-box;
@@ -49,4 +49,5 @@ export const DropDownContent = styled.div`
 
 export const DropDownContentText = styled.h6`
   color: white;
+  text-align: start;
 `;

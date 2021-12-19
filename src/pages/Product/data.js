@@ -454,7 +454,7 @@ export const datas = [
         },
         {
           num: 3,
-          name: "Platform apa yang akan digunakana dalam layanan Study Abroad?",
+          name: "Platform apa yang akan digunakan dalam layanan Study Abroad?",
           children:
             "Study Abroad menggunakan Zoom Meetings sebagai sarana pelaksanaan workshops dan sesi netowrking session.",
         },
