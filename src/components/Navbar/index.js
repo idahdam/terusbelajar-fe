@@ -35,16 +35,41 @@ const Navbar = (props) => {
           <FaBars onClick={props.toggling} />
         </MobileIcon>
         <NavItemList>
-          <NavItem to="/" active={pathname === "/"}>
-            Home
-          </NavItem>
           {pathname === "/" ? (
-            <NavItemScroll activeClass="active" to="programs" spy={true} smooth={true} offset={-70} duration={500} active={pathname === "/program" || pathname.includes("/program")}>
+            <NavItemScroll
+              activeClass="active"
+              to="heroHome"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              // active={pathname === "/" || pathname.includes("/")}
+            >
+              Home
+            </NavItemScroll>
+          ) : (
+            <NavItem to="/" active={pathname === "/"}>
+              Home
+            </NavItem>
+          )}
+          {pathname === "/" ? (
+            <NavItemScroll
+              activeClass="active"
+              to="programs"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              // active={pathname === "/" || pathname.includes("/")}
+            >
               Program
             </NavItemScroll>
           ) : null}
 
-          <NavItem to="/about-us" active={pathname === "/about-us"}>
+          <NavItem
+            to="/about-us"
+            // active={pathname === "/about-us"}
+          >
             About Us
           </NavItem>
           <NavItemButtonSign to="/register">Register</NavItemButtonSign>

@@ -1,5 +1,5 @@
 import React from "react";
-import { BottomTextTemplate, BottomTextButton, BottomTextTemplateButton, BottomTextText, BottomTextLeft, BottomTextRight, BottomTextRightImage } from "./styles";
+import { BottomTextTemplate, BottomTextButton, BottomTextTemplateButton, BottomTextText, BottomTextLeft, BottomTextRight, BottomTextRightImage, BottomTextButtonScroll } from "./styles";
 
 const BottomText = (props) => {
   return (
@@ -10,7 +10,9 @@ const BottomText = (props) => {
             <BottomTextLeft>
               <BottomTextText>{props.text}</BottomTextText>
               <BottomTextTemplateButton split={props.split}>
-                <BottomTextButton to="/register">{props.button}</BottomTextButton>
+                <BottomTextButtonScroll to="programs" spy={true} smooth={true} offset={-70} duration={500}>
+                  {props.button}
+                </BottomTextButtonScroll>
               </BottomTextTemplateButton>
             </BottomTextLeft>
             {props.split ? (

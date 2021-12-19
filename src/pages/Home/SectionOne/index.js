@@ -30,7 +30,7 @@ const SectionOne = () => {
     />,
   ];
   return (
-    <SectionOneDiv>
+    <SectionOneDiv id="heroHome">
       <SectionOneDivCarousel>
         <Carousel
           value={value}

@@ -7,6 +7,7 @@ import { BsChatFill, BsFillPersonFill, BsFillBagFill } from "react-icons/bs";
 import { AiFillHome } from "react-icons/ai";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
 import { CgTrack } from "react-icons/cg";
+import { Link as LinkScroll } from "react-scroll";
 
 export const SidebarContainer = styled.aside`
   position: fixed;
@@ -127,13 +128,11 @@ export const ButtonBottom = styled(LinkR)`
   align-items: center;
   justify-content: center;
   padding: 8px 16px;
-  background: ${(props) =>
-    props.call ? "#FFFFFF" : `${theme.color.orange.A500}`};
+  background: ${(props) => (props.call ? "#FFFFFF" : `${theme.color.orange.A500}`)};
   border-radius: 10px;
   cursor: pointer;
   width: 100%;
-  border: ${(props) =>
-    props.call ? `1px solid ${theme.color.orange.A500}` : "none"};
+  border: ${(props) => (props.call ? `1px solid ${theme.color.orange.A500}` : "none")};
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -143,4 +142,15 @@ export const ButtonBottom = styled(LinkR)`
   @media screen and (max-width: 606px) {
     margin: 10px 0;
   }
+`;
+
+export const SidebarLinkScroll = styled(LinkScroll)`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  color: #909daa;
+  cursor: pointer;
+  line-height: 3rem;
 `;

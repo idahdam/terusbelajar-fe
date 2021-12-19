@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll";
 import theme from "../../styles/theme";
 
 export const BottomTextTemplate = styled.div`
@@ -68,4 +69,13 @@ export const BottomTextRightImage = styled.div`
   @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
     width: 250px;
   }
+`;
+
+export const BottomTextButtonScroll = styled(LinkScroll)`
+  background: ${(props) => props.theme.color.orange.A500};
+  color: ${(props) => props.theme.color.white};
+  padding: 12px 24px;
+  border-radius: 4px;
+  width: fit-content;
+  font-family: "Glacial Bold";
 `;
