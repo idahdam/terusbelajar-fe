@@ -4,13 +4,13 @@ import { BottomTextTemplate, BottomTextButton, BottomTextTemplateButton, BottomT
 const BottomText = (props) => {
   return (
     <>
-      <BottomTextTemplate split={props.split} addHeight={props.addHeight}>
+      <BottomTextTemplate split={props.split} left={props.left}>
         {props.left ? (
           <>
             <BottomTextLeft>
               <BottomTextText>{props.text}</BottomTextText>
               <BottomTextTemplateButton split={props.split}>
-                <BottomTextButtonScroll to="programs" spy={true} smooth={true} offset={-70} duration={500}>
+                <BottomTextButtonScroll to="heroHome" spy={true} smooth={true} offset={-70} duration={500}>
                   {props.button}
                 </BottomTextButtonScroll>
               </BottomTextTemplateButton>
@@ -25,7 +25,7 @@ const BottomText = (props) => {
           <>
             {props.split ? (
               <BottomTextRight>
-                <BottomTextRightImage src={props.image} addHeight={props.addHeight} />
+                <BottomTextRightImage src={props.image} />
               </BottomTextRight>
             ) : null}
             <BottomTextLeft>

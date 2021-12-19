@@ -11,7 +11,7 @@ const Dropdown = (props) => {
           {". "}
           {props.name}
         </h6>
-        <div style={{ marginLeft: "auto" }}>
+        <div>
           <DropDownSymbol open={open} />
         </div>
       </DropdownSection>

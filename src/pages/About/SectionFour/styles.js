@@ -2,14 +2,26 @@ import styled from "styled-components";
 
 export const SectionFourTemplate = styled.div`
   background-color: ${(props) => props.theme.color.black.A50};
-  display: grid;
-  grid-template-columns: auto auto auto;
+  padding: 100px 0;
+  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
+    padding: 70px 0;
+  }
+`;
+
+export const SectionFourContainer = styled.div`
+  width: 80%;
+  display: flex;
+  column-gap: 40px;
   margin: auto;
   justify-content: center;
   align-items: center;
-  padding: 100px 350px;
-  grid-column-gap: 80px;
+  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
+    flex-direction: column;
+    row-gap: 40px;
+  }
 `;
+
+export const SectionFourText = styled.div``;
 
 export const SectionFourTitle = styled.h2`
   text-align: center;

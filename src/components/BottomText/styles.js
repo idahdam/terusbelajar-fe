@@ -14,7 +14,7 @@ export const BottomTextTemplate = styled.div`
   justify-content: center;
   text-align: ${(props) => (props.split ? "" : "center")};
   @media screen and (max-width: ${theme.screen.sm}) {
-    flex-direction: column-reverse;
+    flex-direction: ${(props) => (props.left ? "column-reverse" : "column")};
   }
   @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
     padding-top: 50px;
@@ -63,8 +63,8 @@ export const BottomTextRightImage = styled.div`
   background-image: url(${(props) => props.src});
   background-repeat: no-repeat;
   background-position: center;
-  background-size: ${(props) => (props.addHeight ? "cover" : "contain")};
-  height: 388px;
+  background-size: contain;
+  height: 400px;
   width: 400px;
   @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
     width: 250px;

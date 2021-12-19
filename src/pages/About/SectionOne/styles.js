@@ -12,10 +12,17 @@ export const SectionOneImage = styled.div`
   @media screen and (max-width: 1366px) {
     height: 500px;
   }
+  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
+    background-image: url(${(props) => props.srcMobile});
+  }
 `;
 
 export const SectionOneText = styled.h1`
   font-family: "Raleway Bold";
   width: 50%;
   text-align: center;
+  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
+    width: 100%;
+    color: #ff8f89;
+  }
 `;

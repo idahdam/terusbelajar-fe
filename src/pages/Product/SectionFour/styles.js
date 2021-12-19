@@ -12,6 +12,7 @@ export const SectionFourTemplate = styled.div`
   @media screen and (max-width: ${(props) => props.theme.screen.md}) {
     width: 80%;
     flex-direction: column;
+    margin-top: 70px;
   }
 `;
 
@@ -30,6 +31,7 @@ export const SectionFourTemplateTestimonies = styled.div`
   @media screen and (max-width: ${(props) => props.theme.screen.md}) {
     width: 80%;
     flex-direction: column;
+    row-gap: 24px;
   }
 `;
 
@@ -52,6 +54,6 @@ export const SectionFourSliderTestimonial = styled.div`
     padding: 10px 10px 30px 10px;
   }
   @media screen and (max-width: ${(props) => props.theme.screen.md}) {
-    width: 100%;
+    max-width: 100%;
   }
 `;

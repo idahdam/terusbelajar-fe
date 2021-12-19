@@ -6,13 +6,15 @@ export const DropdownSection = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  text-align: start;
+  justify-content: space-between;
   width: 100%;
-  padding: 4px 48px;
   border-radius: 4px;
   cursor: pointer;
   background-color: ${(props) => props.theme.color.orange.A500};
   color: ${(props) => props.theme.color.white};
   margin-bottom: ${(props) => (props.open ? "0" : "24")}px;
+  padding: 4px 48px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -21,6 +23,9 @@ export const DropdownSection = styled.div`
   user-select: none;
   &:hover {
     background-color: ${(props) => props.theme.color.orange.A500}EE;
+  }
+  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
+    padding: 4px 24px;
   }
 `;
 

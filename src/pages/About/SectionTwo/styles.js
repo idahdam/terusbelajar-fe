@@ -7,6 +7,9 @@ export const SectionTwoTemplate = styled.div`
   align-items: center;
   justify-content: center;
   width: 30%;
+  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
+    width: 80%;
+  }
 `;
 
 export const SectionTwoText = styled.h2`

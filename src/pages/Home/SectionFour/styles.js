@@ -11,6 +11,7 @@ export const SectionFourTemplate = styled.div`
   column-gap: 24px;
   @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
     width: 100%;
+    margin-top: 70px;
   }
 `;
 
