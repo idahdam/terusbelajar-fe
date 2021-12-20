@@ -7,14 +7,7 @@ const SectionThree = (props) => {
     <>
       <SectionThreeCard>
         {props.data.map((item, index) => {
-          return (
-            <ProductType
-              title={item.title}
-              body={item.body}
-              benefitsData={item.benefitsData}
-              key={index}
-            />
-          );
+          return <ProductType title={item.title} price={item.price} benefitsData={item.benefitsData} key={index} />;
         })}
       </SectionThreeCard>
     </>
