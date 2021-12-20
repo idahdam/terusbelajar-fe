@@ -24,8 +24,12 @@ const ProductType = (props) => {
           {props.benefitsData.map((item, index) => (
             <ProductTypeBenefitsList key={index}>
               <ProductTypeBenefitsImage />
-              <ProductTypeBenefitsHeader>{item.benefitsHeader}</ProductTypeBenefitsHeader>
-              <ProductTypeBenefitsText>{item.benefitsBody}</ProductTypeBenefitsText>
+              <ProductTypeBenefitsHeader>
+                {item.benefitsHeader}
+              </ProductTypeBenefitsHeader>
+              <ProductTypeBenefitsText>
+                {item.benefitsBody}
+              </ProductTypeBenefitsText>
             </ProductTypeBenefitsList>
           ))}
         </ProductTypeBenefits>
