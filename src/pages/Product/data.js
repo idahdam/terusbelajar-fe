@@ -40,7 +40,7 @@ export const datas = [
     SectionThree: [
       {
         title: "Kura Kura",
-        body: "59.900",
+        price: "59.900",
         register: "https://google.com",
         benefitsData: [
           {
@@ -62,7 +62,7 @@ export const datas = [
       },
       {
         title: "Kumbang Kumbang",
-        body: "79.900",
+        price: "79.900",
         register: "https://google.com",
         benefitsData: [
           {
@@ -84,7 +84,7 @@ export const datas = [
       },
       {
         title: "Paket Kunang Kunang",
-        body: "80k",
+        price: "80k",
         register: "https://google.com",
         benefitsData: [
           {
@@ -118,7 +118,7 @@ export const datas = [
       },
       {
         title: "Kupu Kupu",
-        body: "90k",
+        price: "90k",
         register: "https://google.com",
         benefitsData: [
           {
@@ -157,7 +157,7 @@ export const datas = [
       },
       {
         title: "Paket Kuda Kuda",
-        body: "100k",
+        price: "100k",
         register: "https://google.com",
         benefitsData: [
           {
@@ -323,7 +323,7 @@ export const datas = [
     SectionThree: [
       {
         title: "Paket Kangaroo",
-        body: "649.000",
+        price: "649.000",
         register: "https://google.com",
         benefitsData: [
           {
@@ -345,7 +345,7 @@ export const datas = [
       },
       {
         title: "Paket Koala",
-        body: "549.000",
+        price: "549.000",
         register: "https://google.com",
         benefitsData: [
           {
@@ -484,7 +484,7 @@ export const datas = [
     SectionThree: [
       {
         title: "Paket Maba",
-        body: "Gratis",
+        price: "Gratis",
         register: "https://google.com",
         benefitsData: [
           {
@@ -511,7 +511,7 @@ export const datas = [
       },
       {
         title: "Cumlaude",
-        body: "14.900",
+        price: "14.900",
         register: "https://google.com",
         benefitsData: [
           {
@@ -538,7 +538,7 @@ export const datas = [
       },
       {
         title: "Bundling Cumlaude Premium",
-        body: "44.900",
+        price: "44.900",
         register: "https://google.com",
         benefitsData: [
           {
@@ -565,7 +565,7 @@ export const datas = [
       },
       {
         title: "Mapres",
-        body: "19.900",
+        price: "19.900",
         register: "https://google.com",
         benefitsData: [
           {
@@ -597,7 +597,7 @@ export const datas = [
       },
       {
         title: "Bundling Mapres Premium",
-        body: "59.900",
+        price: "59.900",
         register: "https://google.com",
         benefitsData: [
           {

@@ -18,7 +18,7 @@ const ProductType = (props) => {
       <ProductTypeCard>
         <ProductTypeHeader>
           <ProductTypeTitle>{props.title}</ProductTypeTitle>
-          <ProductTypeBody>{props.body}</ProductTypeBody>
+          <ProductTypeBody>{props.price}</ProductTypeBody>
         </ProductTypeHeader>
         <ProductTypeBenefits>
           {props.benefitsData.map((item, index) => (
