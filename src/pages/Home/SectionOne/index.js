@@ -9,6 +9,8 @@ import {
   SectionOneDivCarousel,
 } from "./styles";
 
+//ini comment lagi hehe
+
 const SectionOne = () => {
   const [value, setValue] = useState(0);
   const slides = [
