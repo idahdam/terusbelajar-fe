@@ -14,7 +14,7 @@ async function http(method, endpoint, body = null, data) {
     response = await axios({
       url: `${BASE_URL}/${endpoint}`,
       method: method.toUpperCase(),
-      headers,
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       params: body,
       data: data,
     });
