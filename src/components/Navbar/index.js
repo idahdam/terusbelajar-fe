@@ -44,7 +44,15 @@ const Navbar = (props) => {
   return (
     <Nav>
       <NavContent>
-        <Link style={{ display: "block" }} to="/">
+        <Link
+          style={{ display: "block" }}
+          to="/"
+          onClick={() => {
+            setHome(true);
+            setProgram(false);
+            setAboutUs(false);
+          }}
+        >
           <NavLogo src={logo} alt="Logo Terus Belajar" />
         </Link>
         <MobileIcon>
