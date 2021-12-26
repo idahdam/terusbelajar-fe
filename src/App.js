@@ -38,7 +38,7 @@ function App() {
               />
               <Route
                 path="/program/try-out"
-                element={<Product id={2} />}
+                element={<Product id={3} />}
                 exact
               />
               <Route path="/about-us" element={<About />} exact />
