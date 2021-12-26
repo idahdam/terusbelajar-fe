@@ -9,7 +9,7 @@ import {
   SectionOneDivCarousel,
 } from "./styles";
 
-const SectionOne = () => {
+const SectionOne = (props) => {
   const [value, setValue] = useState(0);
   const slides = [
     <CarouselItem
@@ -34,7 +34,18 @@ const SectionOne = () => {
       <SectionOneDivCarousel>
         <Carousel
           value={value}
-          slides={slides}
+          slides={props.data.map((item) => {
+            return (
+              <CarouselItem
+                title={item.title}
+                titleBold={item.title}
+                description={item.description}
+                buttonTitle={item.button}
+                link={item.Link}
+                image={item.hero_image.data.attributes.url}
+              />
+            );
+          })}
           onChange={setValue}
           plugins={[
             "infinite",

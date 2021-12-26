@@ -9,22 +9,27 @@ import {
   SectionFiveTitle,
 } from "./styles";
 
-const SectionFive = () => {
+const SectionFive = (props) => {
   return (
     <SectionFiveContent>
       <SectionFiveTemplate>
         <SectionFiveApart>
-          <SectionFiveTitle>Detail Layanan</SectionFiveTitle>
+          <SectionFiveTitle>{props.data[0].title}</SectionFiveTitle>
           <SectionFiveDescription>
-            Condimentum leo tincidunt malesuada enim, sagittis, vestibulum amet
-            in. Lorem sed sit lectus massa risus, nibh.
+            {props.data[0].description}
           </SectionFiveDescription>
-          <SectionFiveButton to="/">Hubungi Kami</SectionFiveButton>
+          <SectionFiveButton to="/">{props.data[0].button}</SectionFiveButton>
         </SectionFiveApart>
         <SectionFiveApart>
-          <Dropdown num="1" name="Hello" children="Lorem ipsum" />
-          <Dropdown num="1" name="Hello" children="Lorem ipsum" />
-          <Dropdown num="1" name="Hello" children="Lorem ipsum" />
+          {props.data[0].faqItems.map((item, index) => {
+            return (
+              <Dropdown
+                num={index + 1}
+                name={item.title}
+                children={item.description}
+              />
+            );
+          })}
         </SectionFiveApart>
       </SectionFiveTemplate>
     </SectionFiveContent>

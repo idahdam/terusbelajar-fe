@@ -1,10 +1,16 @@
 import React from "react";
 import { BottomText } from "../../../components";
 
-const SectionSix = () => {
+const SectionSix = (props) => {
   return (
     <>
-      <BottomText split={false} text={"Bergabung bersama Terusbelajar dan dapatkan berbagai kemudahan dalam mengejar kampus tujuan!"} left={true} button={"Lihat Layanan"} />
+      <BottomText
+        split={props.data[0].split}
+        text={props.data[0].title}
+        left={props.data[0].left}
+        button={props.data[0].button}
+        link={props.data[0].Link}
+      />
     </>
   );
 };
