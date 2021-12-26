@@ -6,7 +6,7 @@ export const SectionTwoTemplate = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 30%;
+  width: 80%;
   @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
     width: 80%;
   }
@@ -22,4 +22,5 @@ export const SectionTwoDesc = styled.div`
   margin-top: 24px;
   font-family: "Glacial Regular";
   text-align: center;
+  font-size: 40px;
 `;

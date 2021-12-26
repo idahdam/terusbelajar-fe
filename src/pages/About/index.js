@@ -8,22 +8,32 @@ import { aboutUsService } from "../../services/aboutUsService";
 
 const AboutUs = () => {
   const [aboutUsData, setAboutUsData] = useState([]);
+  let aboutUs = true;
 
   useEffect(() => {
     const fetchAboutUs = async () => {
       const response = await aboutUsService.getAboutUs();
-      const data = response.data;
-      console.log(data);
+      // console.log(data.data);
+      if (aboutUs) {
+        setAboutUsData(response.data.data.attributes);
+        console.log(response.data.data.attributes);
+      }
     };
 
     fetchAboutUs();
-  }, [aboutUsData]);
+
+    return () => {
+      aboutUs = false;
+    };
+  }, []);
+
+  console.log(aboutUsData);
 
   return (
     <>
       <SectionOne />
-      <SectionTwo />
-      <SectionThree />
+      <SectionTwo data={aboutUsData} />
+      <SectionThree data={aboutUsData.imageText} />
       <SectionFour />
       <SectionFive />
     </>
