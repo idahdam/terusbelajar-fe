@@ -84,7 +84,7 @@ export const ModalFormInput = styled.input`
   height: 40px;
   text-indent: 10px;
   border-radius: 4px;
-  border-color: rgba(0, 0, 0, 0.15);
+  border-color: rgba(0; 0; 0; 0.15);
   &:focus {
     border-color: ${(props) => props.theme.color.blue.A500};
   }
@@ -166,4 +166,23 @@ export const CancelButton = styled.button`
   justify-content: center;
   font-family: "Glacial Bold";
   border-radius: 4px;
+`;
+
+export const ThumbsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const Thumb = styled.div`
+  display: flex;
+  border-radius: 2px;
+  border: 1px solid #eaeaea;
+  height: 125px;
+  box-sizing: border-box;
+`;
+
+export const ThumbImg = styled.img`
+  display: block;
+  width: auto;
+  height: 100%;
 `;

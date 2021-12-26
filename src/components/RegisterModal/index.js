@@ -18,6 +18,10 @@ import {
   ModalPrice,
   ConfirmButton,
   CancelButton,
+  ThumbsContainer,
+  Thumb,
+  ThumbInner,
+  ThumbImg,
 } from "./styles";
 import { ProductType } from "..";
 import { useDropzone } from "react-dropzone";
@@ -26,35 +30,6 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const portalRoot = document.getElementById("portal-root");
-
-const thumbsContainer = {
-  display: "flex",
-  flexDirection: "row",
-};
-
-const thumb = {
-  display: "inline-flex",
-  borderRadius: 2,
-  border: "1px solid #eaeaea",
-  marginBottom: 8,
-  marginRight: 8,
-  width: 100,
-  height: 100,
-  padding: 4,
-  boxSizing: "border-box",
-};
-
-const thumbInner = {
-  display: "flex",
-  minWidth: 0,
-  overflow: "hidden",
-};
-
-const img = {
-  display: "block",
-  width: "auto",
-  height: "100%",
-};
 
 const RegisterModal = ({ isOpen, close, data }) => {
   let pathname = "";
@@ -256,15 +231,13 @@ const RegisterModal = ({ isOpen, close, data }) => {
                   <h6 style={{ padding: 0 }}>Mendukung .jpg dan .png.</h6>
                 </>
               ) : (
-                <div style={thumbsContainer}>
+                <ThumbsContainer>
                   {files.map((file) => (
-                    <div style={thumb} key={file.name}>
-                      <div style={thumbInner}>
-                        <img src={file.preview} style={img} />
-                      </div>
-                    </div>
+                    <Thumb key={file.name}>
+                      <ThumbImg src={file.preview} />
+                    </Thumb>
                   ))}
-                </div>
+                </ThumbsContainer>
               )}
             </ContainerInput>
           </ModalFileInput>
