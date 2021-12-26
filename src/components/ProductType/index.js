@@ -27,13 +27,13 @@ const ProductType = (props) => {
           {props.benefitsData.map((item, index) => (
             <ProductTypeBenefitsList key={index} modal={props.modal}>
               <ProductTypeBenefitsImage />
-              <ProductTypeBenefitsHeader>
-                {item.title}
-              </ProductTypeBenefitsHeader>
+              <ProductTypeBenefitsHeader
+                dangerouslySetInnerHTML={{ __html: item.title }}
+              ></ProductTypeBenefitsHeader>
               {props.modal ? null : (
-                <ProductTypeBenefitsText>
-                  {item.description}
-                </ProductTypeBenefitsText>
+                <ProductTypeBenefitsText
+                  dangerouslySetInnerHTML={{ __html: item.description }}
+                ></ProductTypeBenefitsText>
               )}
             </ProductTypeBenefitsList>
           ))}

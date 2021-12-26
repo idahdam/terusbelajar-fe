@@ -23,16 +23,16 @@ const Footer = () => {
           Copyrights {new Date().getFullYear()} Terus Belajar
         </h6>
         <FooterSocmed>
-          <a href="https://www.linkedin.com/">
+          <a href="https://www.linkedin.com/company/terusbelajar">
             <FaLinkedinIn />
           </a>
-          <a href="https://www.instagram.com/">
+          <a href="https://www.instagram.com/terusbelajar.idn">
             <SiInstagram />
           </a>
           <a href="https://www.tiktok.com">
             <SiTiktok />
           </a>
-          <a href="https://wa.me/XXXX">
+          <a href="https://wa.me/087871770818">
             <FaWhatsapp />
           </a>
         </FooterSocmed>

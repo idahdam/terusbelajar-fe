@@ -1,6 +1,12 @@
 import React from "react";
 
-import { TestimonyBoxWidth, TestimonyBoxContainer, TestimonyBoxImage, WhyUsTitle, WhyUsDesc } from "./styles";
+import {
+  TestimonyBoxWidth,
+  TestimonyBoxContainer,
+  TestimonyBoxImage,
+  WhyUsTitle,
+  WhyUsDesc,
+} from "./styles";
 
 const TestimonyBox = (props) => {
   return (
@@ -8,14 +14,16 @@ const TestimonyBox = (props) => {
       {props.program ? (
         <>
           <TestimonyBoxImage src={props.image} />
-          <WhyUsTitle italic={props.italic}>{props.title}</WhyUsTitle>
-          <WhyUsDesc>{props.text}</WhyUsDesc>
+          <WhyUsTitle>{props.title}</WhyUsTitle>
+          <WhyUsDesc
+            dangerouslySetInnerHTML={{ __html: props.text }}
+          ></WhyUsDesc>
         </>
       ) : (
         <>
           <TestimonyBoxContainer>
             <TestimonyBoxImage src={props.image} />
-            <h6>"{props.testi}"</h6>
+            <h6 dangerouslySetInnerHTML={{ __html: props.testi }}></h6>
             <div>
               <h6 className="bold">{props.name}</h6>
               <p>{props.title}</p>

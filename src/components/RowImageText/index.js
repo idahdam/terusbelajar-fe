@@ -17,7 +17,9 @@ const RowImageText = (props) => {
         <RowImageBoxItem left={props.left}>
           <RowImageImage src={props.image} />
           <RowImageBoxText>
-            <RowImageBoxTitle>{props.title}</RowImageBoxTitle>
+            <RowImageBoxTitle
+              dangerouslySetInnerHTML={{ __html: props.title }}
+            ></RowImageBoxTitle>
             <RowImageBoxDescription
               dangerouslySetInnerHTML={{ __html: props.description }}
             ></RowImageBoxDescription>
