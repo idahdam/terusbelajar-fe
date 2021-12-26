@@ -14,22 +14,17 @@ const SectionFour = (props) => {
     <>
       <SectionFourTemplate>
         <SectionFourTestimony width={"100%"}>
-          <SectionFourTitle>Yuk Buruan Gabung!</SectionFourTitle>
-          <h6>
-            Dapetin cerita dari kampus kampus terbaik dan pelatihan pengembangan
-            diri langsung dari mahasiswa mahasiswi berpengalaman dari seluruh
-            Indonesia!
-          </h6>
+          <SectionFourTitle>{props.data.title}</SectionFourTitle>
+          <h6>{props.data.description}</h6>
         </SectionFourTestimony>
       </SectionFourTemplate>
       <SectionFourTemplateTestimonies>
-        {props.data.map((item) => {
+        {props.data.benefit_item.map((item) => {
           return (
             <SectionFourSliderTestimonial>
               <TestimonyBox
                 title={item.title}
                 text={item.description}
-                image={item.image}
                 program={true}
               />
             </SectionFourSliderTestimonial>
