@@ -1,13 +1,13 @@
 import React from "react";
 import { SectionTwoTemplate, SectionTwoText, SectionTwoDesc } from "./styles";
 
-const SectionTwo = ({ data }) => {
+const SectionTwo = (props) => {
   // console.log(data.attributes);
   return (
     <>
       <SectionTwoTemplate>
-        <SectionTwoText></SectionTwoText>
-        <SectionTwoDesc></SectionTwoDesc>
+        <SectionTwoText>{props.data.vision_title}</SectionTwoText>
+        <SectionTwoDesc>{props.data.vision_description}</SectionTwoDesc>
       </SectionTwoTemplate>
     </>
   );

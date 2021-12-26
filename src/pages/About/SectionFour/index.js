@@ -1,23 +1,27 @@
 import React from "react";
-import { SectionFourTemplate, SectionFourContainer, SectionFourText, SectionFourTitle, SectionFourDesc } from "./styles";
+import {
+  SectionFourTemplate,
+  SectionFourContainer,
+  SectionFourText,
+  SectionFourTitle,
+  SectionFourDesc,
+} from "./styles";
 
-const SectionFour = () => {
+const SectionFour = (props) => {
   return (
     <>
       <SectionFourTemplate>
         <SectionFourContainer>
-          <SectionFourText>
-            <SectionFourTitle>100.000</SectionFourTitle>
-            <SectionFourDesc>Lorem Ipsum Sit Dolor Amet Vestibulum netus nullam leo a et sit quis arcu non.</SectionFourDesc>
-          </SectionFourText>
-          <SectionFourText>
-            <SectionFourTitle>5 Country</SectionFourTitle>
-            <SectionFourDesc>Lorem Ipsum Sit Dolor Amet Vestibulum netus nullam leo a et sit quis arcu non.</SectionFourDesc>
-          </SectionFourText>
-          <SectionFourText>
-            <SectionFourTitle>100+ Mentors</SectionFourTitle>
-            <SectionFourDesc>Lorem Ipsum Sit Dolor Amet Vestibulum netus nullam leo a et sit quis arcu non.</SectionFourDesc>
-          </SectionFourText>
+          {props.data.length !== 0
+            ? props.data.map((item) => {
+                return (
+                  <SectionFourText>
+                    <SectionFourTitle>{item.title}</SectionFourTitle>
+                    <SectionFourDesc>{item.description}</SectionFourDesc>
+                  </SectionFourText>
+                );
+              })
+            : null}
         </SectionFourContainer>
       </SectionFourTemplate>
     </>

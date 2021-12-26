@@ -13,7 +13,7 @@ const Home = () => {
   useEffect(() => {
     const fetchHome = async () => {
       const response = await homeService.getHome();
-      console.log(response.data.data.attributes);
+      // console.log(response.data.data.attributes);
       setHomeData(response.data.data.attributes);
     };
     fetchHome();

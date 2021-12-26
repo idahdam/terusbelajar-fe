@@ -28,11 +28,11 @@ const ProductType = (props) => {
             <ProductTypeBenefitsList key={index} modal={props.modal}>
               <ProductTypeBenefitsImage />
               <ProductTypeBenefitsHeader>
-                {item.benefitsHeader}
+                {item.title}
               </ProductTypeBenefitsHeader>
               {props.modal ? null : (
                 <ProductTypeBenefitsText>
-                  {item.benefitsBody}
+                  {item.description}
                 </ProductTypeBenefitsText>
               )}
             </ProductTypeBenefitsList>

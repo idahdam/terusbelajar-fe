@@ -4,7 +4,7 @@ const getPrograms = async () => {
   const body = {};
   const response = await gatewayHelper.http(
     "GET",
-    "programs??populate[hero][populate]=*&populate[bottom][populate]=*&populate[imageText][populate]=*&populate[benefitItems][populate]=*&populate[faq][populate]=*&populate[programCard][populate]=programCardItem.image",
+    "programs?populate[hero][populate]=*&populate[bottom][populate]=*&populate[imageText][populate]=*&populate[benefitItems][populate]=*&populate[faq][populate]=*&populate[programCard][populate]=programCardItem.image",
     body
   );
   return response;

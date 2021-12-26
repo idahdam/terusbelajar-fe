@@ -7,7 +7,7 @@ const SectionSix = (props) => {
       <BottomText
         image={props.data.image}
         split={props.data.split}
-        text={props.data.text}
+        text={props.data.title}
         left={props.data.left}
         link={props.data.link}
         button={props.data.button}

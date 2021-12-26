@@ -11,24 +11,7 @@ import {
 
 const SectionOne = (props) => {
   const [value, setValue] = useState(0);
-  const slides = [
-    <CarouselItem
-      title="Memudahkan Setiap Pembelajar Untuk "
-      titleBold="#TerusBelajar"
-      description="Dengan layanan dan program yang aksesibel untuk semua, kamu bisa menyiapkan diri  dengan lebih mudah untuk memasuki dunia kampus di dalam dan di luar negeri bersama Terusbelajar!"
-      buttonTitle="Lihat layanan"
-      link="/"
-      image={imageHero}
-    />,
-    <CarouselItem
-      title="Platform Eksplorasi "
-      titleBold="Kampus dan Dunia Perkuliahan"
-      description="Ketahui lingkungan kampus dan kehidupan mahasiswa di berbagai universitas terbaik di dalam dan di luar negeri bersama Terusbelajar!"
-      buttonTitle="Lihat layanan"
-      link="/"
-      image={imageHero}
-    />,
-  ];
+
   return (
     <SectionOneDiv id="heroHome">
       <SectionOneDivCarousel>
@@ -60,7 +43,7 @@ const SectionOne = (props) => {
         />
       </SectionOneDivCarousel>
       <SectionOneDivDots>
-        <Dots value={value} onChange={setValue} number={slides.length} />
+        <Dots value={value} onChange={setValue} number={props.data.length} />
       </SectionOneDivDots>
     </SectionOneDiv>
   );

@@ -11,7 +11,7 @@ const SectionThree = (props) => {
             <ProductType
               title={item.title}
               price={item.price}
-              benefitsData={item.benefitsData}
+              benefitsData={item.programCardItem}
               key={index}
               // modalButton={true}
             />

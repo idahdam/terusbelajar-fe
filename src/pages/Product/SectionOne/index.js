@@ -9,18 +9,17 @@ import {
 } from "./styles";
 
 const SectionOne = (props) => {
-  // console.log(props);
   const [value, setValue] = useState(0);
   const slides = props.data.map((item) => {
     return (
       <>
         <CarouselItem
           title={item.title}
-          titleBold={item.titleBold}
+          titleBold={item.title}
           description={item.description}
-          buttonTitle={item.buttonTitle}
-          link={item.link}
-          image={item.image}
+          buttonTitle={item.button}
+          link={item.Link}
+          image={item.hero_image.data.attributes.url}
         />
         ,
       </>
