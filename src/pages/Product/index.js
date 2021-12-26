@@ -26,7 +26,7 @@ const Product = (props) => {
       <SectionOne data={programData.hero} />
       <SectionTwo data={programData.imageText} />
       <SectionThree data={programData.programCard} />
-      <SectionFour data={programData.benefitItems} />
+      <SectionFour data={programData.benefits} />
       <SectionFive data={programData.faq} />
       <SectionSix data={programData.bottom} />
     </>

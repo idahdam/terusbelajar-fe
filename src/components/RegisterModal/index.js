@@ -107,8 +107,8 @@ const RegisterModal = ({ isOpen, close, data }) => {
       alert("Please fill all the details!");
     } else {
       Swal.fire({
-        title: "Submit all of the data?",
-        text: "Make sure you have checked all of the data!",
+        title: "Submit semua data?",
+        text: "Pastikan semua data sudah valid!",
         icon: "warning",
         showCancelButton: true,
         confirmButtonColor: "#3085d6",
@@ -152,7 +152,7 @@ const RegisterModal = ({ isOpen, close, data }) => {
           Swal.fire({
             icon: "success",
             title: "Submitted!",
-            html: "Thank you! Your ticket will be processed via email.",
+            html: "Pesanan anda akan segera diproses.",
             showConfirmButton: true,
           }).then((result) => {
             if (result.isConfirmed || result.isDismissed) {
@@ -186,6 +186,13 @@ const RegisterModal = ({ isOpen, close, data }) => {
         return close();
       }
     };
+
+    if (!isOpen) {
+      setName(null);
+      setEmail(null);
+      setPhoneNumber(null);
+      setFiles([]);
+    }
     document.addEventListener("click", handleOutsideClick);
 
     return () => {
