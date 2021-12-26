@@ -2,10 +2,17 @@ import React from "react";
 import { BottomText } from "../../../components";
 import aboutUsThree from "../../../assets/images/aboutUs3.png";
 
-const SectionFive = () => {
+const SectionFive = (props) => {
   return (
     <>
-      <BottomText image={aboutUsThree} split={true} text={"Eu sed egestas quam egestas risus, ornare sit nunc"} left={false} button={"Join Us"} link={"register"} />
+      <BottomText
+        image={props.data.bottom.image.data.attributes.url}
+        split={props.data.bottom.split}
+        text={props.data.bottom.title}
+        left={props.data.bottom.left}
+        button={props.data.bottom.button}
+        link={props.data.bottom.Link}
+      />
     </>
   );
 };

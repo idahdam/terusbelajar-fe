@@ -10,9 +10,10 @@ const SectionThree = (props) => {
           return (
             <ProductType
               title={item.title}
-              body={item.body}
-              benefitsData={item.benefitsData}
+              price={item.price}
+              benefitsData={item.programCardItem}
               key={index}
+              // modalButton={true}
             />
           );
         })}

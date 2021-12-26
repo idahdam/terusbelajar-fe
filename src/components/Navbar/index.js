@@ -25,20 +25,34 @@ const Navbar = (props) => {
   const [program, setProgram] = useState(false);
   const [aboutUs, setAboutUs] = useState(false);
   const { pathname } = useLocation();
-
+  console.log(pathname);
   useEffect(() => {
     if (pathname === "/") {
       setHome(true);
+      setProgram(false);
+      setAboutUs(false);
     } else if (pathname === "/about-us") {
+      setHome(false);
       setAboutUs(true);
+      setProgram(false);
     } else {
+      setHome(false);
+      setAboutUs(false);
       setProgram(true);
     }
   }, []);
   return (
     <Nav>
       <NavContent>
-        <Link style={{ display: "block" }} to="/">
+        <Link
+          style={{ display: "block" }}
+          to="/"
+          onClick={() => {
+            setHome(true);
+            setProgram(false);
+            setAboutUs(false);
+          }}
+        >
           <NavLogo src={logo} alt="Logo Terus Belajar" />
         </Link>
         <MobileIcon>
@@ -111,12 +125,5 @@ const Navbar = (props) => {
     </Nav>
   );
 };
-// const mapStateToProps = (state) => {
-//   return {
-//     authentication: state.auth,
-//     error: state.error,
-//   };
-// };
 
-// export default connect(mapStateToProps, { logout })(Navbar);
 export default Navbar;

@@ -7,10 +7,10 @@ const SectionTwo = (props) => {
       {props.data.map((item) => {
         return (
           <RowImageText
-            image={item.image}
-            left={item.left}
+            image={item.image.data.attributes.url}
+            left={item.position}
             title={item.title}
-            description={item.description}
+            description={item.Description}
           />
         );
       })}

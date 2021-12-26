@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   ProductTypeCard,
   ProductTypeHeader,
@@ -11,25 +11,43 @@ import {
   ProductTypeBenefitsText,
   ProductTypeRegister,
 } from "./styles";
+import RegisterModal from "../RegisterModal";
 
 const ProductType = (props) => {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <>
-      <ProductTypeCard>
+      <ProductTypeCard modal={props.modal}>
         <ProductTypeHeader>
           <ProductTypeTitle>{props.title}</ProductTypeTitle>
-          <ProductTypeBody>{props.body}</ProductTypeBody>
+          <ProductTypeBody>{props.price}</ProductTypeBody>
         </ProductTypeHeader>
-        <ProductTypeBenefits>
+        <ProductTypeBenefits modal={props.modal}>
           {props.benefitsData.map((item, index) => (
-            <ProductTypeBenefitsList key={index}>
+            <ProductTypeBenefitsList key={index} modal={props.modal}>
               <ProductTypeBenefitsImage />
-              <ProductTypeBenefitsHeader>{item.benefitsHeader}</ProductTypeBenefitsHeader>
-              <ProductTypeBenefitsText>{item.benefitsBody}</ProductTypeBenefitsText>
+              <ProductTypeBenefitsHeader
+                dangerouslySetInnerHTML={{ __html: item.title }}
+              ></ProductTypeBenefitsHeader>
+              {props.modal ? null : (
+                <ProductTypeBenefitsText
+                  dangerouslySetInnerHTML={{ __html: item.description }}
+                ></ProductTypeBenefitsText>
+              )}
             </ProductTypeBenefitsList>
           ))}
         </ProductTypeBenefits>
-        <ProductTypeRegister to="/register">Register</ProductTypeRegister>
+        {props.modal ? null : (
+          <ProductTypeRegister onClick={() => setOpen(true)}>
+            Register
+          </ProductTypeRegister>
+        )}
+        <RegisterModal
+          isOpen={isOpen}
+          close={() => setOpen(false)}
+          data={props}
+        ></RegisterModal>
       </ProductTypeCard>
     </>
   );

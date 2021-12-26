@@ -1,12 +1,14 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const ProductTypeCard = styled.div`
-  width: 100%;
+  width: ${(props) => (props.modal ? "65%" : "20%")};
   background-color: ${(props) => props.theme.color.white};
   border-radius: 4px;
   flex-direction: column;
   display: flex;
+  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
+    width: 100%;
+  }
 `;
 
 export const ProductTypeHeader = styled.div`
@@ -31,11 +33,11 @@ export const ProductTypeBody = styled.h6`
   font-family: "Glacial Regular";
   padding-bottom: 0;
   width: 80%;
+  color: black;
 `;
 
 export const ProductTypeBenefits = styled.div`
-  height: 500px;
-  margin-top: 10px;
+  height: ${(props) => (props.modal ? "300px" : "500px")};
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -46,7 +48,7 @@ export const ProductTypeBenefits = styled.div`
 export const ProductTypeBenefitsList = styled.div`
   padding-top: 24px;
   width: 80%;
-  display: grid;
+  display: ${(props) => (props.modal ? "flex" : "grid")};
   font-family: Glacial Bold;
   grid-template-columns: auto auto;
   align-items: center;
@@ -72,7 +74,7 @@ export const ProductTypeBenefitsText = styled.div`
   color: rgba(0, 0, 0, 0.7);
 `;
 
-export const ProductTypeRegister = styled(Link)`
+export const ProductTypeRegister = styled.button`
   height: 40px;
   width: 80%;
   background-color: ${(props) => props.theme.color.orange.A500};

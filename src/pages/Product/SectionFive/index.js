@@ -10,6 +10,7 @@ import {
 } from "./styles";
 
 const SectionFive = (props) => {
+  // console.log(props);
   return (
     <SectionFiveContent>
       <SectionFiveTemplate>
@@ -18,17 +19,15 @@ const SectionFive = (props) => {
           <SectionFiveDescription>
             {props.data.description}
           </SectionFiveDescription>
-          <SectionFiveButton to={`${props.data.link}`}>
-            {props.data.button}
-          </SectionFiveButton>
+          <SectionFiveButton to="/">{props.data.button}</SectionFiveButton>
         </SectionFiveApart>
         <SectionFiveApart>
-          {props.data.items.map((item) => {
+          {props.data.faqItems.map((item, index) => {
             return (
               <Dropdown
-                num={item.num}
-                name={item.name}
-                children={item.children}
+                num={index + 1}
+                name={item.title}
+                children={item.description}
               />
             );
           })}
