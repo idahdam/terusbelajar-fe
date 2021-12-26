@@ -25,13 +25,19 @@ const Navbar = (props) => {
   const [program, setProgram] = useState(false);
   const [aboutUs, setAboutUs] = useState(false);
   const { pathname } = useLocation();
-
-  useEffect((pathname) => {
+  console.log(pathname);
+  useEffect(() => {
     if (pathname === "/") {
       setHome(true);
+      setProgram(false);
+      setAboutUs(false);
     } else if (pathname === "/about-us") {
+      setHome(false);
       setAboutUs(true);
+      setProgram(false);
     } else {
+      setHome(false);
+      setAboutUs(false);
       setProgram(true);
     }
   }, []);
@@ -111,12 +117,5 @@ const Navbar = (props) => {
     </Nav>
   );
 };
-// const mapStateToProps = (state) => {
-//   return {
-//     authentication: state.auth,
-//     error: state.error,
-//   };
-// };
 
-// export default connect(mapStateToProps, { logout })(Navbar);
 export default Navbar;
