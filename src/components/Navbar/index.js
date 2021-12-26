@@ -26,7 +26,7 @@ const Navbar = (props) => {
   const [aboutUs, setAboutUs] = useState(false);
   const { pathname } = useLocation();
 
-  useEffect(() => {
+  useEffect((pathname) => {
     if (pathname === "/") {
       setHome(true);
     } else if (pathname === "/about-us") {

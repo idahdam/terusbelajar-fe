@@ -13,6 +13,7 @@ const SectionThree = (props) => {
               price={item.price}
               benefitsData={item.benefitsData}
               key={index}
+              // modalButton={true}
             />
           );
         })}

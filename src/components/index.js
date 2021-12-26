@@ -10,3 +10,4 @@ export { default as Program } from "./Program";
 export { default as NotFoundComp } from "./NotFound";
 export { default as ProductType } from "./ProductType";
 export { default as BottomText } from "./BottomText";
+export { default as RegisterModal } from "./RegisterModal";

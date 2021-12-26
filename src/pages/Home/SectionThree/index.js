@@ -22,9 +22,7 @@ const SectionThree = () => {
             genggaman. Yuk lihat program dan layanan yang disediakan oleh
             Terusbelajar!
           </SectionThreeDescription>
-          <SectionThreeButton to="/register">
-            Daftar Sekarang
-          </SectionThreeButton>
+          <SectionThreeButton to="/">Daftar Sekarang</SectionThreeButton>
         </SectionThreeApart>
         <SectionThreeApart grid={true}>
           <Program
