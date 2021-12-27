@@ -32,7 +32,7 @@ const Footer = () => {
           <a href="https://www.tiktok.com">
             <SiTiktok />
           </a>
-          <a href="https://wa.me/087871770818">
+          <a href="https://wa.me/6287871770818">
             <FaWhatsapp />
           </a>
         </FooterSocmed>

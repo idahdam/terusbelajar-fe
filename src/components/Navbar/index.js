@@ -119,7 +119,9 @@ const Navbar = (props) => {
           >
             About Us
           </NavItem>
-          <NavItemButtonSign to="/">Register</NavItemButtonSign>
+          <NavItemButtonSign href="https://wa.me/6287871770818">
+            Contact Us
+          </NavItemButtonSign>
         </NavItemList>
       </NavContent>
     </Nav>

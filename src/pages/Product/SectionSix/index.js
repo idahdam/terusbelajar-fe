@@ -9,7 +9,7 @@ const SectionSix = (props) => {
         split={props.data.split}
         text={props.data.title}
         left={props.data.left}
-        link={props.data.link}
+        link={props.data.Link}
         button={props.data.button}
       />
     </>
