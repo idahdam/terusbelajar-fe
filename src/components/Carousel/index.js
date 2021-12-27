@@ -5,7 +5,7 @@ import {
   CarouselTemplate,
   CarouselHeader,
   CarouselHighlightText,
-  CarouselButton,
+  // CarouselButton,
   CarouselTitle,
   CarouselDesc,
   CarouselText,

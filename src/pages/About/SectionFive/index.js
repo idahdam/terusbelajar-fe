@@ -1,6 +1,5 @@
 import React from "react";
 import { BottomText } from "../../../components";
-import aboutUsThree from "../../../assets/images/aboutUs3.png";
 
 const SectionFive = (props) => {
   return (

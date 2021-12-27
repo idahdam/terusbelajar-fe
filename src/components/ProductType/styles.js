@@ -6,8 +6,8 @@ export const ProductTypeCard = styled.div`
   border-radius: 4px;
   flex-direction: column;
   display: flex;
-  @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
-    width: 100%;
+  @media screen and (max-width: ${(props) => props.theme.screen.sm}) {
+    width: ${(props) => (props.modal ? "90%" : "100%")};
   }
 `;
 
@@ -37,18 +37,26 @@ export const ProductTypeBody = styled.h6`
 `;
 
 export const ProductTypeBenefits = styled.div`
-  height: ${(props) => (props.modal ? "300px" : "500px")};
+  height: ${(props) => (props.modal ? "45vh" : "500px")};
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  @media screen and (max-width: 1366px) {
+    height: ${(props) => (props.modal ? "30vh" : "")};
+  }
+  @media screen and (max-width: ${(props) => props.theme.screen.sm}) {
+    height: ${(props) => (props.modal ? "fit-content" : "")};
+    overflow: visible;
+  }
 `;
 
 export const ProductTypeBenefitsList = styled.div`
   padding-top: 24px;
   width: 80%;
-  display: ${(props) => (props.modal ? "flex" : "grid")};
+  display: grid;
   font-family: Glacial Bold;
   grid-template-columns: auto auto;
   align-items: center;
