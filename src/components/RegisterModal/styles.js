@@ -92,6 +92,7 @@ export const ModalTitle = styled.h2`
     padding: 15px;
     color: white;
     border-bottom: 2px solid white;
+    background: transparent;
   }
 `;
 
