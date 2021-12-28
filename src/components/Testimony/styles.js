@@ -19,11 +19,14 @@ export const TestimonyBoxContainer = styled.div`
   justify-content: space-between;
 `;
 
-export const TestimonyBoxImage = styled.img`
+export const TestimonyBoxImage = styled.div`
   width: 80px;
   height: 80px;
   border-radius: 100%;
-  object-fit: cover;
+  background-size: cover;
+  background-image: url(${(props) => props.src});
+  background-repeat: no-repeat;
+  background-position: center;
 `;
 
 export const TestimonyRatingCenter = styled.div`

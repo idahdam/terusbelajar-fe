@@ -1,36 +1,23 @@
 import React from "react";
-import { TestimonyBox } from "../../../components";
-import {
-  SectionFourTestimony,
-  SectionFourTemplate,
-  SectionFourTemplateTestimonies,
-  SectionFourSliderTestimonial,
-  SectionFourTitle,
-} from "./styles";
+import { ProductType } from "../../../components";
+import { SectionFourCard } from "./styles";
 
 const SectionFour = (props) => {
-  // console.log(props.data);
   return (
     <>
-      <SectionFourTemplate>
-        <SectionFourTestimony width={"100%"}>
-          <SectionFourTitle>{props.data.title}</SectionFourTitle>
-          <h6>{props.data.description}</h6>
-        </SectionFourTestimony>
-      </SectionFourTemplate>
-      <SectionFourTemplateTestimonies>
-        {props.data.benefit_item.map((item) => {
+      <SectionFourCard id="productType">
+        {props.data.map((item, index) => {
           return (
-            <SectionFourSliderTestimonial>
-              <TestimonyBox
-                title={item.title}
-                text={item.description}
-                program={true}
-              />
-            </SectionFourSliderTestimonial>
+            <ProductType
+              title={item.title}
+              price={item.price}
+              benefitsData={item.programCardItem}
+              key={index}
+              // modalButton={true}
+            />
           );
         })}
-      </SectionFourTemplateTestimonies>
+      </SectionFourCard>
     </>
   );
 };

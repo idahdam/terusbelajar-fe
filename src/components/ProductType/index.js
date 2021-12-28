@@ -15,7 +15,7 @@ import RegisterModal from "../RegisterModal";
 
 const ProductType = (props) => {
   const [isOpen, setOpen] = useState(false);
-
+  console.log(props.benefitsData[0].image.data.attributes.url);
   return (
     <>
       <ProductTypeCard modal={props.modal}>
@@ -26,7 +26,7 @@ const ProductType = (props) => {
         <ProductTypeBenefits modal={props.modal}>
           {props.benefitsData.map((item, index) => (
             <ProductTypeBenefitsList key={index} modal={props.modal}>
-              <ProductTypeBenefitsImage />
+              <ProductTypeBenefitsImage src={item.image.data.attributes.url} />
               <ProductTypeBenefitsHeader
                 dangerouslySetInnerHTML={{ __html: item.title }}
               ></ProductTypeBenefitsHeader>

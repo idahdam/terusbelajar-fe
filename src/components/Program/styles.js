@@ -14,11 +14,13 @@ export const ProgramTitle = styled.div`
   margin-bottom: -7px;
 `;
 
-export const ProgramImage = styled.img`
+export const ProgramImage = styled.div`
   width: 64px;
   height: 64px;
-  border-radius: 100%;
-  object-fit: contain;
+  background-size: contain;
+  background-image: url(${(props) => props.src});
+  background-repeat: no-repeat;
+  background-position: center;
 `;
 
 export const ProgramCardContainer = styled(Link)`

@@ -43,14 +43,14 @@ export const RowImageImage = styled.div`
   background-position: center;
   background-size: contain;
   width: 45%;
-  height: 280px;
+  height: 250px;
   @media screen and (max-width: ${(props) => props.theme.screen.sm}) {
     width: 100%;
-    height: 250px;
+    height: 220px;
   }
   @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
     width: 100%;
-    height: 220px;
+    height: 200px;
   }
 `;
 
