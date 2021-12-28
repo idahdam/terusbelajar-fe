@@ -1,5 +1,15 @@
 import React from "react";
-import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarWrapperContainer, SidebarLink, SideBtnWrap, ButtonBottom, SidebarLinkScroll } from "./styles";
+import {
+  SidebarContainer,
+  Icon,
+  CloseIcon,
+  SidebarWrapper,
+  SidebarWrapperContainer,
+  SidebarLink,
+  SideBtnWrap,
+  ButtonBottom,
+  SidebarLinkScroll,
+} from "./styles";
 import { useLocation } from "react-router-dom";
 
 const Sidebar = ({ toggling, isOpen }) => {
@@ -17,7 +27,15 @@ const Sidebar = ({ toggling, isOpen }) => {
               <SideBtnWrap>Home</SideBtnWrap>
             </SidebarLink>
             {pathname === "/" ? (
-              <SidebarLinkScroll activeClass="active" to="programs" spy={true} smooth={true} offset={-70} duration={500} onClick={toggling}>
+              <SidebarLinkScroll
+                activeClass="active"
+                to="programs"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={toggling}
+              >
                 <SideBtnWrap>Program</SideBtnWrap>
               </SidebarLinkScroll>
             ) : null}
@@ -27,8 +45,8 @@ const Sidebar = ({ toggling, isOpen }) => {
           </SidebarWrapper>
 
           <div style={{ width: "50%", margin: "0 auto" }}>
-            <ButtonBottom to="/login" onClick={toggling}>
-              Register
+            <ButtonBottom href="https://wa.me/6287871770818" onClick={toggling}>
+              Contact Us
             </ButtonBottom>
           </div>
         </SidebarWrapperContainer>

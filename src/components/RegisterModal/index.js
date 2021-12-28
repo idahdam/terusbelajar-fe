@@ -109,8 +109,8 @@ const RegisterModal = ({ isOpen, close, data }) => {
       await axios
         .post(`${process.env.REACT_APP_API_URL}/upload`, formData)
         .then(async (res) => {
-          console.log(res);
-          console.log(pathname);
+          // console.log(res);
+          // console.log(pathname);
           await axios.post(`${process.env.REACT_APP_API_URL}/${pathname}`, {
             data: {
               status: "unpaid",

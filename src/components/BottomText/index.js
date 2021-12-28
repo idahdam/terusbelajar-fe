@@ -11,7 +11,7 @@ import {
 } from "./styles";
 
 const BottomText = (props) => {
-  console.log(props);
+  // console.log(props);
   return (
     <>
       <BottomTextTemplate split={props.split} left={props.left}>

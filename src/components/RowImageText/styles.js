@@ -6,7 +6,8 @@ export const RowImageTemplates = styled.div`
   width: 100%;
   margin: 0 auto;
   padding: 70px 0;
-  background-color: ${(props) => (props.white ? `${theme.color.white}` : `${theme.color.white}`)};
+  background-color: ${(props) =>
+    props.white ? `${theme.color.white}` : `${theme.color.white}`};
   @media screen and (max-width: ${(props) => props.theme.screen.sm}) {
     padding: 0;
   }
@@ -42,14 +43,14 @@ export const RowImageImage = styled.div`
   background-position: center;
   background-size: contain;
   width: 45%;
-  height: 388px;
+  height: 280px;
   @media screen and (max-width: ${(props) => props.theme.screen.sm}) {
     width: 100%;
-    height: 450px;
+    height: 250px;
   }
   @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
     width: 100%;
-    height: 320px;
+    height: 220px;
   }
 `;
 
