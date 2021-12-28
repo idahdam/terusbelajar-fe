@@ -18,7 +18,9 @@ const SectionFive = (props) => {
           <SectionFiveDescription>
             {props.data[0].description}
           </SectionFiveDescription>
-          <SectionFiveButton to="/">{props.data[0].button}</SectionFiveButton>
+          <SectionFiveButton href="https://wa.me/6287871770818">
+            {props.data[0].button}
+          </SectionFiveButton>
         </SectionFiveApart>
         <SectionFiveApart>
           {props.data[0].faqItems.map((item, index) => {

@@ -6,7 +6,7 @@ import {
   ModalContentLeft,
   ModalContentRight,
   CloseIcon,
-  ContentRightTitle,
+  ModalTitle,
   ModalForm,
   ModalFormTitle,
   ModalFormLabel,
@@ -20,7 +20,6 @@ import {
   CancelButton,
   ThumbsContainer,
   Thumb,
-  ThumbInner,
   ThumbImg,
 } from "./styles";
 import { ProductType } from "..";
@@ -180,7 +179,11 @@ const RegisterModal = ({ isOpen, close, data }) => {
   return ReactDOM.createPortal(
     <BackgroundBlur>
       <ModalContent ref={modalRef}>
-        <CloseIcon onClick={close} />
+        <ModalTitle>
+          Pembayaran
+          <CloseIcon onClick={close} />
+        </ModalTitle>
+
         <ModalContentLeft>
           <ContentLeftTitle>Plan</ContentLeftTitle>
           <ProductType
@@ -191,7 +194,6 @@ const RegisterModal = ({ isOpen, close, data }) => {
           />
         </ModalContentLeft>
         <ModalContentRight>
-          <ContentRightTitle>Pembayaran</ContentRightTitle>
           <ModalForm>
             <ModalFormTitle>Data Diri</ModalFormTitle>
             <ModalFormLabel>Nama Lengkap</ModalFormLabel>
@@ -216,7 +218,7 @@ const RegisterModal = ({ isOpen, close, data }) => {
               onChange={(event) => setPhoneNumber(event.target.value)}
             />
           </ModalForm>
-          <ModalFileInput style={{ marginTop: "10px" }}>
+          <ModalFileInput>
             <ModalFormTitle>Upload Bukti Transfer</ModalFormTitle>
             <ContainerInput
               {...getRootProps({ isDragActive, isDragAccept, isDragReject })}
@@ -241,16 +243,13 @@ const RegisterModal = ({ isOpen, close, data }) => {
               )}
             </ContainerInput>
           </ModalFileInput>
-          <ModalPrice style={{ marginBottom: "10px" }}>
+          <ModalPrice>
             <h6>Total</h6>
             <h6>Rp {data.price}</h6>
           </ModalPrice>
           Lakukan pembayaran sesuai harga yang tertera melalui transfer bank ke
           nomor rekening berikut: BNI 123124231 a.n. SALMAN
-          <ConfirmButton
-            style={{ marginTop: "10px" }}
-            onClick={() => areYouSure()}
-          >
+          <ConfirmButton onClick={() => areYouSure()}>
             Lakukan Pembayaran
           </ConfirmButton>
           <CancelButton onClick={close}>Batal</CancelButton>

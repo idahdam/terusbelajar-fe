@@ -5,7 +5,7 @@ import { SectionThreeCard } from "./styles";
 const SectionThree = (props) => {
   return (
     <>
-      <SectionThreeCard>
+      <SectionThreeCard id="productType">
         {props.data.map((item, index) => {
           return (
             <ProductType

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const SectionFiveTemplate = styled.div`
   width: 65%;
@@ -32,7 +31,7 @@ export const SectionFiveApart = styled.div`
   }
 `;
 
-export const SectionFiveButton = styled(Link)`
+export const SectionFiveButton = styled.a`
   display: block;
   background: ${(props) => props.theme.color.orange.A500};
   color: ${(props) => props.theme.color.white};

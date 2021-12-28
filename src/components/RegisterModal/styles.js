@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { GrClose } from "react-icons/gr";
+import { MdOutlineClose } from "react-icons/md";
 import { MdOutlineCloudUpload } from "react-icons/md";
+import theme from "../../styles/theme";
 
 export const BackgroundBlur = styled.div`
   width: 100vw;
@@ -23,6 +24,12 @@ export const ModalContent = styled.div`
   justify-content: center;
   border-radius: 10px;
   position: relative;
+  @media screen and (max-width: ${theme.screen.sm}) {
+    flex-direction: column;
+    width: 80%;
+    overflow: auto;
+    justify-content: flex-start;
+  }
 `;
 
 export const ModalContentLeft = styled.div`
@@ -32,36 +39,71 @@ export const ModalContentLeft = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  @media screen and (max-width: ${theme.screen.sm}) {
+    width: 100%;
+    overflow: visible;
+  }
+  padding: 50px 20px;
 `;
 
 export const ModalContentRight = styled.div`
+  margin-top: 50px;
   width: 50%;
   display: flex;
   flex-direction: column;
   padding: 20px 50px;
-  justify-content: space-between;
+  overflow: auto;
+  @media screen and (max-width: ${theme.screen.sm}) {
+    width: 100%;
+    overflow: visible;
+    padding: 20px 30px;
+    text-align: center;
+    margin-top: 0px;
+  }
 `;
 
-export const CloseIcon = styled(GrClose)`
+export const CloseIcon = styled(MdOutlineClose)`
   color: black;
-  position absolute;
+  position: absolute;
   top: 15px;
-  right 15px;
+  right: 10px;
   font-size: 24px;
   cursor: pointer;
+  @media screen and (max-width: ${theme.screen.sm}) {
+    color: white;
+  }
 `;
 
-export const ContentRightTitle = styled.h2`
+export const ModalTitle = styled.h2`
+  width: 42%;
+  margin-left: 50%;
+  background: ${(props) => props.theme.color.white};
+  margin-top: 15px;
   color: ${(props) => props.theme.color.blue.A600};
   font-family: "Raleway Bold";
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  @media screen and (max-width: ${theme.screen.sm}) {
+    margin-top: 0;
+    margin-left: 0;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    border-bottom: 2px solid white;
+    background: transparent;
+  }
 `;
 
 export const ContentLeftTitle = styled.h3`
   color: ${(props) => props.theme.color.white};
   font-size: 30px;
   font-family: "Raleway Bold";
-  padding-bottom: 40px;
+  margin-bottom: 10px;
+  @media screen and (max-width: ${theme.screen.sm}) {
+    margin-top: 30px;
+  }
 `;
 
 export const ModalForm = styled.form`
@@ -72,12 +114,14 @@ export const ModalForm = styled.form`
 export const ModalFormTitle = styled.h3`
   color: ${(props) => props.theme.color.black};
   font-family: "Raleway Bold";
+  margin-top: 10px;
+  margin-bottom: 5px;
 `;
 
 export const ModalFormLabel = styled.label`
   font-family: "Glacial Bold";
   color: ${(props) => props.theme.color.blue.A500};
-  padding: 5px 0px;
+  text-align: left;
 `;
 
 export const ModalFormInput = styled.input`
@@ -85,6 +129,8 @@ export const ModalFormInput = styled.input`
   text-indent: 10px;
   border-radius: 4px;
   border-color: rgba(0; 0; 0; 0.15);
+  margin-top: 5px;
+  margin-bottom: 10px;
   &:focus {
     border-color: ${(props) => props.theme.color.blue.A500};
   }
@@ -103,7 +149,9 @@ const getColor = (props) => {
   return props.theme.color.blue.A500;
 };
 
-export const ModalFileInput = styled.div``;
+export const ModalFileInput = styled.div`
+  margin-top: 10px;
+`;
 
 export const ContainerInput = styled.div`
   cursor: pointer;
@@ -119,6 +167,8 @@ export const ContainerInput = styled.div`
   transition: border 0.24s ease-in-out;
   padding-bottom: 20px;
   padding-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 `;
 
 export const UploadIcon = styled(MdOutlineCloudUpload)`
@@ -138,10 +188,11 @@ export const ModalPrice = styled.div`
   border-style: solid;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 10px;
 `;
 
 export const ConfirmButton = styled.button`
-  height: 40px;
+  padding: 10px;
   width: 100%;
   background-color: ${(props) => props.theme.color.orange.A500};
   color: ${(props) => props.theme.color.white};
@@ -150,10 +201,12 @@ export const ConfirmButton = styled.button`
   justify-content: center;
   font-family: "Glacial Bold";
   border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 `;
 
 export const CancelButton = styled.button`
-  height: 40px;
+  padding: 10px;
   width: 100%;
   color: ${(props) => props.theme.color.blue.A500};
   background-color: ${(props) => props.theme.color.white};

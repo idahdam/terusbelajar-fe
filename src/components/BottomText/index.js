@@ -1,7 +1,17 @@
 import React from "react";
-import { BottomTextTemplate, BottomTextButton, BottomTextTemplateButton, BottomTextText, BottomTextLeft, BottomTextRight, BottomTextRightImage, BottomTextButtonScroll } from "./styles";
+import {
+  BottomTextTemplate,
+  BottomTextButton,
+  BottomTextTemplateButton,
+  BottomTextText,
+  BottomTextLeft,
+  BottomTextRight,
+  BottomTextRightImage,
+  BottomTextButtonScroll,
+} from "./styles";
 
 const BottomText = (props) => {
+  console.log(props);
   return (
     <>
       <BottomTextTemplate split={props.split} left={props.left}>
@@ -10,7 +20,13 @@ const BottomText = (props) => {
             <BottomTextLeft>
               <BottomTextText>{props.text}</BottomTextText>
               <BottomTextTemplateButton split={props.split}>
-                <BottomTextButtonScroll to="heroHome" spy={true} smooth={true} offset={-70} duration={500}>
+                <BottomTextButtonScroll
+                  to={props.link}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
                   {props.button}
                 </BottomTextButtonScroll>
               </BottomTextTemplateButton>
@@ -31,7 +47,9 @@ const BottomText = (props) => {
             <BottomTextLeft>
               <BottomTextText>{props.text}</BottomTextText>
               <BottomTextTemplateButton split={props.split}>
-                <BottomTextButton to={`${props.link}`}>{props.button}</BottomTextButton>
+                <BottomTextButton to={`${props.link}`}>
+                  {props.button}
+                </BottomTextButton>
               </BottomTextTemplateButton>
             </BottomTextLeft>
           </>

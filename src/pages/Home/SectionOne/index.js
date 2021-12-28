@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Carousel, { Dots, autoplayPlugin } from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
-import imageHero from "../../../assets/images/backgroundHero.png";
 import { CarouselItem } from "../../../components";
 import {
   SectionOneDiv,

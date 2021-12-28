@@ -30,11 +30,10 @@ const ProductType = (props) => {
               <ProductTypeBenefitsHeader
                 dangerouslySetInnerHTML={{ __html: item.title }}
               ></ProductTypeBenefitsHeader>
-              {props.modal ? null : (
-                <ProductTypeBenefitsText
-                  dangerouslySetInnerHTML={{ __html: item.description }}
-                ></ProductTypeBenefitsText>
-              )}
+
+              <ProductTypeBenefitsText
+                dangerouslySetInnerHTML={{ __html: item.description }}
+              ></ProductTypeBenefitsText>
             </ProductTypeBenefitsList>
           ))}
         </ProductTypeBenefits>

@@ -100,7 +100,7 @@ export const NavItemScroll = styled(LinkScroll)`
   padding: ${(props) => (props.active ? "10px 5px 15px" : "10px 5px")};
 `;
 
-export const NavItemButtonSign = styled(Link)`
+export const NavItemButtonSign = styled.a`
   display: block;
   padding: 8px;
   margin: 0 5px;
