@@ -123,16 +123,18 @@ export const ProdukIcon = styled(BsFillBagFill)`
   margin-right: 10px;
 `;
 
-export const ButtonBottom = styled(LinkR)`
+export const ButtonBottom = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 8px 16px;
-  background: ${(props) => (props.call ? "#FFFFFF" : `${theme.color.orange.A500}`)};
+  background: ${(props) =>
+    props.call ? "#FFFFFF" : `${theme.color.orange.A500}`};
   border-radius: 10px;
   cursor: pointer;
   width: 100%;
-  border: ${(props) => (props.call ? `1px solid ${theme.color.orange.A500}` : "none")};
+  border: ${(props) =>
+    props.call ? `1px solid ${theme.color.orange.A500}` : "none"};
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;

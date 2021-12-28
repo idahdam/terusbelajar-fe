@@ -69,8 +69,10 @@ export const ProductTypeBenefitsImage = styled.div`
   grid-row-end: 3;
   width: 64px;
   height: 64px;
-  border-radius: 100%;
-  background-color: ${(props) => props.theme.color.orange.A400};
+  background-size: contain;
+  background-image: url(${(props) => props.src});
+  background-repeat: no-repeat;
+  background-position: center;
 `;
 
 export const ProductTypeBenefitsHeader = styled.div`

@@ -1,23 +1,36 @@
 import React from "react";
-import { ProductType } from "../../../components";
-import { SectionThreeCard } from "./styles";
+import { TestimonyBox } from "../../../components";
+import {
+  SectionThreeTestimony,
+  SectionThreeTemplate,
+  SectionThreeTemplateTestimonies,
+  SectionThreeSliderTestimonial,
+  SectionThreeTitle,
+} from "./styles";
 
 const SectionThree = (props) => {
+  // console.log(props.data);
   return (
     <>
-      <SectionThreeCard id="productType">
-        {props.data.map((item, index) => {
+      <SectionThreeTemplate>
+        <SectionThreeTestimony width={"100%"}>
+          <SectionThreeTitle>{props.data.title}</SectionThreeTitle>
+          <h6>{props.data.description}</h6>
+        </SectionThreeTestimony>
+      </SectionThreeTemplate>
+      <SectionThreeTemplateTestimonies>
+        {props.data.benefit_item.map((item) => {
           return (
-            <ProductType
-              title={item.title}
-              price={item.price}
-              benefitsData={item.programCardItem}
-              key={index}
-              // modalButton={true}
-            />
+            <SectionThreeSliderTestimonial>
+              <TestimonyBox
+                title={item.title}
+                text={item.description}
+                program={true}
+              />
+            </SectionThreeSliderTestimonial>
           );
         })}
-      </SectionThreeCard>
+      </SectionThreeTemplateTestimonies>
     </>
   );
 };
