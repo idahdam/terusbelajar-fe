@@ -26,21 +26,7 @@ function App() {
             <Sidebar toggling={toggling} isOpen={isOpen} />
             <Routes>
               <Route path="/" element={<Home />} exact />
-              <Route
-                path="/program/eksplorasi-kampus"
-                element={<Product id={1} />}
-                exact
-              />
-              <Route
-                path="/program/study-abroad"
-                element={<Product id={2} />}
-                exact
-              />
-              <Route
-                path="/program/try-out"
-                element={<Product id={3} />}
-                exact
-              />
+              <Route path="/program/:productType" element={<Product />} />
               <Route path="/about-us" element={<About />} exact />
               <Route path="*" element={<NotFound />} exact />
             </Routes>

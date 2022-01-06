@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import SectionOne from "./SectionOne";
 import SectionThree from "./SectionThree";
 import SectionTwo from "./SectionTwo";
@@ -7,13 +8,17 @@ import SectionFive from "./SectionFive";
 import SectionSix from "./SectionSix";
 import { programService } from "../../services/programService";
 
-const Product = (props) => {
+const Product = () => {
+  let { productType } = useParams();
   const [programData, setProgramData] = useState(null);
   useEffect(() => {
     const fetchProgram = async () => {
-      const response = await programService.getProgram(props.id);
-      setProgramData(response.data.data.attributes);
-      console.log("DATA", response.data.data.attributes);
+      const response = await programService.getPrograms();
+      response.data.data.forEach((program) => {
+        if (program.attributes.name === productType) {
+          setProgramData(program.attributes);
+        }
+      });
     };
 
     fetchProgram();

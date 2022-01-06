@@ -27,10 +27,23 @@ import { useDropzone } from "react-dropzone";
 import Swal from "sweetalert2";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { modalService } from "../../services/modalService";
 
 const portalRoot = document.getElementById("portal-root");
 
 const RegisterModal = ({ isOpen, close, data }) => {
+  const [modalData, setModalData] = useState([]);
+
+  useEffect(() => {
+    const fetchModal = async () => {
+      const response = await modalService.getModal();
+      setModalData(response.data.data.attributes);
+      // console.log(response.data.data.attributes);
+    };
+
+    fetchModal();
+  }, []);
+
   let navigate = useNavigate();
   // if (window.location.pathname === "/program/eksplorasi-kampus") {
   //   pathname = "form-eksplorasi-kampuses";
@@ -199,24 +212,24 @@ const RegisterModal = ({ isOpen, close, data }) => {
         <ModalContentRight>
           <ModalForm>
             <ModalFormTitle>Data Diri</ModalFormTitle>
-            <ModalFormLabel>Nama Lengkap</ModalFormLabel>
+            <ModalFormLabel>{modalData.input_title_1}</ModalFormLabel>
             <ModalFormInput
               type="text"
-              placeholder="Contoh: Nama Lengkap"
+              placeholder={modalData.input_hint_1}
               value={name}
               onChange={(event) => setName(event.target.value)}
             />
-            <ModalFormLabel>Email</ModalFormLabel>
+            <ModalFormLabel>{modalData.input_title_2}</ModalFormLabel>
             <ModalFormInput
               type="text"
-              placeholder="Contoh: email@example.com"
+              placeholder={modalData.input_hint_2}
               value={email}
               onChange={(event) => setEmail(event.target.value)}
             />
-            <ModalFormLabel>No Hp/Whatsapp</ModalFormLabel>
+            <ModalFormLabel>{modalData.input_title_3}</ModalFormLabel>
             <ModalFormInput
               type="text"
-              placeholder="Contoh: 081289099092"
+              placeholder={modalData.input_hint_3}
               value={phoneNumber}
               onChange={(event) => setPhoneNumber(event.target.value)}
             />
@@ -248,7 +261,11 @@ const RegisterModal = ({ isOpen, close, data }) => {
           </ModalFileInput>
           <ModalPrice>
             <h6>Total</h6>
-            <h6>Rp {data.price}</h6>
+            {data.price == "Gratis" ? (
+              <h6>{data.price}</h6>
+            ) : (
+              <h6>Rp {data.price}</h6>
+            )}
           </ModalPrice>
           Lakukan pembayaran sesuai harga yang tertera melalui transfer bank ke
           nomor rekening berikut: BNI 123124231 a.n. SALMAN
