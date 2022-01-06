@@ -257,9 +257,12 @@ const RegisterModal = ({ isOpen, close, data }) => {
             </ContainerInput>
           </ModalFileInput>
           <ModalPrice>
-            {console.log(data.price)}
             <h6>Total</h6>
-            <h6>Rp {data.price}</h6>
+            {data.price == "Gratis" ? (
+              <h6>{data.price}</h6>
+            ) : (
+              <h6>Rp {data.price}</h6>
+            )}
           </ModalPrice>
           Lakukan pembayaran sesuai harga yang tertera melalui transfer bank ke
           nomor rekening berikut: BNI 123124231 a.n. SALMAN
