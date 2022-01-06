@@ -121,7 +121,7 @@ const RegisterModal = ({ isOpen, close, data }) => {
       await axios
         .post(`${process.env.REACT_APP_API_URL}/upload`, formData)
         .then(async (res) => {
-          // console.log(res);
+          // console.log(res.data[0].url);
           // console.log(pathname);
           await axios.post(
             `${process.env.REACT_APP_API_URL}/${data.pathname}`,
@@ -133,6 +133,7 @@ const RegisterModal = ({ isOpen, close, data }) => {
                 phone_number: phoneNumber,
                 receipt: res.data[0],
                 type: data.title,
+                pic_url: res.data[0].url,
               },
             }
           );
@@ -150,7 +151,7 @@ const RegisterModal = ({ isOpen, close, data }) => {
           });
         });
     } catch (err) {
-      console.log(err);
+      // console.log(err);
       Swal.fire({
         icon: "error",
         title: err,

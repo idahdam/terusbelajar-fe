@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import logo from "../../assets/images/terusBelajarLogo.png";
+import logo from "../../assets/images/terusBelajarLogo.png";
 // import profilephoto from "../../assets/terusBelajarLogo.png";
 import { FaBars } from "react-icons/fa";
 import {
@@ -66,7 +66,10 @@ const Navbar = (props) => {
             setAboutUs(false);
           }}
         >
-          <NavLogo src={assetData} alt="Logo Terus Belajar" />
+          <NavLogo
+            src={assetData === null ? logo : assetData}
+            alt="Logo Terus Belajar"
+          />
         </Link>
         <MobileIcon>
           <FaBars onClick={props.toggling} />
