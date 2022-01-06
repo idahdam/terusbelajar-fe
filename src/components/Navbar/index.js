@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../../assets/images/terusBelajarLogo.png";
+// import logo from "../../assets/images/terusBelajarLogo.png";
 // import profilephoto from "../../assets/terusBelajarLogo.png";
 import { FaBars } from "react-icons/fa";
 import {
@@ -17,8 +17,21 @@ import {
   // NavbarProfilePhoto,
 } from "./styles";
 import { Link, useLocation } from "react-router-dom";
+import { AssetService } from "../../services/assetService";
 
 const Navbar = (props) => {
+  const [assetData, setAssetData] = useState([]);
+
+  useEffect(() => {
+    const fetchAsset = async () => {
+      const response = await AssetService.getAsset();
+      setAssetData(response.data.data.attributes.logo.data[0].attributes.url);
+      // console.log(response.data.data.attributes.logo.data[0].attributes.url);
+    };
+
+    fetchAsset();
+  }, []);
+
   // const [navbar, setNavbar] = useState(false);
   // const history = useNavigate();
   const [home, setHome] = useState(false);
@@ -53,7 +66,7 @@ const Navbar = (props) => {
             setAboutUs(false);
           }}
         >
-          <NavLogo src={logo} alt="Logo Terus Belajar" />
+          <NavLogo src={assetData} alt="Logo Terus Belajar" />
         </Link>
         <MobileIcon>
           <FaBars onClick={props.toggling} />
