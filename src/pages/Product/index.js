@@ -13,7 +13,7 @@ const Product = (props) => {
     const fetchProgram = async () => {
       const response = await programService.getProgram(props.id);
       setProgramData(response.data.data.attributes);
-      console.log(response.data.data.attributes);
+      console.log("DATA", response.data.data.attributes);
     };
 
     fetchProgram();
@@ -26,7 +26,10 @@ const Product = (props) => {
       <SectionOne data={programData.hero} />
       <SectionTwo data={programData.imageText} />
       <SectionThree data={programData.benefits} />
-      <SectionFour data={programData.programCard} />
+      <SectionFour
+        data={programData.programCard}
+        pathname={programData.formUrl}
+      />
       <SectionFive data={programData.faq} />
       <SectionSix data={programData.bottom} />
     </>

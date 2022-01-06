@@ -15,7 +15,6 @@ import RegisterModal from "../RegisterModal";
 
 const ProductType = (props) => {
   const [isOpen, setOpen] = useState(false);
-  console.log(props.benefitsData[0].image.data.attributes.url);
   return (
     <>
       <ProductTypeCard modal={props.modal}>

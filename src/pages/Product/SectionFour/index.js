@@ -13,6 +13,7 @@ const SectionFour = (props) => {
               price={item.price}
               benefitsData={item.programCardItem}
               key={index}
+              pathname={props.pathname}
               // modalButton={true}
             />
           );
