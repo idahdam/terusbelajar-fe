@@ -44,15 +44,14 @@ const RegisterModal = ({ isOpen, close, data }) => {
     fetchModal();
   }, []);
 
-  let pathname = "";
   let navigate = useNavigate();
-  if (window.location.pathname === "/program/eksplorasi-kampus") {
-    pathname = "form-eksplorasis";
-  } else if (window.location.pathname === "/program/try-out") {
-    pathname = "form-try-outs";
-  } else if (window.location.pathname === "/program/study-abroad") {
-    pathname = "form-study-abroads";
-  }
+  // if (window.location.pathname === "/program/eksplorasi-kampus") {
+  //   pathname = "form-eksplorasi-kampuses";
+  // } else if (window.location.pathname === "/program/try-out") {
+  //   pathname = "form-try-outs";
+  // } else if (window.location.pathname === "/program/study-abroad") {
+  //   pathname = "form-study-abroads";
+  // }
   const [name, setName] = useState(null);
   const [phoneNumber, setPhoneNumber] = useState(null);
   const [email, setEmail] = useState(null);
@@ -122,18 +121,22 @@ const RegisterModal = ({ isOpen, close, data }) => {
       await axios
         .post(`${process.env.REACT_APP_API_URL}/upload`, formData)
         .then(async (res) => {
-          // console.log(res);
+          // console.log(res.data[0].url);
           // console.log(pathname);
-          await axios.post(`${process.env.REACT_APP_API_URL}/${pathname}`, {
-            data: {
-              status: "unpaid",
-              name: name,
-              email: email,
-              phone_number: phoneNumber,
-              receipt: res.data[0],
-              type: data.title,
-            },
-          });
+          await axios.post(
+            `${process.env.REACT_APP_API_URL}/${data.pathname}`,
+            {
+              data: {
+                status: "unpaid",
+                name: name,
+                email: email,
+                phone_number: phoneNumber,
+                receipt: res.data[0],
+                type: data.title,
+                pic_url: res.data[0].url,
+              },
+            }
+          );
         })
         .then((res) => {
           Swal.fire({
@@ -148,6 +151,7 @@ const RegisterModal = ({ isOpen, close, data }) => {
           });
         });
     } catch (err) {
+      // console.log(err);
       Swal.fire({
         icon: "error",
         title: err,

@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   TestimonyBoxWidth,
   TestimonyBoxContainer,
@@ -7,13 +6,16 @@ import {
   WhyUsTitle,
   WhyUsDesc,
 } from "./styles";
+import backUpImage from "../../assets/images/person.jpg";
 
 const TestimonyBox = (props) => {
   return (
     <TestimonyBoxWidth width={props.width}>
       {props.program ? (
         <>
-          <TestimonyBoxImage src={props.image} />
+          <TestimonyBoxImage
+            src={props.image === null ? backUpImage : props.image}
+          />
           <WhyUsTitle>{props.title}</WhyUsTitle>
           <WhyUsDesc
             dangerouslySetInnerHTML={{ __html: props.text }}

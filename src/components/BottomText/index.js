@@ -9,9 +9,9 @@ import {
   BottomTextRightImage,
   BottomTextButtonScroll,
 } from "./styles";
+import backUpImage from "../../assets/images/aboutUs2.png";
 
 const BottomText = (props) => {
-  // console.log(props);
   return (
     <>
       <BottomTextTemplate split={props.split} left={props.left}>
@@ -33,7 +33,13 @@ const BottomText = (props) => {
             </BottomTextLeft>
             {props.split ? (
               <BottomTextRight>
-                <BottomTextRightImage src={props.image} />
+                <BottomTextRightImage
+                  src={
+                    props.image.data.attributes.url === null
+                      ? backUpImage
+                      : props.image.data.attributes.url
+                  }
+                />
               </BottomTextRight>
             ) : null}
           </>
@@ -41,7 +47,9 @@ const BottomText = (props) => {
           <>
             {props.split ? (
               <BottomTextRight>
-                <BottomTextRightImage src={props.image} />
+                <BottomTextRightImage
+                  src={props.image === null ? backUpImage : props.image}
+                />
               </BottomTextRight>
             ) : null}
             <BottomTextLeft>

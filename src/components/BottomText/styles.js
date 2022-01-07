@@ -20,6 +20,7 @@ export const BottomTextTemplate = styled.div`
     padding-top: 50px;
     padding-bottom: 70px;
     text-align: center;
+    width: 80%;
   }
 `;
 
@@ -59,15 +60,14 @@ export const BottomTextRight = styled.div`
 `;
 
 export const BottomTextRightImage = styled.div`
-  margin: 0px 50px;
+  margin: 0 auto;
   background-image: url(${(props) => props.src});
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  height: 400px;
-  width: 400px;
+  height: 300px;
   @media screen and (max-width: ${(props) => props.theme.screen.xs}) {
-    width: 250px;
+    width: 200px;
   }
 `;
 

@@ -31,7 +31,10 @@ const Product = () => {
       <SectionOne data={programData.hero} />
       <SectionTwo data={programData.imageText} />
       <SectionThree data={programData.benefits} />
-      <SectionFour data={programData.programCard} />
+      <SectionFour
+        data={programData.programCard}
+        pathname={programData.formUrl}
+      />
       <SectionFive data={programData.faq} />
       <SectionSix data={programData.bottom} />
     </>

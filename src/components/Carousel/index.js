@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import theme from "../../styles/theme";
-// import homeBanner from "../../../assets/homeBanner.png";
+import homeBanner from "../../assets/images/backgroundHero.png";
 import {
   CarouselTemplate,
   CarouselHeader,
@@ -29,7 +29,9 @@ const CarouselItem = (props) => {
   return (
     <div
       style={{
-        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5)), url(${props.image})`,
+        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5)), url(${
+          props.image === null ? homeBanner : props.image
+        })`,
         backgroundPosition: "right center",
         width: "100%",
         zIndex: "auto",
